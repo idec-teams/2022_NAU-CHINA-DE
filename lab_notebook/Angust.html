@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Angust</title>
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/painter.css">
+    <link rel="stylesheet" type="text/css" href="../css/new1.css">
+    <link rel="stylesheet" type="text/css" href="../css/page/lab_notebook.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div id="loading">
+        <div class='loadingX' style="background-color: #abc2ea;">
+            <img src="../image/lodding_3.gif" height=100% width=100%>
+        </div>
+    </div>
+
+    <script>
+        document.onreadystatechange = function() {
+
+            if (document.readyState === "complete") {
+
+                setTimeout(
+                    function() {
+                        // document.querySelector("#loading").style.opacity = "0%";
+                        document.querySelector("#loading").style.display = "none";
+                        document.querySelector("#globalWrapper").style.display = "block";
+                    }, 3000)
+            }
+        }
+    </script>
+
+    <div id='globalWrapper'>
+        <div id="content" class="mw-body" role="main" style="background-color:  white">
+
+
+            <div id="HQ_page">
+                <div id="bodyContent">
+
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+
+                        <section class="menu-section-area">
+
+                            <!-- Navigation -->
+                            <nav class="menu">
+                                <div style="height: 0px;width: 0px;position: relative;">
+                                    <img src="../image/logo.png" width="50px" height="50px" style="position:absolute;top:-14px;">
+                                </div>
+
+                                <ol>
+                                    <li class="menu-item"><a href="../index.html">Home</a></li>
+
+                                    <li class="menu-item">
+                                        <a href="#0">Project
+                                            <svg version="1.1" class="plus-icon" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18">
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="10" y1="9" x2="17" y2="9" />
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="9" y1="9" x2="9" y2="1" />
+                                                <g id="lineGroup_1">
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="1" y1="9" x2="8" y2="9" />
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="9" y1="17" x2="9" y2="9" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <ol class="sub-menu">
+                                            <li class="sub-menu-item"><a href="../description.html">Description</a></li>
+                                            <li class="sub-menu-item"><a href="../design.html">Design</a></li>
+                                            <li class="sub-menu-item"><a href="../results.html">Results</a></li>
+                                            <li class="sub-menu-item"><a href="../supplement.html">Supplement</a></li>
+
+                                            <li class="sub-menu-item"><a href="../protocol.html">Protocol</a></li>
+                                        </ol>
+                                    </li>
+                                    <li class="menu-item"><a href="../lab_notebook.html">Lab notebook</a></li>
+                                    <li class="menu-item">
+                                        <a href="#0">Team
+                                            <svg version="1.1" class="plus-icon" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18">
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="10" y1="9" x2="17" y2="9" />
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="9" y1="9" x2="9" y2="1" />
+                                                <g id="lineGroup_1">
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="1" y1="9" x2="8" y2="9" />
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="9" y1="17" x2="9" y2="9" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <ol class="sub-menu">
+                                            <li class="sub-menu-item"><a href="../team.html">Team</a></li>
+                                            <li class="sub-menu-item"><a href="../collaboration.html">Collaboration</a></li>
+
+                                        </ol>
+                                    </li>
+
+
+
+                            </nav>
+                            <!-- Navigation -->
+
+                        </section>
+                        <div class="img1"></div>
+
+                        <!-- <div class="lnav">
+                            <div class="turn-container">
+                               --d为自定义属性，CSS中可通过var函数对其调用 -->
+                        <!-- <div class="turn-line" style="--d:1;"><span></span></div>
+                                <div class="turn-line" style="--d:2;"><span></span></div>
+                                <div class="turn-line" style="--d:3;"><span></span></div>
+                                <div class="turn-line" style="--d:4;"><span></span></div>
+                                <div class="turn-line" style="--d:5;"><span></span></div>
+                                <div class="turn-line" style="--d:6;"><span></span></div>
+                                <div class="turn-line" style="--d:7;"><span></span></div> -->
+                        <!-- <div class="turn-line" style="--d:8;"><span></span></div>
+                          <div class="turn-line" style="--d:9;"><span></span></div>
+                          <div class="turn-line" style="--d:10;"><span></span></div>
+                          <div class="turn-line" style="--d:11;"><span></span></div>
+                          <div class="turn-line" style="--d:12;"><span></span></div> -->
+                    </div>
+                </div> -->
+
+
+
+                <div class="content">
+
+                    <div class="main" style="color: black;">
+                        <div class="notebook_container col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+                            <a href="../lab_notebook.html">
+                                </h1>
+                                BACK👈
+                                </h1>
+                            </a>
+                            <div class=" notebook " style="text-align:center; ">
+                                <div class="calendar-part10 ">
+                                    <img src="../image/8.png " style="width: 300px; " class="hover ">
+                                    <div>
+                                        <table border=" 1 " class="show ">
+                                            <tr>
+                                                <th style=" width: 10vw !important; ">Date</th>
+                                                <th>Member</th>
+                                                <th>Experiment</th>
+                                                <th>Result</th>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="5 " id="h8 ">2022/8/1</td>
+                                                <td>L.J.J.
+                                                </td>
+                                                <td>"(1)Pick 4 tranformants from each of the two plates. Colony PCR (confirm the existence of the target fragment).</br>(2)Verify whether plaques could grow on the plates with S2060 competent cells. Transform
+                                                    Gene2 into S2060. Transform Gene2 into C321 (with sfGFP)。 "
+                                                </td>
+                                                <td>(1) No signal. </br>
+                                                    (2) S2060 competent cell transformants grew afterwards.
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td>Z.Z.Y., N.X.H., L.J., T.W.H.
+
+                                                </td>
+                                                <td>"(1) Use a microplate reader to measure the fluorescence value.</br>(2) Colony PCR (confirm the existence of the target fragment in 8.30 transformants) </br>(3) Colony PCR (confirm the existence of Gene2
+                                                    and sfGFP)
+                                                    </br>
+                                                    (4) Streak culture, then culture in test tubes in a shaker for 16h."
+
+                                                </td>
+                                                <td>"(1) Green fluorescence showed while orange fluorescence didn't show.
+                                                    </br>(2) No signal, suspected it was other bacterium index. </br>(3) Gene2 existed in the transformants."
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>L.J., N.X.H.
+
+                                                </td>
+                                                <td>Measure the fluorescence value. Dilute saturate C321δAsfGFP＋Gene2, add L-DOPA and Ara, and culture in test tubes in a shaker for 16h. Add IPTG, PBS buffer solution. Use a microplate reader to measure green
+                                                    and orange fluorescence values.
+
+                                                </td>
+                                                <td>The green fluorescence value was high, while orange fluorescence didn't show.
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td>Z.Y.H., L.J.J.
+
+                                                </td>
+                                                <td>"(1) Colony PCR (confirm the existence of reconstituted phages) </br>
+                                                    (2) Gel extraction. </br>
+                                                    (3) PCR (use wild type phages as templates). Gel extraction. </br>
+                                                    (4) USER cloning to construct SP. </br>
+                                                    (5) Transform SP into S2208."
+
+                                                </td>
+                                                <td>"(1) No signal. </br>(2) The concertration of gel extraction product was 12 ng/μl. </br>(3) The concertration of gel extraction product was 6 ng/μl. The electrophoretic band was wrong."
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>L.W.R., X.K.
+                                                </td>
+                                                <td>Add wild type phages into S2208 and cultured for 2h.
+
+                                                </td>
+                                                <td>"No single colonies existed. "
+                                                </td>
+
+                                            </tr>
+
+
+
+                                            <tr>
+                                                <td rowspan="6">2022/8/2
+                                                </td>
+                                                <td>L.J.J.
+                                                </td>
+                                                <td>"(1) Add Ara into cultured C321 (with Gene2)。Divided them into controled group, groups with no inducer, and groups with different dopamine gradients.
+                                                    </br>(2) Construct SP；Design primers for construction of AP.
+                                                    </br>(3) Pick one transformant from each of the two plates and add into 2×YT medium with Kan(1/1000) and Str."
+
+                                                </td>
+                                                <td>(3) The bacterial solution was not turbid when observing in the next day morning and Later in the evening it was turbid.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>Z.Z.Y., N.X.H.
+
+                                                </td>
+                                                <td>"(1) Streak culture (7.23 and 7.30 competent cells with Kan resistance)
+                                                    </br>
+                                                    (2) Verify whether plaques could grow on the plates with S2060 competent cells."
+
+                                                </td>
+                                                <td>(1) No single colonies existed.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>N.X.H.
+
+                                                </td>
+                                                <td>"(1)Transform two plasmids into C321, add Ara in time, add IPTG and DOPA to induce.
+
+                                                    </br>(2)Measure the fluorescence value. Prepare saturated bacterial solution."
+
+                                                </td>
+                                                <td>The transformants didn't grow in 12h, probably because of the tempreture and the activity of bacterial.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+
+                                                </td>
+                                                <td>"(1) Pick 59 transformants and verify whether plaques could grow on the plates with S2060 competent cells. </br>(2) PCR (use SP as templates, labeled as'SP-U'). </br>(3) PCR (use phages labeled as 'After'
+                                                    as templates) . Gel extraction. </br>(4) PCR (use SP constructed the previous day as templates) . Gel extraction. </br>(5) Transform AP-P and AP-F into S2060. </br>(6) Filter the supernatant to remove
+                                                    residual cells. Conduct plaque assay."
+
+                                                </td>
+                                                <td>"(1) 7 transformants showed correct electrophoretic band. Pick and culture them for 16h.
+                                                    </br>(2) all transformants showed correct electrophoretic band, which implied the template had both wild type and recombinant phages.
+                                                    </br>(3) The concertration of gel extraction product was 58 ng/μl.
+                                                    </br>(4) The concertration of gel extraction product was 39 ng/μl.
+                                                    </br>(5) The transformants over-grew.
+                                                    </br>(6) No plaque grew, for 2208 culturing too much time."
+
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.W.R., X.K.</td>
+                                                <td>Add wild type phages into S2208 and cultured for 2h. Measure the fluorescence value.
+
+                                                </td>
+                                                <td>"Lack DRM medium as control group.
+
+                                                    </br>OD600
+                                                    </br>luminescence
+                                                    </br>There was no obvious positive correlation between fluorescence and the experiment need to be repeated.
+
+                                                    </br>con 5*10^0 10^0 10^-1 10^-2 10^-3 10^-4
+                                                    </br>0.6775 0.7431 0.7238 0.7178 0.7551 0.7413 0.7566
+                                                    </br>3529 1904 4904 4696 748 1028 1132
+
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>L.W.R.
+                                                </td>
+                                                <td>Colony PCR (confirm the existence of KanR, GOI, g3, T7)
+                                                </td>
+                                                <td>Three transformants showed the existence of KanR, while the band of GOI and GⅢ were weak, and T7 had no signal. Probably the problem of purity of primers.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="4">2022/8/3
+                                                </td>
+
+                                                <td>L.J., N.X.H.
+                                                </td>
+                                                <td>Measure the fluorescence value. Pick single colony of C321δAsfGFP＋gene2, and culture to saturation.
+                                                </td>
+                                                <td>One of the 3 test tubes wasn't turbid, and the other test tubes were turbid. Probably the problem of the bacteria activity.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Z.Y., N.X.H.
+
+                                                </td>
+                                                <td>"(1) Colony PCR (confirm the existence of Gene2). Streak culture(7.23 competent cells with Amp resistance). (2) Pick single colony and culture to saturation."
+
+                                                </td>
+                                                <td>Only one electrophoretic band showed. But it was other Bacterium.
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.J.
+
+
+                                                </td>
+                                                <td>"(1) Design AP primers.
+                                                    </br>(2) Construction of SP.
+                                                    </br>(3) Pick single colony of S2208, and culture to saturation.
+                                                    </br>(4) Verify whether plaques could grow on the plates with S2060 competent cells.
+                                                    </br>(5) Colony PCR (confirm the existence of sfGFP)."
+
+
+                                                </td>
+                                                <td>(5) 7 electrophoretic band were correct (about 4800bp).
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+
+
+
+                                                </td>
+                                                <td>"(1) Pick 48 plaques.
+                                                    </br>(2) Colony PCR (use 7 plaques showed correct band the previous day as templates, and set control group which use wild type phage as templates).
+                                                    </br>(3) Conduct nucleic acid electrophoresis with 7 plaques showed correct band the previous day again.
+                                                    </br>(4) Send two gel extraction products for sequencing"
+
+
+
+                                                </td>
+                                                <td>"(1) No signal.
+                                                    </br>(2) All the electrophoretic band were wrong.
+                                                    </br>(3) No signal."
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="7">2022/8/4
+                                                </td>
+                                                <td>Z.Z.Y.
+                                                </td>
+                                                <td>"(1) Colony PCR (use saturated S2208 solution as templates)
+                                                    </br>(2) Transform sfGFP plasmid into C321 competent cells."
+                                                </td>
+                                                <td>"(1) No signal.
+                                                    </br>(2) One of the two plates had other bacterium with rough selvedge. The other plate had bacteria lawn on it."
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>L.J.J.
+
+                                                </td>
+                                                <td>"(1) Plasmid extraction (S2060). Measure the plasmid concentration.
+                                                    </br>(2) Plaque assay (SP).
+                                                    </br>(3) Plasmid extraction (S2060). PCR (confirm whether S2060 cells had wild type phage), use M13 wild type phage as control group."
+
+                                                </td>
+                                                <td>(1) The concentration of the plasmid extraction product was very low. One was 50.149 ng/μl. The other is 14.87 ng/μl.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J., N.X.H.
+                                                </td>
+                                                <td>Pick single colony of C321δAsfGFP＋gene2, and culture it in a biological shaker until saturated.
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H., N.X.H.
+
+                                                </td>
+                                                <td>"(1) Culture S2208 until saturated (add Str and Amp).
+                                                    </br>(2) Design primers for homologous recombination of the 3 parts of SP (the 3 parts was labeled as T7RNAP, gene1 and gene2). "
+
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.W.R.
+                                                </td>
+                                                <td>Get T7 RNAP and fully-synthesized fragment (use mixture of SP and wild type phage as templates) through PCR
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>X.K.
+                                                </td>
+                                                <td>Culture S2208 until saturated and add recombinant phage into it. Measure the fluorescence value.
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>X.K.
+                                                </td>
+                                                <td>Culture S2208 until saturated and add recombinant phage into it. Measure the fluorescence value.
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="5">2022/8/5</td>
+                                                <td>L.J.J.
+                                                </td>
+                                                <td>"(1) Measure the plasmid concentration again.
+                                                    </br>(2) PCR (confirm whether S2060 cells had wild type phage, use plasmid extraction product as templates).
+                                                    </br>(3) Streak culture (S2208).
+                                                    </br>(4) Culture S2060 until saturated. PCR(use S2208 saturated bacteria solution as templates).
+                                                    </br>(5) Streak culture (S2060 competent cells) and PCR(confirm whether S2060 has pJC175e).
+                                                    </br>(6) Colony PCR(use S2060 cells cultured in April as templates), set pJC175e plasmid as control group.
+                                                    </br>(7) Streak culture (S2060 competent cells) with Tet and Str."
+
+                                                </td>
+                                                <td>
+                                                    "(1) The concentrations were 0::8.368 ng/ul, 1:148.956 ng/ul, and 2:103.625 ng/ul, respectively.
+                                                    </br>(2) The result was normal.
+                                                    </br>(5) There was a problem with the results.
+                                                    </br>(6) There was a problem with the result, there was a band."
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>Z.Z.Y., N.X.H.
+
+                                                </td>
+                                                <td>"(1) Colony PCR (use transformants as templates)
+                                                    </br>(2) Transform SP into S2208 again.
+                                                    </br>(3) Streak culture (S2208 of 3 batches).
+                                                    </br>(4) Pick single colony from the streak culture plate and cultule it until saturated."
+                                                </td>
+                                                <td>
+                                                    "(1) No signal.
+                                                    </br>(2) The bacteria grow quickly and are suspected to be miscellaneous bacteria.
+                                                    </br>(4) No signal."
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>N.X.H., L.J.
+                                                </td>
+                                                <td>Induce protein expression again. Conduct different gradient experiment to confirm the induction conditions
+
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>Z.Y.H.
+
+                                                </td>
+                                                <td>Colony PCR (use 48 plaques picked as templates), and use wild type phages as control group.
+
+
+                                                </td>
+                                                <td>
+                                                    All the electrophoretic bands showed the existence of wild type phages.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>L.W.R.
+
+
+                                                </td>
+                                                <td>Get KanR and frame fragments (use selected transformants as templates) through PCR.
+                                                </td>
+                                                <td>
+                                                    No signal. But it showed clear dimer band. Probably primer dimer were formed.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="6">2022/8/6
+                                                </td>
+                                                <td>L.J.J.
+                                                </td>
+                                                <td>"(1) PCR (confirm whether S2060 cells had wild type phage).
+                                                    </br>(2) Culture S2208 until saturated for plaque assay.
+                                                    </br>(3) Culture S2060 in 2×YT medium.
+                                                    </br>(4) PCR (confirm whether S2060 has pJC175e).
+                                                    </br>(5) Streak culture (S2060) and culture until saturated, prepared for plaque assay in the next day."
+
+                                                </td>
+                                                <td>
+                                                    "(1) No signal.
+                                                    </br>(2) No plaque grew.
+                                                    </br>(4) One tube of S2060 was confirmed to be correct. "
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Z.Y.
+                                                </td>
+                                                <td>"(1) Colony PCR (use sfGFP picked from plates of streak culture).
+                                                    </br>(2) Streak culture of C321 with sfGFP."
+
+
+                                                </td>
+                                                <td>
+                                                    (1) No signal.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>N.X.H.，L.J.
+
+                                                </td>
+                                                <td>Induce protein expression again. Conduct different gradient experiment to confirm the induction conditions
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+                                                </td>
+                                                <td>"(1) Culture S2208 until saturated.
+                                                    </br>(2) Colony PCR (confirm whether homologous recombination succeeded).
+                                                    </br>(3) Get of T7 RNAP and gene2 fragments. Gel extraction through PCR.
+                                                    </br>(4) PCR (set 53°C, 57°C, 59°C, 61°C, four different temperature gradients).
+                                                    </br>(5) Get gene1 fragment through PCR.
+                                                    </br>(6) Gel extraction of (the frame, T7 RNAP, gene2 fragment)."
+
+                                                </td>
+                                                <td>
+                                                    "(2) ""Vector"", ""gene2”, ”T7RNAP” had bands, but ""gene1"" had not.
+                                                    </br>(3) Same as above (4) No signal.
+                                                    </br>(5) The fragment of ""gene1"" was no signal.
+                                                    </br>(6) Result was good."
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.W.R.
+
+                                                </td>
+                                                <td>"(1)Get T7+QHC fragment (use the mixture of recombinant and wild type phage) through PCR.
+                                                    </br>(2)Get KanR fragments through PCR.
+                                                    </br>(3)Get frame fragments through PCR."
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>X.K.
+                                                </td>
+                                                <td>Culture S2208 to saturated.
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="5">2022/8/7
+                                                </td>
+                                                <td>L.J.J.
+
+                                                </td>
+                                                <td>"(1) Pick two single colony from each of two plates and culture in 2×YT medium.
+                                                    </br>(2) Colony PCR (confirm whether S2060 cells had wild type phage). Set S2060 bacteria solution as control group.
+                                                    </br>(3) Plaque assay of SP and wild type phage.
+                                                    </br>(4) Get frame of AP-A through PCR. Get g3 and luxab fragments through PCR.
+                                                    </br>(5) Get frame of AP-A through PCR. Get g3 and luxab fragments through PCR. Gel extraction.
+                                                    </br>(6) Gel extraction and measure the concentration.
+                                                    </br>(7) Streak culture of S2060."
+
+                                                </td>
+                                                <td>
+                                                    "(1) Except for the tube from yesterday's ok as a control, which can be used, all the other picked single colonies had pjc175e bands.
+                                                    </br>(2) No phage plaques.
+                                                    </br>(4) The band was normal.
+                                                    </br>(5) The band is normal.
+                                                    </br>(6) The vector's concentration was 532.266 ng/ul. The g3 fragment's concentration was 471.424 ng/ul"
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Z.Y., N.X.H., L.J., G.P.Z.
+
+                                                </td>
+                                                <td>"(1) Streak culture of S2060 and C321 with sfGFP plasmid.
+                                                    </br>(2) Plasmid of sfGFP plasmid.
+                                                    </br>(4) Culture selected single colony of S2060 competent cells until saturated.
+                                                    </br>(5) Prepare C321 competent cells. Transformation of sfGTP plasmid into them."
+                                                </td>
+                                                <td>
+                                                    (1) Positive clones grew.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J., N.X.H.
+
+
+                                                </td>
+                                                <td>"(1) Prepare VC solution.
+                                                    </br>(2) Measure the fluorescence value. Pick single colony of C321δAsfGFP＋Gene2, and culture them until saturated. Add L-DOPA, Ara, VC and culture in a biological shaker for 2h. Add IPTG for induction
+                                                    and culture for 4h."
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.
+                                                </td>
+                                                <td>Prepare X-gal.
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+
+                                                </td>
+                                                <td>"(1) With two pairs of primers gene1F/R8 and gene1R/F8, strips of length 1538 bp and 2451 bp were obtained. fragments through PCR, using the bacteriophage labeled ""after"" as a template.
+                                                    </br>(2) The fragments of T7RNAP and gene2 recovered from yesterday's gel extraction were homologously recombinant with the AP-P vector, respectively, and transformated into the DH5α competent cells
+                                                    </br>(3) With two pairs of primers gene1F/R8 and gene1R/F8, strips of length 2451 bp and 866 bp were obtained. Fragments through PCR, using the bacteriophage labeled ""after"" as a template. At the same
+                                                    time, the gene1 fragment was verified
+                                                    </br>(4) Gel extaction for the above two fragments
+                                                    </br>(5) Overlap PCR for gel extraction products
+                                                    </br>(6) Get gene1 fragments through PCR
+                                                    </br>(7) Take 5 microrun the PCR of overlap PCR and gene1 fragment for electrophoresis verification"
+                                                </td>
+                                                <td>"(1) No signal
+                                                    </br>(2) All grew colonies
+                                                    </br>(3) The bands were all correct
+                                                    </br>(4) Gel extractio results data and concentration were good
+                                                    </br>(7) The band of ovelap PCR was correct, but the band of gene1 fragment was no signal."
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>2022/8/7
+                                                </td>
+                                                <td>N.X.H., L.J.
+                                                </td>
+                                                <td>Verify the induction conditions by changing the medium, inducer and antibiotic.
+
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="4">2022/8/8
+                                                </td>
+                                                <td>Z.Z.Y., N.X.H., L.J., T.W.H.
+
+                                                </td>
+                                                <td>"(1) Prepare C321 competent cells.
+                                                    </br>(2) Colony PCR (to confirm whether the transformation succeeded). Culture the ideal transformants in tubes until saturated.
+                                                    </br>(3) Prepare C321 competent cells with sfGFP.
+                                                    </br>(4) Transform Gene2 muted through error-prone PCR with into C321.
+                                                    </br>(5) Pick single colony, confirm through colony PCR, and culture positive transformants for 12h."
+                                                </td>
+                                                <td>
+                                                    (1) No signal.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.
+                                                </td>
+                                                <td>Measure the fluorescence value.
+                                                </td>
+                                                <td>
+                                                    The fluorescence value were higher than last time. The orange fluorescence in the experimental group was normal, and the optimal concentration of Dopa was determined to be 1.0.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+
+                                                </td>
+                                                <td>"(1) In the morning, a set of 50 micrograms overlap PCR system was set up, and take the overlap PCR and gene1 fragment after taking 5 micrograms each yesterday for electrophoresis verification , and take
+                                                    the overlap PCR bands for gel extraction.
+                                                    </br>(2) The transformation done yesterday was verified by colony PCR, and 8 colonies were selected each
+                                                    </br>(3) Set up three sets of overlap PCR in the afternoon
+                                                    </br>(4) Take the above gel and the gel in the morning for gel extraction.
+                                                    </br>(5) Pick the colonies for the correct colony of colony PCR verification
+                                                    </br>(6) The gene1 fragments and vector were homologously recombined, and the homologous recombinant products were transfromated into DH5α competent cell. Set up two groups"
+
+                                                </td>
+                                                <td>
+                                                    "(1) The overlap PCR done yesterday has a weak band, but today does not have a band. PCR of gene1 fragment is no signal.
+                                                    </br>(2) There were 7 bands of T7RNAP fragment in 8 colonies.The gene2 has one very bright and two faint correct bands.
+                                                    </br>(3) All three groups had weak correct bands, while the surrounding bands were more diffuse.
+                                                    </br>(6) Both plates grew single colonies."
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.W.R., X.K.
+
+
+                                                </td>
+                                                <td>Characterization and induction were completed. Prepare to measure fluorescence value.
+                                                </td>
+                                                <td>
+                                                    The microplate reader could not be used, and the sample was refrigerated in the refrigerator for the next day for measurement.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="6">
+                                                    2022/8/9
+                                                </td>
+
+                                                <td>Z.Z.Y., N.X.H.
+                                                </td>
+
+                                                <td>"(1) Colony PCR (to confirm whether Gene2 was transformed into C321)
+                                                    </br>(2) Prepare C321 and SFGFP competent cells.
+                                                    </br>(3) Culture C321 until saturated.
+                                                    </br>(4) Pick the transformants the previous day, prepared for fluorescence measurement. "
+
+                                                </td>
+
+                                                <td>
+                                                    (1) No signal. Transformants of sfGFP into C321 grew. Others had no single colonies on the plates.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>L.J.
+                                                </td>
+
+                                                <td>"(1)Prepare LB liquid medium.
+                                                    </br>(2)Pick single colony of C321δAsfGFP＋Gene2, and culture them until saturated.
+                                                    </br>(3)Measure the fluorescence value. "
+                                                </td>
+
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>L.J.J.
+                                                </td>
+
+                                                <td>"(1) Preserve S2208.
+                                                    </br>(2) Culture S2060 until saturated.
+                                                    </br>(3) Prepare S2060 competent cells."
+                                                </td>
+
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+                                                </td>
+
+                                                <td>(1) Pick 4 of each of the two plates transformed yesterday for colony PCR.
+                                                    </br>(2) Plasmid extraction for the plasmid containing T7RNAP fragment and the plasmid containing gene2 fragment.
+                                                    </br>(3) PCR verification for the above plasmids
+                                                    </br>(4) PCR verification for the above plasmids, using F-3 and R-5 as primers.
+                                                    </br>(5) Pick 4 out of each of the two tablets converted yesterday for colonies PCR, using gene1R and F8, gene1F and R8 as primers.
+                                                    </br>(6) For SP-U spots, pick 16 plauges for verification, with F-3 and R-5 as primers
+                                                    </br>(7) The single colony picked by gene1 was shaken.
+
+                                                </td>
+
+                                                <td>
+                                                    "(1) No signal.
+                                                    </br>(2) Concentration, values was ideal.
+                                                    </br>(3) The band of T7RNAP fragment and gene2(1) fragment were all right. The gene2(2) fragment had no signal.
+                                                    </br>(4) The strip shows that there is the SP and no M13 Wild Type.
+                                                    </br>(5) The former had no a stripe and the latter had.
+                                                    </br>(6) All were wild-type plagues , but the ""9"" and ""16"" bands were slightly different, and they were shaken and were to be verified."
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.
+
+
+                                                </td>
+                                                <td>Design primers for the construction of CP.
+                                                </td>
+                                                <td>
+                                                    "(1) No signal.
+                                                    </br>(2) Concentration, values was ideal.
+                                                    </br>(3) The band of T7RNAP fragment and gene2(1) fragment were all right. The gene2(2) fragment had no signal.
+                                                    </br>(4) The strip shows that there is the SP and no M13 Wild Type.
+                                                    </br>(5) The former had no a stripe and the latter had.
+                                                    </br>(6) All were wild-type plagues , but the ""9"" and ""16"" bands were slightly different, and they were shaken and were to be verified."
+
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.W.R., X.K.
+                                                </td>
+
+                                                <td>"Pick single colony of C321δAsfGFP＋Gene2, and culture them until saturated. Measure the fluorescence value."
+                                                </td>
+                                                <td>
+                                                    Prepare for the next adjustment of the induction system.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="5">2022/8/10 </td>
+                                                <td>L.J.J.
+
+                                                </td>
+
+                                                <td>"(1) PCR (to confirm whether S2060 has pJC175e).
+                                                    </br>(2) Culture S2060 and S2208 until saturated.
+                                                    </br>(3) Streak culture of S2208."
+
+                                                </td>
+                                                <td>
+                                                    (1) Transformants grew normally.
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Z.Y., N.X.H., L.J.
+
+                                                </td>
+
+                                                <td>"(1) Get Gene2 through PCR and transform it into C321
+                                                    </br>(2) Prepare C321 competent cells.
+                                                    </br>(3) Colony PCR (to confirm whether Gen2 was transformed into C321), culture positive colonies until saturated.
+                                                    </br>(4) Pick single colony of C321δAsfGFP＋Gene2, and culture them until saturated. Measure the fluorescence value."
+                                                </td>
+                                                <td>
+                                                    (1) It was determined that it was gen2 plasmid , all bright , and no Zeo resistance to the bacteria.
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>L.J.
+
+
+                                                </td>
+
+                                                <td>"(1) Measure the fluorescence value. Pick single colony of C321δAsfGFP＋Gene2, and culture them until saturated. Add L-DOPA, Ara, VC and culture in a biological shaker for 2h. Add IPTG for induction and culture
+                                                    for 4h.
+                                                    </br>(2)Prepare C321 competent cells. Streak culture of C321.
+                                                    </br>(3) Colony PCR (to confirm whether SfGFP was transformed into C321). Pick single colonies and culture positive ones until saturated."
+
+                                                </td>
+                                                <td>
+                                                    "(1) Single colonies grew on the transform plates.
+                                                    </br>(2) C321 solution didn't turbid. Probably the concentration of the antibiotics was too high."
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+
+
+
+                                                </td>
+
+                                                <td>"(1) Plasmid extraction for ""gene1"" in 3 tubes
+                                                    </br>(2) The plasmid was verified, using gene1-R, F8 and gene1-R, gene1-F as primers
+                                                    </br>(3) The recombinant plasmid was verified, using F-3 and R-5 as primers.
+                                                    </br>(4) Take the recombinant plasmid containing the three fragment respectively for electrophoresis verification.
+                                                    </br>(5) The plasmid containing the fragment of T7RNAP or gene1 was verified, using F1 and R1 as primer. And the plasmid containing the fragment of gene2 was verified, using F6 and R6 as primers. (6)
+                                                    The recombinant plasmids of ""T7RNAP"" and ""gene2"" were transformated into DH5α competent cell."
+
+
+                                                </td>
+                                                <td>
+                                                    "(2) The band was wrong.
+                                                    </br>(3) The stripe showed that it was neither the SP nor the M13.
+                                                    </br>(4) The band of plasmid of ""T7RNAP was right"" and the ""gene2"" had a slightly bright band.
+                                                    </br>(5) All were wild-type M13.
+                                                    </br>(6) The colony on the plates overgrew."
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.W.R.
+                                                </td>
+
+                                                <td>
+                                                    Get KanR and T7+QHC fragments through PCR. Gel extraction. Hmologous recombination of these fragments.
+                                                </td>
+                                                <td>
+                                                    The homologous recombination was successful, with thin but bright bands.The bright spots of overlap PCR were larger.
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="5">2022/8/11
+                                                </td>
+                                                <td>Z.Z.Y., N.X.H., L.J.
+                                                </td>
+
+                                                <td>
+                                                    "(1) Culture transformants with muted genes through error-prone until saturated.
+                                                    </br>(2) Transform Gene2 muted through error-prone PCR with into C321."
+
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.J.
+
+                                                </td>
+
+                                                <td>
+                                                    "(1) Conduct plaque assay, using S2060 saturated solution.
+                                                    </br>(2) Colony PCR (to confirm whether AP was transformed).
+                                                    </br>(3) Colony PCR (to confirm whether T7 RNAP existed).
+                                                    </br>(4) Colony PCR (to confirm whether gene1 was transformed).
+                                                    </br>(5) Prepare 100 mg/ml Rif solution."
+                                                </td>
+                                                <td>
+                                                    "(1) No single colonies.
+                                                    </br>(2) The results implied it was wild-type AP vector.
+                                                    </br>(3) The band of T7RNAP plasmid was correct, but the band of gene2 was wrong.
+                                                    </br>(4) All the transformants turned out faint band about 3000bp. Band No.4 and 6 were clear."
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.
+
+
+                                                </td>
+
+                                                <td>
+                                                    "(1) Prepare C321 competent cells. Streak culture of C321.
+                                                    </br>(2) Measure the fluorescence value. "
+
+                                                </td>
+                                                <td>
+                                                    (1) The DAM effect is obvious, and the orange fluorescence exceeds 1900.
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H., L.J.J.
+                                                </td>
+                                                <td>
+                                                    (1) For the two recombinant plasmids of “T7RNAP(3)“ and “gene2“ transformed yesterday, pick 4 single colonies each for verification, using AP-Pyan-F/R as primer.
+                                                    </br>(2) Retransform the two recombinant plasmids T7RNAP(3) and gene2, two each.
+                                                    </br>(3) Recombinate the "T7RNAP" and "gene2" plasmids and transformed them into DH5α.
+                                                </td>
+                                                <td>
+                                                    (1) The DAM effect is obvious, and the orange fluorescence exceeds 1900.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.
+                                                </td>
+                                                <td>
+                                                    Get each fragements of CP (vector, fragment1, 2, 3) through PCR.
+                                                </td>
+                                                <td>
+                                                    vector, fragment 1 has the correct band, fragment 2, fragment 3 has no band.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="5">2022/8/12
+                                                </td>
+                                                <td>Z.Z.Y., N.X.H., L.J.
+                                                </td>
+                                                <td>
+                                                    "(1) Plasmid extraction.
+                                                    </br>(2) Prepare C321 competent cells."
+
+                                                </td>
+                                                <td>
+                                                    (1) Low copy,the concentration was too low to be tested.
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.
+                                                </td>
+                                                <td>
+                                                    "(1) Prepare C321 competent cells. Streak culture of C321.
+                                                    </br>(2) Prepare LB medium and 2×YT medium."
+
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J., N.X.H.
+                                                </td>
+                                                <td>
+                                                    Measure the fluorescence value. Pick single colony of C321δAsfGFP＋Gene2, and culture them until saturated. Add L-DOPA, Ara, VC and culture in a biological shaker for 2h. Add IPTG for induction and culture for 4h.
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+                                                </td>
+                                                <td>
+                                                    "(1) Pick 8 colonies for the normal plate transformed by the gene2 recombinant plasmid yesterday and colonies PCR for these colonies, using AP-Pyan-F/R as primers.
+                                                    </br>(2) Pick 8 colonies for the normal plate transformed by the ""T7RNAP"" and ""gene2"" recombinant plasmid yesterday and colonies PCR for these colonies.
+                                                    </br>(3) Shake the bacteria on the correct colonies."
+                                                </td>
+                                                <td>
+                                                    "(1) All were AP templates.
+                                                    </br>(2)""T7RANP"" labled ""1"", ""3"", ""4"", ""5"" and ""gene2"" labled ""2"" and ""5“ were right."
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Z.Y.
+
+                                                </td>
+                                                <td>
+                                                    Gel extraction of (vector, fragment1).
+                                                </td>
+                                                <td>
+                                                    Gel extraction failed.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="6">
+                                                    2022/8/13
+                                                </td>
+                                                <td>Z.Z.Y., N.X.H.,L.J.J., L.J.
+                                                </td>
+                                                <td>
+                                                    "(1) Prepare C321 competent cells. Streak culture of C321.
+                                                    </br>(2) Measure the fluorescence value.
+                                                    </br>(3) Homologous recombination of muted Gene2 through error-prone PCR with vector and transformation."
+
+                                                </td>
+                                                <td>
+                                                    "(1) After centrifugation,“1” and “3” showed an orange color of the fungus, suspected of leakage.
+                                                    </br>(2) Orange fluorescence was measured, but the intensity could not be determined due to different microplate readers and the absence of a gen2 control."
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J., N.X.H.
+                                                </td>
+                                                <td>
+                                                    "(1) Measure the fluorescence value.
+                                                    </br>(2) Prepare LB medium and DAM medium."
+
+                                                </td>
+                                                <td>
+                                                    Orange fluorescence appears in G1 and H1 in the error-prone library.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.
+                                                </td>
+                                                <td>
+                                                    "(1) Prepare C321 competent cells.
+                                                    </br>(2) Transform Gene2 muted through error-prone PCR into C321 competent cells."
+
+
+                                                </td>
+                                                <td>
+                                                    Zeo plates appeared single colonies, and double antibody plates did not grow.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J., Y.Y.H.
+                                                </td>
+                                                <td>
+                                                    Saturation mutagenesis through PCR (use Gene2 as templates), Gel extraction.
+                                                </td>
+                                                <td>
+                                                    Bands were correct.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.J.
+                                                </td>
+                                                <td>
+                                                    "(1) Pick S2060 single colonies into liqiud medium, added 5 μl Chl and 125 μl D-glucose.
+                                                    </br>(2) Dilute S2060 saturated bacteria solution and culture for 3-4h.
+                                                    </br>(3) Measure the fluorescence value.
+                                                    </br>(4) Use M13 to infect S2060."
+                                                </td>
+                                                <td>
+                                                    (6) No plaque grew.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+
+                                                </td>
+                                                <td>
+                                                    "(1) Pick 8 colonies for the normal plate transformed by the ""T7RNAP"" and ""gene2"" recombinant plasmids yesterday and colonies PCR for these colonies, using AP-Pyan-F/R as primers.
+                                                    </br>(2) Verify for new ""gene1"" primers.
+                                                    </br>(3) Get gene1 fragment.
+                                                    </br>(4) Gel extraction for gene1 fragment.
+                                                    </br>(5) Recombinate fragments of""T7RNAP"", ""gene1"" and ""gene2"" with AP vector respectively. Then transformate them into DH5α competence cell."
+                                                </td>
+                                                <td>
+                                                    "(1) All were AP templates.
+                                                    </br>(2) The primer was ok.
+                                                    </br>(3) The band was right.
+                                                    </br>(4) Result was good.
+                                                    </br>(5) Three plates were good."
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td rowspan="7">
+                                                    2022/8/14
+                                                </td>
+                                                <td>Z.Y.
+
+                                                </td>
+                                                <td>
+                                                    "(1) Get each fragements of CP (vector, fragment1, 2, 3) through PCR.
+                                                    </br>(2) Culture BL21 and use it as templates to get fragment3 through PCR."
+                                                </td>
+                                                <td>
+                                                    No signal.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Z.Y., N.X.H., L.J.
+
+                                                </td>
+                                                <td>
+                                                    Transform Gene2 muted through error-prone PCR into C321 competent cells.
+                                                </td>
+                                                <td>
+                                                    Competent cells were orange after centrifugation.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J., Y.Y.H.
+
+                                                </td>
+                                                <td>
+                                                    "(1) Saturation mutagenesis: PCR (use Gene2 as templates).
+                                                    </br>(2) Gel extraction."
+
+                                                </td>
+                                                <td>
+                                                    "(1) The result was a correctly bright band.
+                                                    </br>(2) The concentration of gel extraction was 247+."
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.
+                                                </td>
+                                                <td>
+                                                    "(1) Saturation mutagenesis: PCR (use Gene2 as templates).
+                                                    </br>(2) Gel extraction. (Zeo; Kana, Chl）"
+
+
+                                                </td>
+                                                <td>
+                                                    Zeo plate had single colonies grew on it. Kana&Chl Plate had no single colonies.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J., N.X.H.
+                                                </td>
+                                                <td>
+                                                    "(1) Measure the fluorescence value.
+                                                    </br>(2) Pick single colonies with muted genes through error-prone PCR and culture it until saturated."
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.J.
+                                                </td>
+                                                <td>
+                                                    "(1) Take four tubes of bacterial liquid in the refrigerator where tube 1 of M13 (1) and tube 1 of M13
+                                                    </br>(2) dilute 1000 times, add D-glucose and Chl. Dilute to get four tubes, divided into two groups.
+                                                    </br>(3) Wait until the OD600 of the bacterium solution is 0.5-0.7 and then add D-glucose as an inducer.
+                                                    </br>(4) At ten o'clock in the evening more than two other tubes are added to the inducer/D-glucose."
+
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+
+                                                </td>
+                                                <td>
+                                                    "(1) Verify 10 bacteria each of the three plates transformed yesterday, using AP-Pyan-F/R as primers.
+                                                    </br>(2) Verify 4 bacteria of the ""gene1' plate transformed yesterday, using gene1-R and quanhecheng -F as primer. Verify 4 bacteria of the ""gene2' plate transformed yesterday, using gene2-F and SP
+                                                    vector-R as primer. Verify 4 bacteria of the ""T7RNAP' plate transformed yesterday, using T7RNAP-F/R as primer. Set the phage stock labeled ""before"" as the control.
+                                                    </br>(3) Re-pick 8 bacteria ”gene2""."
+                                                </td>
+                                                <td>
+                                                    "(1) All were templates.
+                                                    </br>(2) Four of ""T7RNAP"" had bands.Two of ""gene1"" had slightly bright bands. Shake two of the above bacteria each.
+                                                    </br>(3) Seven of ""gene2"" had brigth bands. Shake two of bacteria."
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="5">
+                                                    2022/8/15
+                                                </td>
+                                                <td>L.J., N.X.H.
+
+                                                </td>
+                                                <td>
+                                                    Measure the fluorescence value. Pick single colony of C321δAsfGFP＋Gene2, and culture them until saturated. Add L-DOPA, Ara, VC and culture in a biological shaker for 2h. Add IPTG for induction and culture for 4h.
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.
+
+                                                </td>
+                                                <td>
+                                                    "(1) Pick a single colony of point-mutant transformants, add Chl (3 μ), and shake to saturation.
+                                                    </br>(2) Prepare LB medium and DOPA solution."
+
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>L.J.J.
+
+
+                                                </td>
+                                                <td>
+                                                    "(1) MP6 saturated liquid coating plate, applied to D-Glu and Chl plates. The arabinose-induced solution is applied directly to rifampicin-containing plates without dilution. The induction time is 12h.
+                                                    </br>(2) MP6 saturated liquid coating plate. The induction time is 10 h.
+                                                    </br>(3) Pick out the colonies of S2060 (7.23) and pick out the plaque after doing the plaque.
+                                                    </br>(4) Wait until the bacterial solution OD600 value is about 0.6-0.9 and use M13 (7.20) for infestation.
+                                                    </br>(5) Dilute saturated bacterial solution of the single colony (8.13). Dilute into three tubes of liquid medium containing Chl and 25 mM D-Glu.
+                                                    </br>(6)Add inducers and inhibitors to two of these tubes. for comparison."
+
+
+                                                </td>
+                                                <td>
+                                                    "(1) The original solution, 10-2 of the bacterial liquid paste plate, 10-4 was very dense. At three o'clock I took it out and put it in the refrigerator, and after an hour, the arabinose-induced bacteria on the Lifu plate did not grow.
+                                                    </br>(2) Three points of multi-stock solution, 10-2 bacterial liquid paste plate, 10-4 was very dense. The Lifu flat plate didn't grow until six o'clock.
+                                                    </br>(4) The next day no plaque was observed.
+                                                    </br>(6) Since the plate of (1) (2) does not do well, no control was set. So re-diluted the bacterial solution."
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+
+                                                </td>
+                                                <td>
+                                                    "(1) For gene2, two more colonies corresponding to the correct bands were picked and shaken.
+                                                    </br>(2) 8 colonies of ""gene1"" were repicked for PCR verification using gene1-R and quanhecheng-F as primer.
+                                                    </br>(3) Plasmid extraction for ""T7RNAP"" and ""gene1"" shaken yesterday,each with two tubes. And electrophoresis verification for the above.
+                                                    </br>(4) Verfy for the plasmids of ""T7RNAP"" and ""gene1"", using gene1-R and quanhecheng-F as primer."
+                                                </td>
+                                                <td>
+                                                    "(2) No signal.
+                                                    </br>(3) The bands of M13 and rigth plasmid.
+                                                    </br>(4) No signal."
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.
+
+                                                </td>
+                                                <td>
+                                                    "(1) Get fragments2 and 3 through PCR.
+                                                    </br>(2) Gel extraction and measure the concentration."
+
+                                                </td>
+                                                <td>
+                                                    PCR succeeded，The concentration of gel extraction products is high
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="5">
+                                                    2022/8/16
+                                                </td>
+                                                <td>L.J., N.X.H.
+
+                                                </td>
+                                                <td>
+                                                    "(1) Measure the fluorescence value.
+                                                    </br>(2) Homologous recombination of muted Gene2 through error-prone PCR with vector and transformation."
+
+                                                </td>
+                                                <td>A2 has orange fluorescence, but because of the absence of DAM, the fluorescence value is low; G1, H1(8.13) fluorescence is not pronounced.
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.
+                                                </td>
+                                                <td>
+                                                    Preserve strains with orange fluorescence.
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.J.
+
+                                                </td>
+                                                <td>
+                                                    "(1) After induction for 15 h 10 min, remove the bacterial solution. Both arabinose induced and D-Glu controls were diluted to 10-4, 10-6, 10-8 concentrations of the liquid and coated in 2×YT medium containing D-Glu and Chl. Both stock solutions are coated
+                                                    in Rif-containing medium.
+                                                    </br>(2) Pick out colonies and transform S2060 of Gene2 into medium containing the corresponding antibiotics.
+                                                    </br>(3) Plaque assay of the wild type phage."
+
+                                                </td>
+                                                <td>
+                                                    (3) No plaque.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+
+                                                </td>
+                                                <td>
+                                                    "(1) Shake the bacteria from the BL21 glycerol tube
+                                                    </br>(2) Plasmid extraction of two test tubes containing “gene2“ bacteria
+                                                    </br>(3) Get ""gene2"" fragment through PCR using the plasmid of ""gene2"" as a template and gene2-F and SP vector-R as primers.
+                                                    </br>(4) Get ""gene1"" fragment through PCR using the plasmid of M13 phage shock as a template and gene2-F and SP vector-R as the primer.
+                                                    </br>(5) Gel extraction for the above fragments.
+                                                    </br>(6) Get gene1 fragment through PCR using PCR product of ""gene2"" as the template.
+                                                    </br>(7) Verify for AP template using PCR product of ""gene2"" as the template and M13-6F and M13 -6R as primers.
+                                                    </br>(8) Get T7RNAP fragment through PCR, using BL21 as the template and New T7RNAP-F and T7RNAP-R as primers.
+                                                    </br>(9) Get ""gene2"" fragment through PCR, using gel extraction product of Step 5 as the template.
+                                                    </br>(10) Get ""gene2"" fragment through PCR, using gel extraction product of Step 6 as the template. "
+
+                                                </td>
+                                                <td>
+                                                    (3) No plaque.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.
+                                                </td>
+                                                <td>
+                                                    Homologous recombination and transformation to construct CP.
+                                                </td>
+                                                <td>
+                                                    Many transformants grew. (8.17 observation)
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="5">
+                                                    2022/8/17
+
+                                                </td>
+                                                <td>Z.Z.Y., N.X.H., L.J., T.W.H.
+
+                                                </td>
+                                                <td>
+                                                    "(1) Measure the fluorescence value.
+                                                    </br>(2) Streak culture of strains with orange fluorescence.
+                                                    </br>(3) Pick single colonies with muted genes through error-prone PCR and culture it until saturated."
+
+
+                                                </td>
+                                                <td>All the fluorescence values were low.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.
+
+                                                </td>
+                                                <td>
+                                                    "(1) Prepare L-DOPA solution.
+                                                    </br>(2) Conduct saturation mutagenesis through PCR."
+                                                </td>
+
+                                                <td>The electrophoresis band was correct, but the band was dark and had more heterozygous.
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.J.
+
+                                                </td>
+                                                <td>
+                                                    "(1) Colony PCR (use plaque as templates).
+                                                    </br>(2) MP6 mutation rate assay.
+                                                    </br>(3) Cloning of SP, homologous recombinant products are transformed into S2208 and expanded at 2 × YT without antibiotics."
+
+                                                </td>
+
+                                                <td>(1) Unexpected results occurred.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+                                                </td>
+                                                <td>
+                                                    "(1) Verfy for AP template.
+                                                    </br>(2) The fragments of ""gene1-3"", ""gene2-3"" , ""T7RNAP"" were homologously recombined. The fragments of ""gene1-2"", ""gene2-3"" , ""T7RNAP"" were homologously recombined. Then recombinant plasmids
+                                                    were transformated into DH5α.
+                                                    </br>(3) Verify AP template and recombinant types with bacterial solution. "
+
+
+                                                </td>
+
+                                                <td>
+                                                    (1) There was a wild type, and the fragment running glue results are normal.
+
+                                                    </br>(3) Two groups had AP templates, the first group had no recombinant type and the second group had.
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.
+
+                                                </td>
+                                                <td>
+                                                    Plasmid with T7 RNAP extraction, prepared for CP site-specific mutagenesis.
+                                                </td>
+
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="6">
+                                                    2022/8/18
+
+                                                </td>
+                                                <td>Z.Z.Y., N.X.H., L.J.
+
+
+                                                </td>
+                                                <td>
+                                                    "(1) At night, re-pick the bacteria shake 8 tubes sf to turn to error 8, ready to lift the plasmid for testing.
+                                                    </br>(2) Homologous recombination of 8 tubes is easy to mistake 8, and then transformation."
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J., N.X.H.
+
+                                                </td>
+                                                <td>
+                                                    Fluorescence assay: error-prone PCR, site-directed mutagenesis, diluted shaker (2h) and dopa in 96 deep-well plates, arabinose, VC, shaker (2h); Added IPTG, shaked the bacteria (4h)
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J., Y.Y.H.
+                                                </td>
+                                                <td>
+                                                    Saturation mutation: homologous recombination, PCR-primers were seq F/seq R, templates were homologous recombinations; Agarose gel (1%) electrophoresis (200 V, 25 min); Transformation.
+                                                </td>
+                                                <td>
+                                                    Bands were correct and clear.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.
+                                                </td>
+                                                <td>
+                                                    Homologous recombination and transformation to construct SP.
+                                                </td>
+                                                <td>
+                                                    Only one plate had a single colony on it.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+                                                </td>
+                                                <td>
+                                                    "(1) Take the bacterial solution to verify the wild type (primer: F3 and R5) and the recombinant type (primer: T7RNAP-F and quanhecheng-R).
+                                                    </br>(2) PCR using gel extraction products of gene1-2 and gene2-2 as templates.
+                                                    </br>(3) Verify recombinant AP, using the plasmid of gene2(1) and (8) as template and AP-Pyan-F/R as primers.
+                                                    </br>(4) Gel extraction for Step 2 and continue PCR with this gel extraction product as the template.
+                                                    </br>(5) Using BL21 bacteria as a template, get T7RNAP fragments and gel extraction.
+                                                    </br>(6) With Dpn1, fragments of gene1, gene1-2, gene1-3, gene2-3, AP vector was digested.
+                                                    </br>(7) Homologous recombinant of the SP and transformated the SP into S2208 compentent cell.
+                                                    </br>(8) Take the plasmid of ""gene2"" to transformated into DH5α."
+
+                                                </td>
+                                                <td>
+                                                    "(1) The ""gene1-3"" group was non-recombinant, and both groups had wild types.
+                                                    </br>(2) The gene1 band was lower than the target band and the gene2 band was normal.
+                                                    </br>(3) The plasmid of number 1 was recombinant type, and the plasmid of number 8 was wild type.
+                                                    </br>(4) The concentration of ""gene2"" is 57, the concentration of ”gene1” is 23, and the concentration of gene1(5) is more than 90.
+                                                    </br>(7) They all grew colonies, but not many. (8) It grews a lot, but can pick out single colonies."
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.
+
+                                                </td>
+                                                <td>
+                                                    "(1) Get fragments for CP site-specific mutagenesis through PCR.
+                                                    </br>(2) Gel extraction and measure the concentration.
+                                                    </br>(3) Homologous recombination and transformation to construct the plasmid for CP site-specific mutagenesis."
+
+
+                                                </td>
+                                                <td>
+                                                    No single colonies existed.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="6">
+                                                    2022/8/19
+
+                                                </td>
+                                                <td>Z.Z.Y., N.X.H., L.J.
+
+                                                </td>
+                                                <td>"(1) Measure the fluorescence value.
+                                                    </br>(2) Streak culture of strains with orange fluorescence.
+                                                    </br>(3) 10 tubes of error-prone bacteria liquid 8 sent for testing"
+
+                                                </td>
+                                                <td>
+                                                    (1)There were two orange fluorescences.
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J., N.X.H.
+
+                                                </td>
+                                                <td>Measure the fluorescence value.
+
+
+                                                </td>
+                                                <td>
+                                                    The fixed-point mutation ratio is significantly higher than the others.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J., Y.Y.H.
+
+                                                </td>
+                                                <td>Saturation mutation: homologous recombination, PCR-primers are seq F/seq R, templates are homologous recombinations; Agarose gel (1%) electrophoresis (200 V, 25 min)
+
+
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+
+                                                </td>
+                                                <td>"(1) Pick 8 bacterial colonies on the plasmid of ""gene2"" transformed yesterday, using gene2-F and SP vector-R as primers.
+                                                    </br>(2) For the fragment of ""gene1-2"", ""gene1-3"", ""gene2-3"", AP vector verification of yesterday's digestion, the first three verified that there was no wild type, and the latter verified that
+                                                    there was no AP template.
+                                                    </br>(3) Both recombinant SP validated wild type M13 and recombinant type SP yesterday.
+                                                    </br>(4) The AP template and ""gene1"" homologous recombination digested with yesterday's Dpn1 and was transformated to DH5α, labeled ""1"" and ""2"". (5) Pick 8 colonies on the plate labeled ""1"" for
+                                                    verification，using AP-Pyan-F/R as primers.
+                                                    </br>(6) Of the 8 ""gene2"" colonies validated in the morning, select 4 to verify the wild type M13 and use AP-P as primers. (7) Choose two of the 8 ""gene2"" colonies verified in the morning (labels
+                                                    ""2"", ""4"") to shake bacteria."
+
+
+
+                                                </td>
+                                                <td>
+                                                    "(1) All had bands.
+                                                    </br>(2) There were wild types, but fewer than before.
+                                                    </br>(3) There was a mixture of wild-types and recombinant types.
+                                                    </br>(5) Both were a mixture of AP templates and AP recombinant types.
+                                                    </br>(6) It were AP templates. "
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.J.
+
+
+                                                </td>
+                                                <td>"(1) Dilute the MP6(1)2 tube. Dilute into 2×YT medium containing Cull and D-Glu. Dilute the two tubes.
+                                                    </br>(2) The measured OD values were 0.701 and 0.669, reaching 0.5-0.7. One tube was added to the inducer ara, the other was added to D-Glu.
+                                                    </br>(3) Get fully synthetic fragments through PCR.
+                                                    </br>(5) With the previous AP-A vector, pJC175e fragments were homologously recombined, diluting the original glue recovery products. Equipped with a two-pipe homologous reorganization system."
+                                                </td>
+                                                <td>
+                                                    (4) PCR succeeded.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.
+                                                </td>
+                                                <td>Colony PCR (to confirm whether the transformation succeeded).
+                                                </td>
+                                                <td>
+                                                    Bands were correct and clear.
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td rowspan="5">
+                                                    2022/8/20
+
+                                                </td>
+                                                <td>L.J., N.X.H.
+
+
+                                                </td>
+                                                <td>Measure the fluorescence value. Pick the transformants with muted genes, add Chl and culture them until saturated.
+
+
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J., Y.Y.H.
+                                                </td>
+                                                <td>Saturation mutation: homologous recombination, PCR-primers are seq F/seq R, templates are homologous recombinations; Agarose gel (1%) electrophoresis (200 V, 25 min)
+
+                                                </td>
+
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.
+
+                                                </td>
+                                                <td>Streak culture. Pick single colonies to culture until saturated.
+
+
+                                                </td>
+
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.J.
+
+                                                </td>
+                                                <td>(1) After arabinose and D-Glu induction for 13h 30min, each remove 100ul and coat it on a plate containing Rif and Chl. Remove another 30 ul in a 1.5 ml centrifuge tube for future dilution, and if the previous
+                                                    plate results are normal then for dilution coating on a D-Glu-containing plate.
+
+                                                </td>
+
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+
+                                                </td>
+                                                <td>"(1) A total of 8 colonies were selected from the two plates of gene1 transformed yesterday and verified, using AP-Pyan-F/R as primers.
+                                                    </br>(2) Select ""5"" and ""6"" for the ""gene1"" verified yesterday, using quanhecheng-Fand gene1-R as the primer to verify, and verify the wild type M13 at the same time.
+                                                    </br>(3) Select ""2"" and ""4"" for the ""gene2"" verified yesterday, using gene2-F and SP vector-R as the primer to verify, and verify the wild type M13 at the same time.
+                                                    </br>(4) The ""6"" of gene1 and the ""4"" of gene2 were revalidated with their respective primers
+                                                    </br>(5) Plasmid extraction for gene2 labled ""2"" and ""4"". And the plasmids were transformated into DH5α。"
+
+
+                                                </td>
+                                                <td>
+                                                    (1) Except for ""7"", there are two bands
+                                                    </br>(2) There is wild-type M13, but rarely, a set of bandless primers with quanhecehng-F and gene1-R.
+                                                    </br>(3) No signal.
+                                                    </br>(4) ""Gene2"" had bands, but ""gene1"" still had no bands.
+                                                    </br>(5) The concentration of ""2"" was 332, the value is normal, The concentration of ""4"" was 71.
+                                                </td>
+
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>2022/8/21
+                                                </td>
+                                                <td>L.J.
+
+
+                                                </td>
+                                                <td>Colony PCR (use SP vector as templates).
+
+                                                </td>
+
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>2022/8/24
+
+                                                </td>
+                                                <td>L.J.
+                                                </td>
+                                                <td>Measure the fluorescence value.
+                                                </td>
+
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>2022/8/27
+
+
+                                                </td>
+                                                <td>Z.Y.H.
+                                                </td>
+                                                <td>(1) Pick 4 on each of the two plates of the "2" and "4" of the transformed gene2, using gene2-F and SP vector-R as primers.
+                                                    </br>(2) Select "2", "3", "6" and "6" of "gene1" in the 20th of gene1 on the verified plate, using quanhecheng-F and gene1-R as primers.
+                                                    </br>(3) Wild-type types of gene1 and gene2 were verified, using M13-F6 and R6, M13-F1 and R1 as primers respectively, with the former being 4 of (2) and the latter being four of the "2" of (1).
+                                                </td>
+
+
+                                                <td>
+                                                    "(1) All ""2"" had stripes, and ""4"" had none.
+                                                    </br>(2) No signal.
+                                                    </br>(3) The ""gene1"" had a brighter band and the gene2 had a very dark band."
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="2">2022/8/28
+
+                                                </td>
+                                                <td>L.J.J.
+
+
+                                                </td>
+                                                <td>Transform the plasmid of 'gene2' into DH5α.
+
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>LZ.Y.H.
+                                                </td>
+                                                <td>"(1) Pick 5 colonies, ""1"" and ""3"" of gene2, ""2"" and ""3"" of gene1 in 20 and ""6"" of 19.
+                                                    </br>(2) Plasmids extraction for the above 5 shake the bacteria.
+                                                    </br>(3) Select ""3"" for gene1, ""3"" for gene2 to transformate into DH5α."
+                                                </td>
+
+                                                <td>
+                                                    "(2) The data are all good.
+                                                    </br>(3) All grow colonies."
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="4">2022/8/29
+                                                </td>
+                                                <td>Z.Z.Y., L.J.
+                                                </td>
+                                                <td>"(1) Pick transformants with muted gene. Measure the fluorescence value.
+                                                    </br>(2) The remaining two transformants with muted genes are easily misapplied to the plate where the inducer is doubled."
+                                                </td>
+                                                <td>No single colonies existed.
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.
+                                                </td>
+                                                <td>Apply the muted library to the inducer plate.
+
+                                                </td>
+                                                <td>The bacteria on the plate grew well and the flashlight irradiated without fluorescence.
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>L.J.J.
+
+                                                </td>
+                                                <td>"(1) Plasmid extraction.
+                                                    </br>(2) PCR (use plasmids as templates)."
+
+
+                                                </td>
+                                                <td>2 bands diffused. But the maker did not run away, presumably the problem of the voltage.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+
+
+                                                </td>
+                                                <td>"(1) Five colonies were selected for ""gene1"" transformed plates and validated using AP-Pyan-F/R, and gene1-R andquanhecheng-F as primers. Use electrophoresis to verify the gene1-labeled ""3"" plasmid.
+                                                    </br>(2) Pick 2 colonies on the plate of “gene2“.
+                                                    </br>(3) Pick 6 colonies on the plate of “gene2“ .
+                                                    </br>(4) Pick the bacteria to shake on the ""1"", ""2"", ""3"" of “gene1“."
+
+
+
+                                                </td>
+                                                <td>"(1) Each of the 5 colonies has two bands, and the plasmid ""3"" also has two bands. there are darker correct bands for others. (2) No signal.
+                                                    </br>((3) No signal."
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="4">2022/8/30
+                                                </td>
+                                                <td>Z.Z.Y., L.J.
+
+                                                </td>
+                                                <td>"(1) Colony PCR (to confirm whether transform succeeded).
+                                                    </br>(2) Transform gen2 on plates where the inducer was doubled."
+
+                                                </td>
+                                                <td>"(1) Gene2 fixed point has no bands, easy to mistake there are shallow strips but blanks also have strips, send 8 tubes for sequencing "
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.
+
+                                                </td>
+                                                <td>Prepare 10x inducer plates.
+
+
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L.J.J.
+
+
+                                                </td>
+                                                <td>"(1) Pick MP6(1)(2) single colonies in medium containing Cull and Str.
+                                                    </br>(2) PCR (use plasmids as templates)."
+
+
+
+                                                </td>
+                                                <td>
+                                                    (2) Bands all diffused.
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Z.Y.H.
+
+
+                                                </td>
+                                                <td>"(1) The ""1"" of the gene1 shaken yesterday was verified, using AP-Pyan-F/R as primers, the ""1"" ""2"" ""3"" of ""gene1"" shake using quanhecheng-F and gene1-R as primers, and the wild-type M13 was verified,using
+                                                    M13-F1/R1 as primers.
+                                                    </br>(2) Plasmids extraction for the above three bacteria.
+                                                    </br>(3) Verify three plasmids, using CE-gene1R/F as primers while validating ""gene2"" plasmid ""3"".
+                                                    </br>(4) Get fragment of ""gene2"" through PCR, using CE-gene1R/F as primers and gel extraction.
+                                                    </br>(5) Transform the plasmid of ""gene2"" into DH5α.
+                                                    </br>(6) Pick two ""3"" of ”gene1” colonies."
+                                                </td>
+                                                <td>
+                                                    "(1) The first had two bands, the second was bandless, and all three have wild-type M13.
+                                                    </br>(2) The values were all higher.
+                                                    </br>(3) The ""3"" of gene1 had a band and the ""1"" and ""2"" did not. gene2 had the correct band.
+                                                    </br>(4) The value was extremely low."
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td rowspan="5">2022/8/31
+                                                </td>
+                                                <td>Z.Z.Y., L.J.
+
+                                                </td>
+                                                <td>Culture transformants with muted genes through error-prone until saturated.
+
+
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+
+                                                </td>
+                                                <td>L.J.
+
+                                                </td>
+                                                <td>"(1) Prepare Ara solution.
+                                                    </br>(2) Prepare LBL solid and liquid medium, DAM medium."
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+
+                                                </td>
+                                                <td>L.J.J.
+                                                </td>
+                                                <td>"(1) Dilute the MP6 single colony (1) saturated yesterday by 1000 times to 5 ml of 2×YT medium, all added to D-Glu. Culture to OD600 is 0.5-0.7. After 4h, remove it from the shaker and add 25 mM of D-Glu
+                                                    or arabinose each
+                                                    </br>(2) Transfer AP to DH5α.."
+                                                </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                </td>
+                                                <td>Z.Y.H.
+                                                </td>
+                                                <td>"(1) Plasmids extraction for the two bacteria of ""gene1"" picked yesterday and .
+                                                    </br>(2) Gel extraction for the above plasmids.
+                                                    </br>(3) Verify 15 bacteria on the gene2 that was transformed yesterday
+                                                    </br>(4) Verify the plasmid (step 2) using gene1-R and quanhecheng-F as primers, and electrophoresis for the plasmids.
+                                                    </br>(5) Verify plasmid ""gene1"" using AP-Pyan-F/R as primers, and the 15th bacterium selected in step 3 was simultaneously validated, using the AP-Pyan-F/R as primers. Also verify the wild type M13."
+                                                </td>
+                                                <td>
+                                                    "(1) Two strips, cut the upper strip.
+                                                    </br>(2) Concentration of the plasmid was 28
+                                                    </br>(3) No signal.
+                                                    </br>(4) The band was wrong.
+                                                    </br>(5) The result stripe was more than 2000bp. There were wild-type M13."
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Z.Y.
+                                                </td>
+                                                <td>Plasmid extraction for CP site-specific mutagenesis.
+                                                </td>
+                                                <td>Send sequencing
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                </div>
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="footer " style="position:absolute;right:0;left:0;margin:0 auto;width: 100%;height: 500px;background-color: black;margin-top: -200px;position: relative;">
+                    <div class="container" style="width:100%;height:100%;background-color: black;width: 100%;font-size: 14px;">
+                        <div class="footer-img" style="position:absolute;left: 0;">
+                            <img src="../image/footer.jpg" width="800px" height="330px">
+                        </div>
+
+
+                        <div class="footer-content" style="text-align: center;right: 0;height: 100%;width: 50%;background-color: black;top: 0;">
+
+                            <ul class="footer-content-ul">
+                                <li class="first">
+                                    <a href="../index.html" style="font-size: 21px;">HOME</a>
+                                </li>
+
+
+                            </ul>
+
+                            <ul>
+                                <li class="first">
+                                    <a href="../background.html" style="font-size: 21px;">PROJECT</a>
+
+                                </li>
+                                <li>
+                                    <a href="../description.html">Description</a>
+                                </li>
+                                <li>
+                                    <a href="../design.html">Design</a>
+
+                                </li>
+                                <li>
+                                    <a href="../protocol.html">Protocol</a>
+                                </li>
+                                <li>
+                                    <a href="../supplement.html">Supplement</a>
+                                </li>
+                                <li>
+                                    <a href="../results.html">Results</a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="footer-content-ul">
+                                <li class="first">
+                                    <a href="../lab_notebook.html" style="font-size: 18px;">LAB NOTEBOOK</a>
+                                </li>
+                            </ul>
+
+                            <ul class="footer-content-ul">
+                                <li class="first">
+                                    <a href="../team.html" style="font-size: 21px;">TEAM</a>
+                                </li>
+
+                                <li>
+                                    <a href="../collaboration.html">Collaboration</a>
+                                </li>
+                            </ul>
+
+
+                        </div>
+
+                        <div class="footer-row">
+                            <div class="col-md-12 " style="margin-top: -30px; ">
+                                <p style="text-align: center;font-size: 16px; color: white;">Copyright © 2022 NAU All rights reserved.
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+</html>

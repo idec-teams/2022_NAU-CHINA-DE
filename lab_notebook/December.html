@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>December</title>
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/painter.css">
+    <link rel="stylesheet" type="text/css" href="../css/new1.css">
+    <link rel="stylesheet" type="text/css" href="../css/page/lab_notebook.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div id="loading">
+        <div class='loadingX' style="background-color: #abc2ea;">
+            <img src="../image/lodding_3.gif" height=100% width=100%>
+        </div>
+    </div>
+
+    <script>
+        document.onreadystatechange = function() {
+
+            if (document.readyState === "complete") {
+
+                setTimeout(
+                    function() {
+                        // document.querySelector("#loading").style.opacity = "0%";
+                        document.querySelector("#loading").style.display = "none";
+                        document.querySelector("#globalWrapper").style.display = "block";
+                    }, 3000)
+            }
+        }
+    </script>
+
+    <div id='globalWrapper'>
+        <div id="content" class="mw-body" role="main" style="background-color:  white">
+
+
+            <div id="HQ_page">
+                <div id="bodyContent">
+
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+
+                        <section class="menu-section-area">
+
+                            <!-- Navigation -->
+                            <nav class="menu">
+                                <div style="height: 0px;width: 0px;position: relative;">
+                                    <img src="../image/logo.png" width="50px" height="50px" style="position:absolute;top:-14px;">
+                                </div>
+
+                                <ol>
+                                    <li class="menu-item"><a href="../index.html">Home</a></li>
+
+                                    <li class="menu-item">
+                                        <a href="#0">Project
+                                            <svg version="1.1" class="plus-icon" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18">
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="10" y1="9" x2="17" y2="9" />
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="9" y1="9" x2="9" y2="1" />
+                                                <g id="lineGroup_1">
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="1" y1="9" x2="8" y2="9" />
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="9" y1="17" x2="9" y2="9" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <ol class="sub-menu">
+                                            <li class="sub-menu-item"><a href="../description.html">Description</a></li>
+                                            <li class="sub-menu-item"><a href="../design.html">Design</a></li>
+                                            <li class="sub-menu-item"><a href="../results.html">Results</a></li>
+                                            <li class="sub-menu-item"><a href="../supplement.html">Supplement</a></li>
+
+                                            <li class="sub-menu-item"><a href="../protocol.html">Protocol</a></li>
+                                        </ol>
+                                    </li>
+                                    <li class="menu-item"><a href="../lab_notebook.html">Lab notebook</a></li>
+                                    <li class="menu-item">
+                                        <a href="#0">Team
+                                            <svg version="1.1" class="plus-icon" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18">
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="10" y1="9" x2="17" y2="9" />
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="9" y1="9" x2="9" y2="1" />
+                                                <g id="lineGroup_1">
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="1" y1="9" x2="8" y2="9" />
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="9" y1="17" x2="9" y2="9" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <ol class="sub-menu">
+                                            <li class="sub-menu-item"><a href="../team.html">Team</a></li>
+                                            <li class="sub-menu-item"><a href="../collaboration.html">Collaboration</a></li>
+
+                                        </ol>
+                                    </li>
+
+
+
+                            </nav>
+                            <!-- Navigation -->
+
+                        </section>
+                        <div class="img1"></div>
+                        <!-- 
+                        <div class="lnav">
+                            <div class="turn-container"> -->
+                        <!-- --d为自定义属性，CSS中可通过var函数对其调用 -->
+                        <!-- <div class="turn-line" style="--d:1;"><span></span></div>
+                                <div class="turn-line" style="--d:2;"><span></span></div>
+                                <div class="turn-line" style="--d:3;"><span></span></div>
+                                <div class="turn-line" style="--d:4;"><span></span></div>
+                                <div class="turn-line" style="--d:5;"><span></span></div>
+                                <div class="turn-line" style="--d:6;"><span></span></div>
+                                <div class="turn-line" style="--d:7;"><span></span></div> -->
+                        <!-- <div class="turn-line" style="--d:8;"><span></span></div>
+                          <div class="turn-line" style="--d:9;"><span></span></div>
+                          <div class="turn-line" style="--d:10;"><span></span></div>
+                          <div class="turn-line" style="--d:11;"><span></span></div>
+                          <div class="turn-line" style="--d:12;"><span></span></div> -->
+                        <!-- </div>
+                        </div> -->
+
+
+
+                        <div class="content">
+
+                            <div class="main" style="color: black;">
+                                <div class="notebook_container col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+                                    <a href="../lab_notebook.html">
+                                        </h1>
+                                        BACK👈
+                                        </h1>
+                                    </a>
+                                    <div class=" notebook " style="text-align:center; ">
+                                        <div class="calendar-part2 ">
+                                            <img src="../image/12.png " style="width: 300px; " class="hover ">
+                                            <div>
+
+
+                                                <table border=" 1 " class="show ">
+                                                    <tr>
+                                                        <th style=" width: 10vw !important; ">Date</th>
+                                                        <th>Member</th>
+                                                        <th>Experiment</th>
+                                                        <th>Result</th>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td id="h2 ">2021/12/2</td>
+                                                        <td>L.X.R., Z.Z.Y.</td>
+                                                        <td>Dilute the phage stock solution 108, 107, 106, 105, 104 times respectively. Mix 140 μl TG1 bacterial solution with 10 μl diluted phage solution and dispense the mixture onto the plate.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/12/3</td>
+                                                        <td>L.X.R., Z.Z.Y.</td>
+                                                        <td>Check the plates and count the phage plaques</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/12/3</td>
+                                                        <td>G.P.Z., T.W.H.</td>
+                                                        <td>PCR:<br />Template：M13 Phage<br />Primer：F,R</td>
+                                                        <td>Strips existed after agarose gel electrophoresis, but the concentration of DNA is low after gel extraction.</td>
+
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td rowspan="2 ">2021/12/4</td>
+
+                                                        <td>L.W.R.</td>
+                                                        <td>Make 2 conical flasks of 2xYT solid media(150 mL) and 2 conical flasks of 2xYT liquid media(50 mL).</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>X.K.</td>
+                                                        <td>Pick the single colonies into the test tubes and put them in the biological shaker at 220 rpm, 37℃ for 12 h.</td>
+                                                        <td>Serious contamination of bacteria.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/12/5</td>
+                                                        <td>X.K.</td>
+                                                        <td>Mix the phage solution with TG1 bacteria solution and paint the plates.
+                                                        </td>
+                                                        <td>No phage plaques existed.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">2021/12/6</td>
+
+                                                        <td>L.X.R., Z.Z.Y.</td>
+                                                        <td>Check the plates and count the phage plaques</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>T.W.H.</td>
+                                                        <td>PCR:<br />Template：M13 Phage;<br />Primer：M13-F, M13-R.</td>
+                                                        <td>No signal.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/12/7</td>
+                                                        <td>F.W.</td>
+                                                        <td>PCR of M13 phage→electrophoresis→gel extraction→measure the concentration.
+                                                        </td>
+                                                        <td>sample 1: 9.7 ng/μl; sample 2: 2.3 ng/μl. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/12/8</td>
+                                                        <td>L.W.R.</td>
+                                                        <td>(1) Filter daikanomycin. Lots of daikanomycin solution remained in the yellow bacteria filter tablets. Press out some by the air, but the the bacterial filtration effect is not guaranteed;
+                                                            <br />(2) Make 6 media plates with daikanomycin and 100 mM D-Glucose;
+                                                            <br />(3) Paint the solution onto the media plates with daikanomycin and 100 mM D-Glucose after transferring the MP(mutation plasmid) to the DH5α.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td rowspan="2 ">2021/12/11</td>
+                                                        <td>F.W.</td>
+                                                        <td>Purify the DNA of M13 phage by PEG assay and run electrophoresis.</td>
+                                                        <td>No signal. The reason for this may be the low activity of bacteria and M13 phage and short time(&lt; 4 h) for culture. </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>T.W.H.</td>
+                                                        <td>Pick the TG1 single colonies into the 2xYT liquid media to propagate.
+                                                        </td>
+                                                        <td> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/12/12</td>
+                                                        <td>F.W.</td>
+                                                        <td>Inoculate M13 phage into the 2×YT liquid media with bacterial solution to observe the activity; inoculate M13 phage onto the solid media plates to observe the generation of phage plaques.</td>
+                                                        <td>The solution did not become clear; no plaques existed. </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td rowspan="2 ">2021/12/13</td>
+                                                        <td>L.W.R., L.J.</td>
+                                                        <td>Extraction of MP.</td>
+                                                        <td>2 test tubes in all. The concentration were 104 ng/mL and 120 ng/mL. Stored in the fridge at -20℃. </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>X.K.</td>
+                                                        <td>Pick the single colonies into the test tubes and put them in the biological shaker at 220 rpm, 37℃ for 12 h.; make semi-solid media.</td>
+                                                        <td>The concentration of agarose was too low. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/12/15</td>
+                                                        <td>X.K.</td>
+                                                        <td>Operate two layer medium method to count phage plaques.</td>
+                                                        <td>No phage plaques existed. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/12/17</td>
+                                                        <td>L.W.R.</td>
+                                                        <td>Pick the DH5α single colonies with MP into the 2xYT liquid media in the test tubes and put them in the biologiacal shaker at 37℃ overnight.</td>
+                                                        <td>Stored in the fridge at 4℃. </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td rowspan="3 ">2021/12/19</td>
+                                                        <td>L.W.R., T.W.H.</td>
+                                                        <td>(1) Take 1 mL of cooled bacterial solution into 50 mL 2xYT liquid media in test tubes and put them in the biological shaker at 37℃ for 4 h;
+                                                            <br />(2) Take out the tubes;<br />(3) Make the arabinose solution and glucose solution. Part of the solution was filtered to be sterilised and part of solution was sent to be sterilised in a
+                                                            high temperature;
+                                                            <br />(4) Divide the sample into two conical flasks and take 25 mL of bacterial solution into every flasks. 100mM D-Glucose was added into one of the flasks. The same quantity of 100 mM L-Arabinose
+                                                            was added into another flask. Put them in the biological shaker at 37℃ for 24 h.
+                                                        </td>
+
+                                                        <td>OD600 was over the range of 0.5~0.7(too high).</td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>G.P.Z., C.Q.Y.</td>
+                                                        <td>PCR:<br />Template：M13 Phage<br />Primer：M13-F, M13-R </td>
+                                                        <td>Strips diffused around the spot sample pot; no clear strips existed above the 5000 bp marker; some dark strips existed in the 5000 bp marker downstream.
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>G.P.Z., T.W.H.</td>
+                                                        <td>Make 10 2×YT solid media plates with ampicillin and streptomycin respectively; streak on the plates to culture bacteria S2060 and bacteria containing pJC175e plasmids.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/12/20</td>
+                                                        <td>T.W.H., G.P.Z.</td>
+                                                        <td>Paint the satured bacterial solution on the LB solid media plates with 100 mM D-Glucose and 100 mM D-Glucose-100 μg/ml Rifampin respectively after diluting the solution. Put them in the incubator
+                                                            at 37℃ overnight.</td>
+                                                        <td>The bacteria lawn formed on both kind of plates. Few of single colonies existed. The bacteria concentration was too high and we can not count. We needed to do it again.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/12/21</td>
+                                                        <td>X.K., G.P.Z., C.Q.Y., Z.Y.H.</td>
+                                                        <td>Make semi-solid media; extract the plasmids(pJC175e) ; store the bacteria(s2060e) in the glycerol in the fridge at -80℃.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/12/22</td>
+                                                        <td>X.K., Z.Y.H.</td>
+                                                        <td>Operate two layer medium method to count phage plaques.</td>
+                                                        <td>Phage plaques existed but were not obvious due to other factors.</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="footer " style="position:absolute;right:0;left:0;margin:0 auto;width: 100%;height: 500px;background-color: black;margin-top: -200px;position: relative;">
+                            <div class="container" style="width:100%;height:100%;background-color: black;width: 100%;font-size: 14px;">
+                                <div class="footer-img" style="position:absolute;left: 0;">
+                                    <img src="../image/footer.jpg" width="800px" height="330px">
+                                </div>
+
+
+                                <div class="footer-content" style="text-align: center;right: 0;height: 100%;width: 50%;background-color: black;top: 0;">
+
+                                    <ul class="footer-content-ul">
+                                        <li class="first">
+                                            <a href="../index.html" style="font-size: 21px;">HOME</a>
+                                        </li>
+
+
+                                    </ul>
+
+                                    <ul>
+                                        <li class="first">
+                                            <a href="../background.html" style="font-size: 21px;">PROJECT</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="../description.html">Description</a>
+                                        </li>
+                                        <li>
+                                            <a href="../design.html">Design</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="../protocol.html">Protocol</a>
+                                        </li>
+                                        <li>
+                                            <a href="../supplement.html">Supplement</a>
+                                        </li>
+                                        <li>
+                                            <a href="../results.html">Results</a>
+                                        </li>
+
+                                    </ul>
+
+                                    <ul class="footer-content-ul">
+                                        <li class="first">
+                                            <a href="../lab_notebook.html" style="font-size: 18px;">LAB NOTEBOOK</a>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="footer-content-ul">
+                                        <li class="first">
+                                            <a href="../team.html" style="font-size: 21px;">TEAM</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="../collaboration.html">Collaboration</a>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+
+                                <div class="footer-row">
+                                    <div class="col-md-12 " style="margin-top: -30px; ">
+                                        <p style="text-align: center;font-size: 16px; color: white;">Copyright © 2022 NAU All rights reserved.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+</html>

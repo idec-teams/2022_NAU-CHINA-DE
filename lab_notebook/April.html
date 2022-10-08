@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>April</title>
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/painter.css">
+    <link rel="stylesheet" type="text/css" href="../css/new1.css">
+    <link rel="stylesheet" type="text/css" href="../css/page/lab_notebook.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div id="loading">
+        <div class='loadingX' style="background-color: #abc2ea;">
+            <img src="../image/lodding_3.gif" height=100% width=100%>
+        </div>
+    </div>
+
+    <script>
+        document.onreadystatechange = function() {
+
+            if (document.readyState === "complete") {
+
+                setTimeout(
+                    function() {
+                        // document.querySelector("#loading").style.opacity = "0%";
+                        document.querySelector("#loading").style.display = "none";
+                        document.querySelector("#globalWrapper").style.display = "block";
+                    }, 3000)
+            }
+        }
+    </script>
+
+    <div id='globalWrapper'>
+        <div id="content" class="mw-body" role="main" style="background-color:  white">
+
+
+            <div id="HQ_page">
+                <div id="bodyContent">
+
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+
+                        <section class="menu-section-area">
+
+                            <!-- Navigation -->
+                            <nav class="menu">
+                                <div style="height: 0px;width: 0px;position: relative;">
+                                    <img src="../image/logo.png" width="50px" height="50px" style="position:absolute;top:-14px;">
+                                </div>
+
+                                <ol>
+                                    <li class="menu-item"><a href="../index.html">Home</a></li>
+
+                                    <li class="menu-item">
+                                        <a href="#0">Project
+                                            <svg version="1.1" class="plus-icon" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18">
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="10" y1="9" x2="17" y2="9" />
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="9" y1="9" x2="9" y2="1" />
+                                                <g id="lineGroup_1">
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="1" y1="9" x2="8" y2="9" />
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="9" y1="17" x2="9" y2="9" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <ol class="sub-menu">
+                                            <li class="sub-menu-item"><a href="../description.html">Description</a></li>
+                                            <li class="sub-menu-item"><a href="../design.html">Design</a></li>
+                                            <li class="sub-menu-item"><a href="../results.html">Results</a></li>
+                                            <li class="sub-menu-item"><a href="../supplement.html">Supplement</a></li>
+
+                                            <li class="sub-menu-item"><a href="../protocol.html">Protocol</a></li>
+                                        </ol>
+                                    </li>
+                                    <li class="menu-item"><a href="../lab_notebook.html">Lab notebook</a></li>
+                                    <li class="menu-item">
+                                        <a href="#0">Team
+                                            <svg version="1.1" class="plus-icon" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18">
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="10" y1="9" x2="17" y2="9" />
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="9" y1="9" x2="9" y2="1" />
+                                                <g id="lineGroup_1">
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="1" y1="9" x2="8" y2="9" />
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="9" y1="17" x2="9" y2="9" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <ol class="sub-menu">
+                                            <li class="sub-menu-item"><a href="../team.html">Team</a></li>
+                                            <li class="sub-menu-item"><a href="../collaboration.html">Collaboration</a></li>
+
+                                        </ol>
+                                    </li>
+
+
+
+                            </nav>
+                            <!-- Navigation -->
+
+                        </section>
+                        <div class="img1"></div>
+
+                        <!-- <div class="lnav">
+                            <div class="turn-container">
+                         --d为自定义属性，CSS中可通过var函数对其调用 -->
+                        <!-- <div class="turn-line" style="--d:1;"><span></span></div>
+                                <div class="turn-line" style="--d:2;"><span></span></div>
+                                <div class="turn-line" style="--d:3;"><span></span></div>
+                                <div class="turn-line" style="--d:4;"><span></span></div>
+                                <div class="turn-line" style="--d:5;"><span></span></div>
+                                <div class="turn-line" style="--d:6;"><span></span></div>
+                                <div class="turn-line" style="--d:7;"><span></span></div> -->-->
+                        <!-- <div class="turn-line" style="--d:8;"><span></span></div>
+                          <div class="turn-line" style="--d:9;"><span></span></div>
+                          <div class="turn-line" style="--d:10;"><span></span></div>
+                          <div class="turn-line" style="--d:11;"><span></span></div>
+                          <div class="turn-line" style="--d:12;"><span></span></div> -->
+                        <!-- </div>
+                        </div> -->
+
+
+
+                        <div class="content">
+
+                            <div class="main" style="color: black;">
+                                <div class="notebook_container col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+                                    <a href="../lab_notebook.html">
+                                        </h1>
+                                        BACK👈
+                                        </h1>
+                                    </a>
+                                    <div class=" notebook " style="text-align:center; ">
+                                        <div class="calendar-part6 ">
+                                            <img src="../image/4.png " style="width: 300px; " class="hover ">
+                                            <div>
+                                                <table border=" 1 " class="show ">
+                                                    <tr>
+                                                        <th style=" width: 10vw !important; ">Date</th>
+                                                        <th>Member</th>
+                                                        <th>Experiment</th>
+                                                        <th>Result</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 " id="h4 ">2022/4/1</td>
+                                                        <td>L.X.R.</td>
+                                                        <td>(1) Paint the satured bacterial solution on the LB solid media plates with 100 mM D-Glucose and 100 mM D-Glucose-100 μg/ml Rifampin respectively after diluting the solution(3 concentration gradients
+                                                            each of glucose and arabinose, original concentration, 10 times diluted, 102 times diluted). Put them in the incubator at 37℃ overnight;
+                                                            <br />(2) Make several conical flasks of 2×YT media.
+                                                        </td>
+                                                        <td>The morphologies of bacteria colonies were different from each other; there was no control relationship between the controls(no difference in growth on rifampicin resistant plates). </td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>PCR: M13 backbones, T7 and aritificial sythetic section; take gel section containing the DNA of aritificial sythetic section after electrophoresis; operate PCR for M13 backbones, T7 and aritificial
+                                                            sythetic section by using new PCR enzyme and operate the gel extraction.</td>
+                                                        <td> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">2022/4/2</td>
+                                                        <td>L.X.R.</td>
+                                                        <td>(1) Take picture of the results of the mutation ratio estimation assasy;
+                                                            <br />(2) Pick S2060 single colonies and culture the bacteria in the biological shaker.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>Muti-section homologous recombination of M13 backbones, T7 and aritificial sythetic section. Transfer the products.</td>
+                                                        <td> </td>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                        <td rowspan="2 ">2022/4/3</td>
+                                                        <td>L.X.R.</td>
+                                                        <td>(1) Dilute the bacterial solution 1000 times. Take the bacterial solution into basic media or 2xYT media respectively for 5 h until the OD600 became 0.6. Divide the sample into two conical flasks
+                                                            and take 25 mL of bacterial solution into every flask;
+                                                            <br />(2) 60 mM D-Glucose solution was added into one of the flasks. The same quantity of 40, 60, 80 mM L-Arabinose solution were added into another flask. Put them in the biological shaker at
+                                                            37℃ for 24 h.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>Paint the plates with bacterial culture and observe the phage plaques.
+                                                        </td>
+                                                        <td>No phage plaques existed. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">2022/4/4</td>
+                                                        <td>L.X.R.</td>
+                                                        <td>Paint the satured bacterial solution on the LB solid media plates with 100 mM D-Glucose and 100 mM D-Glucose-100 μg/ml Rifampin respectively after diluting the solution(3 concentration gradients
+                                                            each of glucose and arabinose, original concentration, 10 times diluted, 102 times diluted). Put them in the incubator at 37℃ overnight.</td>
+                                                        <td>MP6 can be qualitatively determined to have a mutagenic effect. </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>Operate the PCR using the phage of wild type as the template to get M13 backbones, T7: operate the gel extraction of T7 section only; operate the PCR using the original phage solution, SP bacterial
+                                                            solution constructed before as the template to get M13 backbones, the reults did not match the theory.
+                                                        </td>
+                                                        <td> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">2022/4/5</td>
+                                                        <td>L.X.R.</td>
+                                                        <td>Take picture of results.</td>
+                                                        <td> </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>Operate electrophoresis to validate the T7+aritificial section constructed by using overlap. The results showed a great success; homologous recombination of the T7+aritificial section and M13 backbones;
+                                                            transformation of the recombination products.</td>
+                                                        <td> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2022/4/6</td>
+                                                        <td>L.J.J., Z.Y.H., Y.R.</td>
+                                                        <td>(1) PCR of A/P;<br /> (2) Electrophoresis(220 V，25 min) ;<br /> (3) Cut and extract the gel ;<br /> (4) Anealing of the long section; <br /> (5) Measure the concentration of DNA; <br /> (6) Homologous
+                                                            recombination; <br /> (7) Transformation.
+                                                        </td>
+                                                        <td>PCR was a success. Concentration: A: 22.049 ng/μl, P: 28.198 ng/μl.
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td rowspan="2 ">2022/4/7</td>
+                                                        <td>L.X.R.</td>
+                                                        <td>Homologous recombination and transformation.</td>
+                                                        <td>The results of transformation was good.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>Paint the plates with the S2208 bacterial solution of SP and observe whether the phage plaques will form. Paint 8 plates in all.</td>
+                                                        <td>No phage plaques existed.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">2022/4/8</td>
+                                                        <td>L.X.R.</td>
+                                                        <td>Pick the single colonies and culture them in the biological shaker overnight.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>(1) Operate electrophoresis for kanamycin gene and gel extraction by Y.R.;
+                                                            <br />(2) Operate 2 sections homologous recombination for kanamycin gene section and M13 backbones. Transfer the recombinant plasmids into S2208 competent cells. Take the bacterial solution into
+                                                            the test tubes and put them in the biological shaker for several hours. Then, paint the plates;
+                                                            <br />(3) Operate 2 sections homologous recombination for T7+artificial sythetic sections and M13 backbones. Transfer the recombinant plasmids into S2208 competent cells. Take the bacterial solution
+                                                            into the test tubes with 2×YT media and put them in the biological shaker for several hours;
+                                                            <br />(4) Operate 2 sections homologous recombination for T7, artificial sythetic sections and M13 backbones. Transfer the recombinant plasmids into S2208 competent cells. Take the bacterial
+                                                            solution into the test tubes with 2×YT media and put them in the biological shaker for several hours.
+                                                        </td>
+                                                        <td>There were 2 transformants growing on the plates with kanamycin. The results of colony PCR matched theoretical length.
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/4/9</td>
+                                                        <td> Y.R.</td>
+                                                        <td>(1) Transfer the M13 backbones+ kanamycin gene section and paint the plates;
+                                                            <br /> (2) Make 2×YT solid media plates with kanamycin.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>L.X.R.</td>
+                                                        <td>Extract the plasmids and send it to sequence.</td>
+                                                        <td>All original T7 promoters.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>Paint plates with the bacteria solution with recombinant plasmids made by 2 or 3 sections homologous recombination.</td>
+                                                        <td>No phage plaques existed.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">2022/4/10</td>
+                                                        <td> Y.R.</td>
+                                                        <td>(1) PCR: M13 backbones and kanamycin gene section(golRF/kanRF). Operate gel electrophoresis to test. Transfer the recombinant plasmids consisting of M13 backbones and kanamycin gene sections into
+                                                            the competent cells and paint the plates;
+                                                            <br />(2) PCR: M13 backbones and kanamycin gene section(golRF/kanRF).
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>(1) Centrifuge the bacteria with recombinant SP made by 2 or 3 sections homologous recombination. Dilute and filter the bacteria. Paint the plates;
+                                                            <br />(2) Operate phage infection experiment with original concentration of phage solution.
+                                                        </td>
+                                                        <td>No phage plaques existed. </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td rowspan="2 ">2022/4/11</td>
+                                                        <td>L.X.R.</td>
+                                                        <td>(1) Make the vector backbones of AP-P and AP-A through reverse PCR;(2) Electrophoresis and gel extraction;(3) Make T3, T7, short section of T7/T3 promoter by anealing of the long section;(4) Homologous
+                                                            recombination and transformation(S2060).
+                                                        </td>
+                                                        <td>The result of gel extraction was normal. The result of transformation was good.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>(1) Centrifuge the bacteria with recombinant SP made by 2 or 3 sections homologous recombination. Dilute and filter the bacteria. Paint the plates;
+                                                            <br />(2) Operate phage infection experiment with original concentration of phage solution. Blank control groups were also set(all the experiments were performed on 1/4 plates).
+                                                        </td>
+                                                        <td>No phage plaques existed.</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/4/12</td>
+                                                        <td> Y.R.</td>
+                                                        <td>PCR: kanamycin gene section and M13 backbones; pick the single colonies into the liquid media with stretomycin in the test tubes.
+                                                            <br />Add 10 μL of phage solution and put them in the biological shaker.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>L.X.R.</td>
+                                                        <td>Pick the single colonies and culture them in the biological shaker overnight.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>Paint the plates with bacteria with recombinant SP made by 2 or 3 sections homologous recombination. Blank control groups were also set.</td>
+                                                        <td>No phage plaques existed.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="5 ">2022/4/13</td>
+                                                        <td> Y.R.</td>
+                                                        <td>(1)PCR: M13 backbones，
+                                                            <br />(2) Two layer plating method: 150 μL bacterial solution+ 10 μL phage solution+ 22 μL bluegal coloring solution+ 1ml 2xYT liquid media(make 4 dilution gradients for phage solution: original
+                                                            concentration, 102 times diluted, 104 times diluted, 106 times diluted). The phage plaques appeared;
+                                                            <br />(3) Gel extraction of M13 backbones+kana gene sections; homologous recombination and transformation.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.</td>
+                                                        <td> Transformation of plasmids P1, P2, AP-TC.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.X.R.</td>
+                                                        <td>Extract the plasmids and send it to sequence.</td>
+                                                        <td>All original T7 promoters.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>L.W.R.</td>
+                                                        <td>PCR: M13 backbones.<br />Set the Tm at 60℃, extension time at 3 minutes; gel electrophoresis; gel extraction.
+                                                        </td>
+                                                        <td>Concentration of M13 backbones: 213 ng/μL.</td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>(1) Add phage solution at original concentration into the S2208 bacterial solution. Centrifuge and filer bacteria to get the phage of wild type. Paint the plates with the phage of wild type and observe
+                                                            whether the phage plaques will form;<br />(2) The bacterial solution containing phage was used to PCR to get the M13 backbones used for SP homologous recombination; gel electrophoresis.
+                                                        </td>
+                                                        <td>(1) The phage infection experiment was a success by using phage of wild type;(2) The target strip did not appear.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="5 ">2022/4/14</td>
+                                                        <td> Y.R.</td>
+                                                        <td>Pick the 3 single colonies and culture them in the biological shaker.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.X.R.</td>
+                                                        <td>(1) Make the vector backbones of AP-P and AP-A through reverse PCR;
+                                                            <br />(2) Electrophoresis and gel extraction;
+                                                            <br /> (3) Make T3, T7, short section of T7/T3 promoter by anealing of the long section;
+                                                            <br />(4) Homologous recombination and transformation(DH5α).
+                                                        </td>
+                                                        <td>The results of gel extraction were normal; transformation was not good and it might be caused by the abnormal competent cells.</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td rowspan="2 ">L.W.R.</td>
+
+                                                        <td>PCR: T7-2.Set the Tm at 59℃, extension time at 1 minute; gel electrophoresis; gel extraction.</td>
+                                                        <td>Concentration of T7-2: 58 ng/μL.</td>
+                                                    </tr>
+                                                    <tr>
+
+
+                                                        <td>PCR: artificial sythetic sections.Set the Tm at 59℃, extension time at 1 minute.
+                                                        </td>
+                                                        <td>The experiment failed; there was a strip at the position of 2000 bp.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>The bacterial solution containing phage was used to PCR(readjust parameter) to get the M13 backbones used for SP homologous recombination; gel electrophoresis; gel extraction. </td>
+                                                        <td>The results of electrophoresis show target strips.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4 ">2022/4/15</td>
+                                                        <td> Y.R.</td>
+                                                        <td>Pick 7 colonies and label as 1-7.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">L.W.R.</td>
+                                                        <td>PCR: T7-1.Set the Tm at 59℃, extension time at 1 minute and 4 seconds.
+                                                        </td>
+                                                        <td>No signal</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>PCR: artificial sythetic sections.Set the Tm at 59℃, extension time at 1 minute.
+                                                        </td>
+                                                        <td>No signal</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>Operate 2 or 3 sections homologous recombination for SP by using M13 backbones and transfer the recombinant plasmids into bacteria S2208; part of the phage solution was used to operate phage infection
+                                                            by general method, the other part of phage solution was used to perform Blue-White Screening after adding the SOC media into the solution.</td>
+                                                        <td>In the following 2 days, single colonies in blue can be seen on the plates. Only a few single colonies in white can be seen on 3 plates. In spite of the results above, there was a bacteria lawn growing
+                                                            on the plates.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4 ">2022/4/16</td>
+                                                        <td> Y.R.</td>
+                                                        <td>(1) Validate the results of homologous recombination by using primer GOIR/F;
+                                                            <br />(2) Extract the plasmids and label tubes as 2-4. Operate the electrophoresis by using plasmids.</td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>L.X.R.</td>
+                                                        <td>Homologous recombination and transformation(DH5α).</td>
+                                                        <td>The results were normal.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.W.R.</td>
+                                                        <td>PCR: artificial sythetic sections.Set the Tm at 60℃, extension time at 1 minute; electrophoresis; gel extraction.
+                                                        </td>
+                                                        <td>Concentration of artificial sythetic sections: 40 ng/μL.</td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>Products of 2 or 3 sections homologous recombination were used to operate phage infection experiment and paint several plates.</td>
+                                                        <td>No phage plaques existed.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/4/17</td>
+                                                        <td> Y.R.</td>
+                                                        <td>Validate the results of homologous recombination by using primer (GOIR/F), (KanaR/F), (GOIR/KanaF) respectively.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.X.R.</td>
+                                                        <td>Pick the single colonies, extract the plasmids and send it to sequence.
+                                                        </td>
+                                                        <td>All original T7 promoters.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>Products of 2 or 3 sections homologous recombination were used to operate phage infection experiment and paint several plates.</td>
+                                                        <td>One of the plate painted by 102 times diluted products of 3 sections homologous recombination showed obvious phage plaques. No obvious plaques grew on the other plates.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2022/4/18</td>
+                                                        <td>C.Q.Y.</td>
+                                                        <td>(1) Validate the obvious phage plaques by using primer aritificial synthetic GOIF/R, aritificial synthetic R/GOIF, aritificial synthetic F/GOIR through PCR;<br />(2) Products of the gel extraction(4/17)
+                                                            were sent to sequence.
+                                                        </td>
+                                                        <td>The results of PCR matched the theory; however, the sequence results showed the phage plaques were still the wild type. The artificial synthetic primer can partialy match the genome of wild-type
+                                                            M13 phage, which caused this results.
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td rowspan="2 ">2022/4/19</td>
+                                                        <td>L.W.R.</td>
+                                                        <td>Recombination of SP.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>Get new M13 phage backbones through PCR; operate 3-section homologous recombination by using the artificial synthetic sections, T7 section and new M13 phage backbones. Transfer the recombinant plasmids
+                                                            into bacteria S2208.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">2022/4/20</td>
+                                                        <td>L.W.R.</td>
+                                                        <td>Transformation of bacteria S2208</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>C.Q.Y.</td>
+                                                        <td>(1) Paint 5 plates with the new SP made by homologous recombination to operate phage infection experiment;<br />(2) Validate the 3-section homologous recombination by using primer GOIF/R, GOIR/T7F,
+                                                            GOIF/T7R through PCR; PCR products of wild-type phages were used as controls;<br />(3) Products of gel extraction were sent to be sequenced.
+                                                        </td>
+                                                        <td>The results of PCR showed the products of homologous recombination were not contaminated by wild-type phage, but might be contaminated by kanamycin section. However, we might have constructed SP
+                                                            successfully; the sequence results showed the products were M13 phage backbone templates, and we surely constructed SP successfully, which matched sequence results completely; no phage plaques
+                                                            existed on the plates that day.</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/4/21</td>
+                                                        <td>Z.Y.H., Y.R.</td>
+                                                        <td>Transfer AP into bacteria S2060.</td>
+                                                        <td>No bacteria grew on the plates.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.W.R.</td>
+                                                        <td>Operate phage infection experiment and paint it on the plates with X-gal.
+                                                        </td>
+                                                        <td>The phage plaques were not obvious.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>Operate phage infection on 3 plates with X-Gal by using bacteria S2208, SP and wild-type phage.</td>
+                                                        <td>No phage plaques existed.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/4/22</td>
+                                                        <td>Z.Y.H., Y.R.</td>
+                                                        <td>Transfer AP into bacteria S2060 and homologous recombination.</td>
+                                                        <td>No bacteria grew on the plates.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.W.R.</td>
+                                                        <td>Operate phage infection experiment and paint it on the plates with X-gal.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>Operate phage infection on 3 plates with X-Gal by using competent cells containing AP-T7P, SP and wild-type phage.</td>
+                                                        <td>Phage plaques appeared on the plate labeled as A on the following day, but they disappeared in the evening, and appeared on the plates on the third day; phage plaques appeared on the plate labeled
+                                                            as B on the following night, but they disappeared on the third day; no phage plaques appear on the plates painted with wild-type phage.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2022/4/23</td>
+                                                        <td>C.Q.Y.</td>
+                                                        <td>(1) Validate several spot like phage plaques on the plates through PCR. Products were taken into the tubes and put them in the biological shaker;
+                                                            <br /> (2) Paint 3 plates in all with bacteria containing AP-T7P and 0-1010 diluted times concentration of phage.
+                                                        </td>
+                                                        <td>The results of electrophoresis showed diffused strips which even looked like 2 strips; at the same, the primer GOIR/T7F used for getting genome of wild-type phage can also get the strips at the position
+                                                            of 3300 bp; no phage plaques existed on the 3 plates.</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/4/24</td>
+                                                        <td> Y.R.</td>
+                                                        <td>Two layer plating method: 150 μL bacterial solution+ 10 μL phage solution+ 22 μL bluegal coloring solution+ 1 ml 2xYT liquid media(make 4 dilution gradients for phage solution: original concentration,
+                                                            102 times diluted, 104 times diluted, 106 times diluted). </td>
+                                                        <td>Phage plaques appeared.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>Make 5 conical flasks of 2×YT media at the concentration of 0.5%; make 5 conical flasks of 2×YT media at the concentration of 0.6%.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>(1) Validate 8 phage plaques on 3 plates painted with S2208 bacteria solution by using the primer T7R&amp;GOIF through PCR;
+                                                            <br /> (2) Validate 2 phage plaques on the plate where the phage plaques seemed to appeared on by using the primer T7R&amp;GOIF through PCR;
+                                                            <br /> (3) Validate 4 tubes of bacterial solution y using the primer T7R&amp;GOIF through PCR.
+                                                        </td>
+                                                        <td>PCR products of all 8 phage plaques produced bright bands after electrophoresis by using the primer of T7; PCR products of cloudy bacterial solution produced no bright bands after electrophoresis
+                                                            by using the primer of T7; PCR products of 2 phage plaques on the plate where the phage plaques seemed to appeared on produced one bright strip and the other was not brighr after electrophoresis
+                                                            by using the primer of T7; phage solution whose strip was bright was taken into the 2xYT liquid media in the test tubes and put them in the biological shaker; all the results showed a obvious
+                                                            problem: in this validation, PCR products of wild-type phage produce a strip at the position of 3300 bp by using the primer of T7. The following analysis showed this results was not trustworthy,
+                                                            and the results might be caused by primer contamination.
+                                                        </td>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                        <td rowspan="4 ">2022/4/25</td>
+                                                        <td>Z.Y.H.</td>
+                                                        <td>Pick single colonies of bacteria S2060 into the tubes and put them in the biological shaker.</td>
+                                                        <td>Make competent cells.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.X.R.</td>
+                                                        <td>(1) Make the vector backbones of AP-P and AP-A through reverse PCR;
+                                                            <br />(2) Electrophoresis and gel extraction;
+                                                            <br />(3) Digest the purified vector sections by using DpnI overnight.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>L.W.R.</td>
+                                                        <td>PCR: M13 backbones, T7-1, T7-2, artifical synthetic section.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>(1) Validate the bacterial solution cultured yesterday by using primer GOIF&amp;R through PCR;
+                                                            <br /> (2) Validate 2 phage plaques on the plates painted by Y.R. by using primer GOIF&amp;R through PCR.
+                                                        </td>
+                                                        <td>The results showed the phage we got was wild type; the PCR products of phage picked yesterday and PCR products produced bright strip produced no bright strips by using primer GOIF&amp;R. </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td rowspan="5 ">2022/4/26</td>
+                                                        <td> Y.R.</td>
+                                                        <td>PCR; pick 16 phage plaques in the PCR tubers for 30s. PCR products of 3 tubes(labeled as 5, 6, 8) produced strips. Put corresponding tips(5, 6, 8) into 2xYT liquid media in test tubes and put them
+                                                            in the biological shaker overnight.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>Pick single colonies into the liquid media conical flasks; operate phage infection experiment and make competent cells.</td>
+                                                        <td>No phage plaques existed; 11 tubes S2060 competent cells.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.X.R.</td>
+                                                        <td>Purify the products of digestion→homologous recombination→transformation.
+                                                        </td>
+                                                        <td>Result was good.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.W.R. ,L.J.</td>
+                                                        <td>Electrophoresis and gel extraction(T7-1, T7-2, artificial synthertic section).
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>Validate homologous recombination products after filtration(A), bacterial solution mixture(B), 2 phage plaques on the plates that G.P.Z. operated phage infection experiment on(C) and simple primers
+                                                            without templates(D) by using the primers GOIF&amp;R、T7R&amp;GOIF、T7F&amp;GOIR respectively.
+                                                        </td>
+                                                        <td>The results of experiment D showed no strips which meaned the primers were not contaminated; the results of experiment A and B were the same and showed strips at the right position. However, the
+                                                            PCR products of kanamycin gene produced strips at the position of over 1000 bp by using the primer GOIF&amp;R; the results of experiment C prodcued no strips which meant the phage was wild type.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="5 ">2022/4/27</td>
+                                                        <td> Y.R.</td>
+                                                        <td>(1) Validate tube no.5, 6, 8 through PCR by using the primers GOIR/F and GOIR/T7F and operate electrophoresis<br />(2) Transfer plasmids pJC175e into S2060 competent cells.</td>
+                                                        <td>Results of transformation were not successful.</td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Pick S2208 single colonies. Make 13 2×YT solid media 1/4 plates;
+                                                        </td>
+                                                        <td>No phage plaques existed. <br />(2) Take the bacterial solution into the conical flasks and put them in the biological shaker; operate phage infection experiment.</td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>L.X.R.</td>
+                                                        <td>Pick the single colonies, extract the plasmids and send it to sequence.
+                                                        </td>
+                                                        <td>No results.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.W.R., L.J.</td>
+                                                        <td>PCR: T7-1; operate electrophoresis and gel extraction(M13, T7-1).</td>
+                                                        <td>PCR products of M13 phage backbones produced diffused strips; PCR products of T7-1 produced one strip, but the concentration of T7-1 was too low.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>(1) Validate the bacterial solution of homologous recombination products after propagation through PCR(primers: GOIF&amp;R, T7R&amp;GOIF,T7F&amp;GOIR);
+                                                            <br /> (2) Validate the phage plaques on the plates painted with the products of homologous recombination through PCR(primers: T7, a particular pair of primers for GOI);
+                                                            <br /> (3) Validate the bacterial solution of homologous recombination products after propagation and phage solution and bacterial solution homologous recombination products through PCR(primers:
+                                                            M13-R&amp;F).
+                                                        </td>
+                                                        <td>The results showed only kanamycin gene section can be amplified by using the phage solution after propagation and primers GOIF&amp;R; PCR products of phage plaques appearing on the plates painted
+                                                            with homologous recombination products produced no strips by using the primer T7 which meant only wild-type phage grew on the plates.</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td rowspan="15 ">2022/4/28</td>
+                                                        <td> Y.R.</td>
+                                                        <td>PCR: Primers: m13kanaR and M13F(6200 bp); KanaT7F and artificial synthetic sectionR(3000 bp); electrophoresis(M13+ kana produced bright strips).
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Take S2208 bacterial solution into conical flasks and put them in the biological shaker;
+                                                            <br /> (2) Operate phage infection experiment(phage solution were O type made by C.Q.Y. and PS type made by L.W.R.; bacterial solution was statured S2208 solution. Paint 4 plates in all).
+                                                        </td>
+                                                        <td>No phage plaques existed.</td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>L.X.R.</td>
+                                                        <td>Reorder the primers and continue the test.</td>
+                                                        <td>All original T7 promoters.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="11 ">L.W.R.</td>
+                                                        <td>Recombination of SP plasmids (2)</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+
+                                                        <td>Backbones 75 ng 0.375 μL dilute 4 times add 1.5 μL</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+
+                                                        <td>T7-1 0.386 μL dilute 4 times add 1.55 μL</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+
+                                                        <td>T7-2 0.105 μL dilute 10 times add 1.05 μL</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+
+                                                        <td>Artificial sythetic section 0.027 μL dilute 102 times add 2.7 μL proportion: 1: 1: 1: 1</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+
+                                                        <td>10×BsaI buffer 2.0μL</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td></td>
+                                                        <td>BsaI 1.0 μL</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>T4 Ligase 5 μL</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+
+                                                        <td>T4 buffer 5 μL</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+
+                                                        <td>Program：37℃ for 3 min，16℃ for 3 min，25 cycles，60℃ for 5 min</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+
+                                                        <td>Transfer the recombinant plasmids into S2208 and put them in the biological shaker for 16-18 hours.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>Validate the SP products and 4 groups of homologous recombination products through PCR(primers: GOIF&amp;R, T7R&amp;GOIF, T7F&amp;GOIR).</td>
+                                                        <td>The results showed the previous homologous recombination products did not contain T7; products made by L.W.R. were considered to be the mixture of SP and wild-type phage.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/4/29</td>
+                                                        <td> Y.R.</td>
+                                                        <td>(1) PCR: T7, artificial synthetic section. Electrophoresis and cut the gel corresponding to the strip;
+                                                            <br />(2) Operate gel extraction for M13＋kana, T7, artificial synthetic section;
+                                                            <br /> (3) Extract plasmids pJC175e and send them to be sequenced;
+                                                            <br /> (4) Operate homologous recombination for M13＋kana, T7, artificial synthetic section. Transfer the recombinant plasmids into the bacteria S2208.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+
+
+                                                        <td rowspan="2 ">Z.Y.H.</td>
+                                                        <td>Pick S2208 single colonies. Take the S2208 bacterial solution into conical flasks and put them in the biological shaker. Check the growth situation at 7:00 p.m. and 9:00 p.m.;</td>
+                                                        <td>Pick the S2208 single colonies into the media in the test tubes and put them in the biological shaker.</td>
+                                                    </tr>
+                                                    <tr>
+
+
+                                                        <td>Make 5 conical flasks of 150 mL of 2×YT liquid media and 5 test tubes of 5 mL of 2×YT liquid media. Autoclave 28 empty test tubes.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/4/30</td>
+                                                        <td>L.W.R.</td>
+                                                        <td>Filter the S2208 baterial solution
+                                                            <br />Operate colony PCR to check whether the homologous recombination was successful(primers: GOI-F+GOI-R,GOI-F+T7-R,GOI-R+T7-F,T7-F+T7-R)
+                                                            <br /> Tm-1: 95℃, extension time-1: 30 s, Tm-2: 53℃, extension time-2:30 s，Tm-3: 72℃, extension time-3: 1: 50 s.
+                                                        </td>
+                                                        <td>One tube of phage solution was filtered directly; the other tube of phage solution was filtered after centrifuge; one tube of bacterial solution was stored at -20℃.</td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td> Y.R.</td>
+                                                        <td>Streak on the plates by using DH5α.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Take the S2208 bacterial solution into conical flasks and put them in the biological shaker;
+                                                            <br /> (2) Operate phage infection experiment(phage solution labeled as 0)
+                                                        </td>
+                                                        <td>Phage plaques appeared.</td>
+                                                    </tr>
+
+                                                </table>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="footer " style="position:absolute;right:0;left:0;margin:0 auto;width: 100%;height: 500px;background-color: black;margin-top: -200px;position: relative;">
+                            <div class="container" style="width:100%;height:100%;background-color: black;width: 100%;font-size: 14px;">
+                                <div class="footer-img" style="position:absolute;left: 0;">
+                                    <img src="../image/footer.jpg" width="800px" height="330px">
+                                </div>
+
+
+                                <div class="footer-content" style="text-align: center;right: 0;height: 100%;width: 50%;background-color: black;top: 0;">
+
+                                    <ul class="footer-content-ul">
+                                        <li class="first">
+                                            <a href="../index.html" style="font-size: 21px;">HOME</a>
+                                        </li>
+
+
+                                    </ul>
+
+                                    <ul>
+                                        <li class="first">
+                                            <a href="../background.html" style="font-size: 21px;">PROJECT</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="../description.html">Description</a>
+                                        </li>
+                                        <li>
+                                            <a href="../design.html">Design</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="../protocol.html">Protocol</a>
+                                        </li>
+                                        <li>
+                                            <a href="../supplement.html">Supplement</a>
+                                        </li>
+                                        <li>
+                                            <a href="../results.html">Results</a>
+                                        </li>
+
+                                    </ul>
+
+                                    <ul class="footer-content-ul">
+                                        <li class="first">
+                                            <a href="../lab_notebook.html" style="font-size: 18px;">LAB NOTEBOOK</a>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="footer-content-ul">
+                                        <li class="first">
+                                            <a href="../team.html" style="font-size: 21px;">TEAM</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="../collaboration.html">Collaboration</a>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+
+                                <div class="footer-row">
+                                    <div class="col-md-12 " style="margin-top: -30px; ">
+                                        <p style="text-align: center;font-size: 16px; color: white;">Copyright © 2022 NAU All rights reserved.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+</html>

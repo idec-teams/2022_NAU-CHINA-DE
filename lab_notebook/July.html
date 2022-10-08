@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>July</title>
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/painter.css">
+    <link rel="stylesheet" type="text/css" href="../css/new1.css">
+    <link rel="stylesheet" type="text/css" href="../css/page/lab_notebook.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div id="loading">
+        <div class='loadingX' style="background-color: #abc2ea;">
+            <img src="../image/lodding_3.gif" height=100% width=100%>
+        </div>
+    </div>
+
+    <script>
+        document.onreadystatechange = function() {
+
+            if (document.readyState === "complete") {
+
+                setTimeout(
+                    function() {
+                        // document.querySelector("#loading").style.opacity = "0%";
+                        document.querySelector("#loading").style.display = "none";
+                        document.querySelector("#globalWrapper").style.display = "block";
+                    }, 3000)
+            }
+        }
+    </script>
+
+    <div id='globalWrapper'>
+        <div id="content" class="mw-body" role="main" style="background-color:  white">
+
+
+            <div id="HQ_page">
+                <div id="bodyContent">
+
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+
+                        <section class="menu-section-area">
+
+                            <!-- Navigation -->
+                            <nav class="menu">
+                                <div style="height: 0px;width: 0px;position: relative;">
+                                    <img src="../image/logo.png" width="50px" height="50px" style="position:absolute;top:-14px;">
+                                </div>
+
+                                <ol>
+                                    <li class="menu-item"><a href="../index.html">Home</a></li>
+
+                                    <li class="menu-item">
+                                        <a href="#0">Project
+                                            <svg version="1.1" class="plus-icon" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18">
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="10" y1="9" x2="17" y2="9" />
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="9" y1="9" x2="9" y2="1" />
+                                                <g id="lineGroup_1">
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="1" y1="9" x2="8" y2="9" />
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="9" y1="17" x2="9" y2="9" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <ol class="sub-menu">
+                                            <li class="sub-menu-item"><a href="../description.html">Description</a></li>
+                                            <li class="sub-menu-item"><a href="../design.html">Design</a></li>
+                                            <li class="sub-menu-item"><a href="../results.html">Results</a></li>
+                                            <li class="sub-menu-item"><a href="../supplement.html">Supplement</a></li>
+
+                                            <li class="sub-menu-item"><a href="../protocol.html">Protocol</a></li>
+                                        </ol>
+                                    </li>
+                                    <li class="menu-item"><a href="../lab_notebook.html">Lab notebook</a></li>
+                                    <li class="menu-item">
+                                        <a href="#0">Team
+                                            <svg version="1.1" class="plus-icon" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18">
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="10" y1="9" x2="17" y2="9" />
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="9" y1="9" x2="9" y2="1" />
+                                                <g id="lineGroup_1">
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="1" y1="9" x2="8" y2="9" />
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="9" y1="17" x2="9" y2="9" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <ol class="sub-menu">
+                                            <li class="sub-menu-item"><a href="../team.html">Team</a></li>
+                                            <li class="sub-menu-item"><a href="../collaboration.html">Collaboration</a></li>
+
+                                        </ol>
+                                    </li>
+
+
+
+                            </nav>
+                            <!-- Navigation -->
+
+                        </section>
+                        <div class="img1"></div>
+
+                        <!-- <div class="lnav">
+                            <div class="turn-container"> -->
+                        <!-- --d为自定义属性，CSS中可通过var函数对其调用 -->
+                        <!-- <div class="turn-line" style="--d:1;"><span></span></div>
+                                <div class="turn-line" style="--d:2;"><span></span></div>
+                                <div class="turn-line" style="--d:3;"><span></span></div>
+                                <div class="turn-line" style="--d:4;"><span></span></div>
+                                <div class="turn-line" style="--d:5;"><span></span></div>
+                                <div class="turn-line" style="--d:6;"><span></span></div>
+                                <div class="turn-line" style="--d:7;"><span></span></div>
+                              <div class="turn-line" style="--d:8;"><span></span></div>
+                          <div class="turn-line" style="--d:9;"><span></span></div>
+                          <div class="turn-line" style="--d:10;"><span></span></div>
+                          <div class="turn-line" style="--d:11;"><span></span></div>
+                          <div class="turn-line" style="--d:12;"><span></span></div> -->
+                        <!-- </div>
+                        </div> -->
+
+
+
+                        <div class="content">
+
+                            <div class="main" style="color: black;">
+                                <div class="notebook_container col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+                                    <a href="../lab_notebook.html">
+                                        </h1>
+                                        BACK👈
+                                        </h1>
+                                    </a>
+                                    <div class=" notebook " style="text-align:center; ">
+                                        <div class="calendar-part9 ">
+                                            <img src="../image/7.png " style="width: 300px; " class="hover ">
+                                            <div>
+                                                <table border=" 1 " class="show ">
+                                                    <tr>
+                                                        <th style=" width: 10vw !important; ">Date</th>
+                                                        <th>Member</th>
+                                                        <th>Experiment</th>
+                                                        <th>Result</th>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                        <td id="h7 " rowspan="3 ">2022/7/4</td>
+                                                        <td>N.X.H.，T.W.H.</td>
+                                                        <td>Streak C321 ΔA muts-T7 strains with sfGFP, gen2-tRNA plasmids respectively. Inoculate single-colony in LB medium, breed at 30℃.</td>
+                                                        <td>The colonies grew normally.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>Design ten pairs of primers to sequence the sequence of the M13 phage.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J., N.X.H.，Z.Z.Y.</td>
+                                                        <td>Plasmid extraction: sfGFP, modify all terminated tRNAs and unmodified tRNAs.</td>
+                                                        <td>DNA concentration: sfGFP-15.491 ng/μL, modify all terminated tRNAs -35.163 ng/μL, unmodified tRNAs-31.913ng/μL.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">2022/7/5</td>
+                                                        <td>N.X.H.</td>
+                                                        <td>(1) Confect solid 2xYT, LB medium.(2) Inoculate strains with sfGFP.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Z.Y., N.X.H., T.W.H.</td>
+                                                        <td>(1) Plasmid extraction: gen2 and gen2 Angew tRNA2.(2) Make competent of C321 ΔA muts-T7.(3) Transformation sfGFP into C321 ΔA muts-T7.</td>
+                                                        <td>(1) DNA concentration was low.(3) One plate had a lot of transformants, while the other had almost no transformants.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/7/6</td>
+                                                        <td>Z.Y.H., N.X.H.</td>
+                                                        <td>(1) PCR: Clone of 10 M13 fragmentstargets to verify that it is M13 wild-type phage..(2) Confect 2xYT, LB medium of 1000 ml respectively(solid, liquid). Sterilized empty tube, 50ml centrifuge tube,
+                                                            ddH2O. (3) Inoculate strains with AP-T7-A and AP-T7-P plasmids.</td>
+                                                        <td>(1) The DNA fragment was correct.(2) The bacterial solution was clear.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.</td>
+                                                        <td>Transformation: AP. Breed at constant temperature of 37℃ for 12 h. </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Z.Y., N.X.H., T.W.H.</td>
+                                                        <td>Pick transformants in the liquid 2xYT medium(13 tubes), Bred in shaker at 200 rpm/min, 30 ℃ for 12 h. (2) Design primer.</td>
+                                                        <td>After centrifugation and enrichment, the three tubes showed no fluorescence.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">2022/7/7</td>
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Glycerine stored: AP-T7-A and AP-T7-P.(2) Plasmid extraction: AP-T7-A and AP-T7-P.(3) PCR to confirm competent of S2060, AP-T7-A and AP-T7-P.</td>
+                                                        <td>(2) DNA concentration was low, PCR had no fragment.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.</td>
+                                                        <td>(1) PCR to confirm weather C321 ΔA muts-T7 contains sfGFP. (2) PCR: the template was the sfGFP plasmid.(3) Transformation：sfGFP.</td>
+                                                        <td>(1) PCR had no fragment. The dimer was heavy. (2) PCR had no fragment. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">2022/7/8</td>
+                                                        <td>Z.Z.Y., N.X.H.</td>
+                                                        <td>(1) Selected Transformants for PCR(Cells were lysed in a boiled water bath during the second).(2) Transformation：sfGFP. (Add 1.5 µL, 2 µL palsmids as template).</td>
+                                                        <td>(1) PCR had no fragment. The dimer was heavy.(2) No colonies on the plates.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Z.Y.</td>
+                                                        <td>(1) Prepare Ara, IPTG, L-DOPA. (2) Transformation：sfGFP. (3) Make 2×YT solid media plates.(4) Streak F4.</td>
+                                                        <td>(2) There were 8 clonies, select 4 clonies to ionculate. (4) No colonies on the plates.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">2022/7/9</td>
+                                                        <td>Z.Y.</td>
+                                                        <td>PCR: the template was AP plasmid.</td>
+                                                        <td>PCR had no fragment. </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.</td>
+                                                        <td>(1) Inoculate 5 mL 2xYT culture medium in a test tube with AP-P single colony and put it in the biological shaker at 220rpm, 37℃, for 12 h. (2) Plasmid extraction: AP-T7-A and AP-T7-P. (3) PCR: the
+                                                            template was strains with AP-T7-A and AP-T7-P, to obtain skeleton of plasmids.(4) Purification of PCR products. (5) Homologous recombination: AP-T3-A, AP-T3-P, AP- T7/T3-P. (6) Streak S2060 to
+                                                            confirm.
+                                                        </td>
+                                                        <td>(3) DNA concentration: AP-T7-A-42.739 ng/ul, AP-T7-P-190.221 ng/μL. (5) DNA concentration: AP-T7-A-92.345 ng/ul, AP-T7-P-11.451 ng/uL.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4 ">2022/7/10</td>
+                                                        <td>Z.Z.Y., N.X.H.</td>
+                                                        <td>(1) Confirm transformants. (2) Confirm transformants, add IPTG. (3) Make competent of C321 ΔA muts-T7.(4) Make 3 2×YT solid media plates.</td>
+                                                        <td>(1) PCR had the right fragment. (2) The liquid was clear.(3) No colonies on the plates.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Design 3 pairs of primers to colony skeleton of SP, T7RNAP and synthetic DNA fragments.(2) Confirm skeletondo AP-T7-P.</td>
+                                                        <td>(2) PCR had no fragment.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.</td>
+                                                        <td>Transformation: AP.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Z.Y., N.X.H.</td>
+                                                        <td>(1) Streak F4. 2. (2) Make competent of C321 ΔA muts-T7 .(3) Transformation：sfGFP. (Use old competent of C321 ΔA muts-T7, AP was used as the control group).</td>
+                                                        <td>(2) The liquid became turbid after 8 h.(3) No colonies on the plates.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/7/11</td>
+                                                        <td>L.J.J.，L.J.</td>
+                                                        <td>(1) Confirm S2060(S2060, competent of S2060).(2) Make 10 2×YT solid media plates.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Z.Y.H., G.P.Z.</td>
+                                                        <td>Transformate pJC175e into S2060 to make comperent of S2208.</td>
+                                                        <td>There were no bands.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J., L.J.</td>
+                                                        <td>(1) Make competent of S2060. (2) Inoculate a single-colony in LB medium with Amp, Str, to confirm S2060.(3) Transformate pJC175e into S2060.(4) PCR: the template was S2060, the primers was the fragment
+                                                            of pJC175e. Agarose gel (1%) electrophoresis (200V, 25min).(5) Glycerine stored: S2060.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4 ">2022/7/12</td>
+                                                        <td>L.J.</td>
+                                                        <td>Confect solid 2xYT medium of 750 ml. </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Z.Y., N.X.H., T.W.H., Y.R.</td>
+                                                        <td>(1) Make competent of C321 ΔA muts-T7. (2) F3 Single colonies were selected for propagation and plasmid extraction.(3) Transformate sfGFP and gen2 into S2060 together.</td>
+                                                        <td>(2) DNA concentration was normal.(3) One plate had colonies.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) PCR to colony skeleton of SP, T7RNAP and synthetic DNA fragments.(2) Confirm whether SP skeleton and T7RNAP could be obtained by PCR using M13 and BL21 strain as templates. </td>
+                                                        <td>(1) SP bands were diffused. </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.</td>
+                                                        <td>(1) To prepare S2060 competent cell.(2) Verify the plasmid of pJC175e through PCR.(3) Transformate the pJC175e into DH5αcompetent cell.</td>
+                                                        <td>(2) The plasmid was normal.(3) The competent cell overgrew in the plate.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4 ">2022/7/13</td>
+                                                        <td>L.J.J., L.J.</td>
+                                                        <td>(1) Make S2208 competent cell.(2) PCR to confirm pJC175e, the primers are the fragment of pJC175e (500-750bp), the template is pJC175e plasmid. Agarose gel (1%)electrophoresis (200V, 25min).(3) Verify
+                                                            S2208: transformatr pJC175e into S2060(two kind of S2060) and DH5α. Dispense bacterial solution onto LB solid medium, 37℃, for 12h.</td>
+                                                        <td>(2) PCR：the fragment was right.(3) The colonies on competent(step 1) were too much to identfy, competent(step 2) and DH5α plates had signal colony.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Z.Y., N.X.H., Y.R.</td>
+                                                        <td>(1) Select transformants(4 tubes of sfGFP, one tube of co-transformation, one tube of gen2) to propagate. Colony PCR(3 tubes of sfGFP).(2) Next-generation sequencing of F3. (3) Select transformants(one
+                                                            tube of co-transformation, one tube of gen2 to propagate. (4) Select strains with sfGFP to propagate. (5) Choose confirmed colony to propagate. </td>
+                                                        <td>(1) No signal.(5) No colonies on the plates. We guessed it was an overdose of antibiotics.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) PCR to obtain T7RNAP and SP, then purificate the product of PCR. (2) Design 3 pairs primers to prepare for USER clone.</td>
+                                                        <td>(1) DNA concentration: T7RNAP-233 ng/ul , SP-289 ng/μL, quanhecheng(122).</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J., L.J.</td>
+                                                        <td>(1) Pick single colonies and inoculate 5 mL of 2×YT liquid media in a test tube, proportion of antibiotics is 1/2000. (2) Colony PCR(S2208).(3) Make PCR, using S2208 and DH5α containing the pJC175e
+                                                            as templates and M13-4F/R as primers.</td>
+                                                        <td>(1) All bacteria were cloudy.(3) The band were right.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/7/14</td>
+                                                        <td>Z.Z.Y., N.X.H.</td>
+                                                        <td>(1) Plasmid extraction for plasmids of gen2, sfgfp, original sfgfp. (2) Verify for the above plasmids.(3) Colony PCR for the above plasmids.</td>
+                                                        <td>(1) No signal.(3) There were four bright bands.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>Verify that S2208 and DH5α were plasmids of pJC175e.</td>
+                                                        <td>The band was right.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J., L.J.</td>
+                                                        <td>(1) Prepare S2208 Competent cell.(2) Activity-independent phage plaque assays.(3) Plasmid extraction for pJC175e. (4) Store the bacterial solution of S2208(1), S2208(2) and DH5α containing pJC174e.</td>
+                                                        <td>(3) Concentration was 34.445 ng/μL.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/7/15</td>
+                                                        <td>L.J., Z.Y.H.</td>
+                                                        <td>Phage plaque analysis for wild-type M13. </td>
+                                                        <td>No phage plaques.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>T.W.H., N.X.H., Z.Y.H.</td>
+                                                        <td>(1) Prepare compentent cell.(2) Transformated the plasmid of "gen2 " into compentent cell.(3) Plasmid extraction.</td>
+                                                        <td>(2) The false positive rate was too high.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Z.Y., N.X.H., T.W.H.</td>
+                                                        <td>(1) Plasmid extraction of the plasmid containing wild-type AARS.(2) Transformation.(3) Store the bacterial solution of bacteria containing sfgfp.</td>
+                                                        <td>(1) Concentration was low.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">2022/7/16</td>
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Three fragments of SP were recombined homologously. (2) Dpn1 at 0.5mol digested for 2.5 h. (3) Cloning SP.</td>
+                                                        <td>(3) The bands were wrong.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J., L.J.</td>
+                                                        <td>(1) Verify S2208 and S2060 competence.(2) Phage plaque analysis for wild type M13.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/7/17</td>
+                                                        <td>Z.Z.Y., N.X.H., T.W.H.</td>
+                                                        <td>(1) Plasmid extraction for the plasmid containing gen2 and WT AARS.(2) Preperation comptent cell.(3) Colony PCR.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Three fragments of SP were recombined homologously. (2) 1.5 mol of Dpn1 digestion for 45 min (two sets of replicated, one group without Dpn1 as a control). (3) Cloning SP.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Z.Y., N.X.H., T.W.H.</td>
+                                                        <td>(1) Preparation compentent cell.(2) Transformation.</td>
+                                                        <td>(1) The first ones had strips, the others had none. (2) On the 20th two boards grew up. At the same time, the plasmid extraction verified that the competent plasmid concentration was very low and
+                                                            might be false-positive.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/7/18</td>
+                                                        <td>L.J.J., L.J.</td>
+                                                        <td>(1) Colony PCR.(2) Phage plaque analysis for wild type M13.</td>
+                                                        <td>(1) The band was right.</td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Centrifuge yesterday's bacteriophage-containing liquid and filter the bacteria. (2) Verify hyage fluids for filtered bacteria and uncentrifuged bacterial solutionusing GOI-F/R as primers. </td>
+                                                        <td>(2) No signal.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J., L.J.</td>
+                                                        <td>(1) Phage plaque analysis for wild-type M13(0).(2) Wild-type M13 stock amplification.</td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/7/19</td>
+                                                        <td>N.X.H.，Z.Z.Y.</td>
+                                                        <td>Verify sfGFP competent cell.</td>
+                                                        <td>There were problems with the method of preparing the competent cell.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Prepare 2×YT solid and liquid medium and sterilize empty tubes. (2) Verify the SP.</td>
+                                                        <td>(2) There were many bands.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Y.R., L.W.R.</td>
+                                                        <td>PCR: M13 vector, T7RNAP fragment, KanR fragment, sythesis fragment.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="5 ">2022/7/20</td>
+                                                        <td>Z.Z.Y., N.X.H.</td>
+                                                        <td>(1) Colony PCR.(2) Plasmid extraction.(3) Prepare vector.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.</td>
+                                                        <td>Phage plaque analysis for wild-type M13.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>Get connected fragments through PCR, using T7RNAP-F and sythesis fragment as primers. </td>
+                                                        <td>The bands were diffuse.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.W.R., Y.R.</td>
+                                                        <td>(1) PCR：M13 vector, T7RNAP fragment, sythesis fragment, KanR fragment.(2) Gel extraction.</td>
+                                                        <td>(1) Except for the M13 skeleton less than 5000 bp, which need to be re-PCR, the other fragments were normal in size.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Z.Y., L.J.J.</td>
+                                                        <td>(1) Transformation.(2) Culture bacteria.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="5 ">2022/7/21</td>
+                                                        <td>L.J.</td>
+                                                        <td>(1) Phage plaque analysis for wild-type M13.(2) Verify the wild-type M13 through PCRM13 shock amplification.</td>
+                                                        <td>(1) No single colonies had grown on the plate.(2) The bands were diffuse.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>N.X.H.，T.W.H.</td>
+                                                        <td> SfGFP is prepared by calcium chloride method.</td>
+                                                        <td>Store at -80 °C.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>Get SP vector, sythesis fragment, T7RNAP fragment, using primers with dU. </td>
+                                                        <td>No signal.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.W.R., Y.R.</td>
+                                                        <td>(1) PCR：M13 vector.(2) Homologous recombinant.(3) Transformation.</td>
+                                                        <td>(1) The size of the strip was about 5000 bp.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.W.R, X.K.</td>
+                                                        <td> Culture S2208 in 5 mL DRM medium.</td>
+                                                        <td>S2060 did not grow, S2208 grows, indicating that pjc175e was successfully transformed into S2208.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/7/22</td>
+                                                        <td>L.J.J., L.J.</td>
+                                                        <td>(1) Take a tube of S2060 and S2208 competent cell upstairs, scribble a line in the plate, and then pick out a single colony.(2) Scribble the plate with S2060 piercing bacteria. (3) Verify wild-type
+                                                            M13. </td>
+                                                        <td>(1) There were colonies.(2) There was no colony.(3) The band was right. </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Get SP vector, sythesis fragment, T7RNAP fragment, using KOD high fidelity enzyme. (2) Get SP vector, sythesis fragment, T7RNAP fragment, using P510 high fidelity enzyme. (3) Gel extraction for
+                                                            SP vector and T7RNAP fragments.</td>
+                                                        <td>(1) No bands. (2) The bands of SP vector and T7RNAP fragment were right. But the band of sythesis fragment was wrong. (3) Concentration was high.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.W.R., Y.R. , L.J.</td>
+                                                        <td>(1) Colony PCR.</td>
+                                                        <td>(1) The size of band were right.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4 ">2022/7/23</td>
+                                                        <td>L.J.</td>
+                                                        <td>(1) Phage plaque analysis for wild-type.</td>
+                                                        <td>(1) There were phage plaques.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Z.Y., N.X.H., T.W.H.</td>
+                                                        <td>(1) Prepare C321 Competent cell.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Get the sythesis fragment, using P510 high fidelity. (2) Verify the sythesis fragment. </td>
+                                                        <td>(1) No band.(2) No band. </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.W.R., X.K.</td>
+                                                        <td>(1) Measure fluorescence.</td>
+                                                        <td>(1) No fluorescence.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/7/24</td>
+                                                        <td>L.J.</td>
+                                                        <td>(1) Prepare 2× YT liquid medium.(2) Phage plaque analysis for wild-type.</td>
+                                                        <td>(2) There were plaques for S2208. No plaques for S2060.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Get the sythesis fragment, using P510 high fidelity.(2) Colony PCR. (3) Get the sythesis fragment, using the above bacteria as the template. (4) Plasmid extraction. Get the sythesis fragment,
+                                                            using the above plasmid as the template.</td>
+                                                        <td>(1) No band. (2) The band were right. (3) No band.(4) The former had no stripes and the latter had strips.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Z.Y.</td>
+                                                        <td>Prepare sfgfp competent cell.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4 ">2022/7/25</td>
+                                                        <td>L.J.</td>
+                                                        <td>Phage plaque analysis for wild-type M13.</td>
+                                                        <td> No phage plaques.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>N.X.H.</td>
+                                                        <td>(1) PCR.(2) Plasmid extraction.</td>
+                                                        <td>(1) Wild-type band.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>Get SP vector through PCR, using primers without dU.</td>
+                                                        <td>Concentration of SP vector was about 90. </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Z.Y.</td>
+                                                        <td>Transformation.</td>
+                                                        <td>There were colonies.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4 ">2022/7/26</td>
+                                                        <td>L.J.</td>
+                                                        <td>(1) Phage plaque analysis for wild-type M13.</td>
+                                                        <td>(1) No phage plaques.</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>N.X.H.</td>
+                                                        <td>(1) Gel extraction.</td>
+                                                        <td>(1) Concentration was normal.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) The S2208 filter bacteria transformed after homologous recombination yesterday were given three tubes of "SP ".(2) Colony PCR.(3) Activity-independent phage plaque assays.</td>
+                                                        <td>(2) There were bands. (3) All were phage plaques.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Z.Y., N.X.H., L.J.J</td>
+                                                        <td>(1) Error-prone PCR.(2) Homologous recombination.(3) Gel extraction.</td>
+                                                        <td>(1) No colonyes.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/7/27</td>
+                                                        <td>L.J.</td>
+                                                        <td>Activity-independent phage plaque assays.</td>
+                                                        <td>No phage plaques.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>Verify SP, using GOI-F/R as primers.</td>
+                                                        <td>No bands.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Z.Y., L.J.J.</td>
+                                                        <td>(1) Transformation.(2) Make error-prone pcr of the temperature gradient.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4 ">2022/7/28</td>
+                                                        <td>Z.Z.Y., L.J.J.</td>
+                                                        <td>(1) Transformation.(2) Error-prone PCR.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.</td>
+                                                        <td>(1) Colony PCR (use "0 " phages as templates).(2) Plaque assay.(3) Colony PCR (use "0 " phages as templates).(4) Plaque assay of "0 " phage.</td>
+                                                        <td>(1) No single colonies.</td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>N.X.H., L.J.J., Z.Z.Y.</td>
+                                                        <td>Preparation of TyrRS mutants.</td>
+                                                        <td>The error-prone PCR band was correct, and the temperature gradient confirmed the error-prone condition.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Colony PCR (use "0 " phages as templates.)(2) Plaque assay.(3) Colony PCR (use "0 " phages as templates).(4) Plaque assay of "0 " phage.</td>
+                                                        <td>(1) The bands were weak, while group 58 and 59 were the brightest.(3) No singal. (4 )All the two plates had plaques.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="3 ">2022/7/29</td>
+                                                        <td>Z.Z.Y., N.X.H.</td>
+                                                        <td>(1) Colony PCR.(2) Pick positive transformants into two tubes until saturated.</td>
+                                                        <td>(2) One tube added kana, whlie the other tubes didn't, both grew well.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.</td>
+                                                        <td>Plaque assay of wild type phages.</td>
+                                                        <td>Plaque of S2208 appeared. </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) PCR (use "0 " phage as tempaltes).(2) Colony PCR (use "0 " phages as templates).(3) Homologous reorganization of SP.(4) Plaque assay of "0 " phage.</td>
+                                                        <td>(1) No singal.(2) No singal. (3) The resulting bacteria liquid contained both SP and wild types.(4) All have correct bands,.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td rowspan="2 ">2022/7/30</td>
+                                                        <td>Z.Z.Y., N.X.H. , L.J.J.</td>
+                                                        <td>(1) Prepare C321 competent cells.(2) Transformation,</td>
+                                                        <td>(2) No single colonies.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Filter the bacteria to obtain SP.(2) Colony PCR (to confirm whether SP is constructed succcessfully). Use GOI as primers. (3) Plaque assay. (4) Colony PCR (to confirm whether SP is constructed
+                                                            succcessfully). Use T7RNAP-F and fully synthesized-R as primers. </td>
+                                                        <td>(1) Three sets of phage stock solution are obtained.(2) All have bands indicaed that there were wild-type bacteriophages.(3) All had plauqes.(4) All have correct bands, indicating that the newly
+                                                            constructed three groups of SPs all have recombinant types.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">2022/7/31</td>
+                                                        <td>L.J.J.</td>
+                                                        <td>(1) Pick S2060 single colonies and place in Str and TET resistant 2×YT medium to shake to saturation. S2060 Bacteria preservation. (2) Prepare S2060 competent cells.(3) Colony PCR (to confirm whether
+                                                            S2060 has pJC175e).</td>
+                                                        <td>(1) S2060 preservation.(3) Bands were all correct.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Z.Y., N.X.H.</td>
+                                                        <td>(1) Colony PCR.(2) Transformation.</td>
+                                                        <td>(1)There were bands.(2)The colony overgrew.</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="footer " style="position:absolute;right:0;left:0;margin:0 auto;width: 100%;height: 500px;background-color: black;margin-top: -200px;position: relative;">
+                            <div class="container" style="width:100%;height:100%;background-color: black;width: 100%;font-size: 14px;">
+                                <div class="footer-img" style="position:absolute;left: 0;">
+                                    <img src="../image/footer.jpg" width="800px" height="330px">
+                                </div>
+
+
+                                <div class="footer-content" style="text-align: center;right: 0;height: 100%;width: 50%;background-color: black;top: 0;">
+
+                                    <ul class="footer-content-ul">
+                                        <li class="first">
+                                            <a href="../index.html" style="font-size: 21px;">HOME</a>
+                                        </li>
+
+
+                                    </ul>
+
+                                    <ul>
+                                        <li class="first">
+                                            <a href="../background.html" style="font-size: 21px;">PROJECT</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="../description.html">Description</a>
+                                        </li>
+                                        <li>
+                                            <a href="../design.html">Design</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="../protocol.html">Protocol</a>
+                                        </li>
+                                        <li>
+                                            <a href="../supplement.html">Supplement</a>
+                                        </li>
+                                        <li>
+                                            <a href="../results.html">Results</a>
+                                        </li>
+
+                                    </ul>
+
+                                    <ul class="footer-content-ul">
+                                        <li class="first">
+                                            <a href="../lab_notebook.html" style="font-size: 18px;">LAB NOTEBOOK</a>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="footer-content-ul">
+                                        <li class="first">
+                                            <a href="../team.html" style="font-size: 21px;">TEAM</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="../collaboration.html">Collaboration</a>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+
+                                <div class="footer-row">
+                                    <div class="col-md-12 " style="margin-top: -30px; ">
+                                        <p style="text-align: center;font-size: 16px; color: white;">Copyright © 2022 NAU All rights reserved.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+</html>

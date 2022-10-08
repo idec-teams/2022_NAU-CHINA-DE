@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>November</title>
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/painter.css">
+    <link rel="stylesheet" type="text/css" href="../css/new1.css">
+    <link rel="stylesheet" type="text/css" href="../css/page/lab_notebook.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div id="loading">
+        <div class='loadingX' style="background-color: #abc2ea;">
+            <img src="../image/lodding_3.gif" height=100% width=100%>
+        </div>
+    </div>
+
+    <script>
+        document.onreadystatechange = function() {
+
+            if (document.readyState === "complete") {
+
+                setTimeout(
+                    function() {
+                        // document.querySelector("#loading").style.opacity = "0%";
+                        document.querySelector("#loading").style.display = "none";
+                        document.querySelector("#globalWrapper").style.display = "block";
+                    }, 3000)
+            }
+        }
+    </script>
+
+    <div id='globalWrapper'>
+        <div id="content" class="mw-body" role="main" style="background-color:  white">
+
+
+            <div id="HQ_page">
+                <div id="bodyContent">
+
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+
+                        <section class="menu-section-area">
+
+                            <!-- Navigation -->
+                            <nav class="menu">
+                                <div style="height: 0px;width: 0px;position: relative;">
+                                    <img src="../image/logo.png" width="50px" height="50px" style="position:absolute;top:-14px;">
+                                </div>
+
+                                <ol>
+                                    <li class="menu-item"><a href="../index.html">Home</a></li>
+
+                                    <li class="menu-item">
+                                        <a href="#0">Project
+                                            <svg version="1.1" class="plus-icon" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18">
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="10" y1="9" x2="17" y2="9" />
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="9" y1="9" x2="9" y2="1" />
+                                                <g id="lineGroup_1">
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="1" y1="9" x2="8" y2="9" />
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="9" y1="17" x2="9" y2="9" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <ol class="sub-menu">
+                                            <li class="sub-menu-item"><a href="../description.html">Description</a></li>
+                                            <li class="sub-menu-item"><a href="../design.html">Design</a></li>
+                                            <li class="sub-menu-item"><a href="../results.html">Results</a></li>
+                                            <li class="sub-menu-item"><a href="../supplement.html">Supplement</a></li>
+
+                                            <li class="sub-menu-item"><a href="../protocol.html">Protocol</a></li>
+                                        </ol>
+                                    </li>
+                                    <li class="menu-item"><a href="../lab_notebook.html">Lab notebook</a></li>
+                                    <li class="menu-item">
+                                        <a href="#0">Team
+                                            <svg version="1.1" class="plus-icon" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18">
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="10" y1="9" x2="17" y2="9" />
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="9" y1="9" x2="9" y2="1" />
+                                                <g id="lineGroup_1">
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="1" y1="9" x2="8" y2="9" />
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="9" y1="17" x2="9" y2="9" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <ol class="sub-menu">
+                                            <li class="sub-menu-item"><a href="../team.html">Team</a></li>
+                                            <li class="sub-menu-item"><a href="../collaboration.html">Collaboration</a></li>
+
+                                        </ol>
+                                    </li>
+
+
+
+                            </nav>
+                            <!-- Navigation -->
+
+                        </section>
+                        <div class="img1"></div>
+
+                        <!-- <div class="lnav">
+                            <div class="turn-container"> -->
+                        <!-- --d为自定义属性，CSS中可通过var函数对其调用 -->
+                        <!-- <div class="turn-line" style="--d:1;"><span></span></div>
+                                <div class="turn-line" style="--d:2;"><span></span></div>
+                                <div class="turn-line" style="--d:3;"><span></span></div>
+                                <div class="turn-line" style="--d:4;"><span></span></div>
+                                <div class="turn-line" style="--d:5;"><span></span></div>
+                                <div class="turn-line" style="--d:6;"><span></span></div>
+                                <div class="turn-line" style="--d:7;"><span></span></div> -->
+                        <!-- <div class="turn-line" style="--d:8;"><span></span></div>
+                          <div class="turn-line" style="--d:9;"><span></span></div>
+                          <div class="turn-line" style="--d:10;"><span></span></div>
+                          <div class="turn-line" style="--d:11;"><span></span></div>
+                          <div class="turn-line" style="--d:12;"><span></span></div> -->
+                        <!-- </div>
+                        </div> -->
+
+
+
+                        <div class="content">
+
+                            <div class="main" style="color: black;">
+                                <div class="notebook_container col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+
+                                    <a href="../lab_notebook.html">
+                                        </h1>
+                                        BACK👈
+                                        </h1>
+                                    </a>
+                                    <div class=" notebook " style="text-align:center; ">
+                                        <div class="calendar-part1 ">
+                                            <img src="../image/11.png " style="width: 300px; " class="hover ">
+                                            <div>
+                                                <table border=" 1 " class="show ">
+                                                    <tr>
+                                                        <th style=" width: 10vw !important; ">Date</th>
+                                                        <th>Member</th>
+                                                        <th>Experiment</th>
+                                                        <th>Result</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/10/24</td>
+                                                        <td>T.W.H.</td>
+                                                        <td>Take 0.1 mL of TG1 bacterial solution to 5 mL of 2xYT culture media in 3 test tubes respectively. Put them in the biological shaker at 250 rpm, 37℃ for 2 h.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/10/30</td>
+                                                        <td>G.P.Z., T.W.H.</td>
+                                                        <td>Inoculate 5 mL 2xYT culture media in a test tube with TG1 single colony and put it in the biological shaker at 220rpm, 37℃ for 12 h. Dispense 150 μl of bacterial solution onto LB solid media plates.
+                                                            Dry and apply 15 μl of phage separately(original concentration, 10-3, 10-6). Culture them at 37℃.</td>
+                                                        <td>Plaques can be observed at all concentrations. Plaques made by 103 times dilution of phage was the most obvious. The results showed phage infection experiment was a success.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="h1 " rowspan=" 2 ">2021/11/3</td>
+                                                        <td>G.P.Z.</td>
+                                                        <td>Make 2 conical flasks of LB solid media.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>T.W.H.</td>
+                                                        <td>Inoculate 5 mL 2xYT culture media in a test tube with TG1 single colony and put it in the biological shaker at 220rpm, 37℃ for 12h. Dispense 150 μl of bacterial solution onto LB solid media. Dry
+                                                            and apply 15ul of phage separately(original concentration, 10-3，10-6). Culture them at 37℃.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/11/7</td>
+                                                        <td>T.W.H.</td>
+                                                        <td>Inoculate 5 mL of 2xYT liquid media in a test tube with TG1 single colonies. Put it in the biological shaker at 37℃, 220 rpm for 12 h.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/11/8</td>
+                                                        <td>T.W.H.</td>
+                                                        <td>Mix 150 μl bacterial solution with 15 μl phage solution(original concentration, 10-4,10-6). Dispense 150 μl of bacterial solution onto LB solid media. Culture them at 37℃.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/11/15</td>
+                                                        <td>T.W.H.</td>
+                                                        <td> PCR:<br />Template：M13 Phage<br />Primer：F,R</td>
+                                                        <td>No signal</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/11/18</td>
+                                                        <td>L.X.R., X.K.</td>
+                                                        <td>Make 450 mL of LB solid media(Detaioled imformation is in the protocol); make 10 LB solid media plates.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/11/19</td>
+                                                        <td>L.X.R., X.K.</td>
+                                                        <td>Dilute the phage stock solution 108, 107, 106, 105, 104 times respectively. Mix 140 μl TG1 bacterial solution with 10 μl diluted phage solution and dispense the mixture onto the plate.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">2021/11/20</td>
+
+                                                        <td>L.X.R., X.K., Z.Z.Y.</td>
+                                                        <td>Check the plates and count the phage plaques</td>
+                                                        <td>The bacterial solution was not painted dry and the sap was not dense enough. Single colonies still existed.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>T.W.H.</td>
+                                                        <td>PCR:<br />Template：M13 Phage<br />Primer：F,R</td>
+                                                        <td>No signal. We decided to change the primer.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">2021/11/23</td>
+
+                                                        <td>X.K.</td>
+                                                        <td>Make 10 LB solid media plates; Streak on the plates to get single colonies. Stored at 4℃ in the fridge.</td>
+                                                        <td>The bacterial grew too slow to become single colony.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>C.Q.Y.</td>
+                                                        <td>Design primers: M13-R, M13-F.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/11/24</td>
+                                                        <td>X.K.</td>
+                                                        <td>Pick single colonies and inoculate 5 mL of 2×YT liquid media in a test tube. Put it in the biological shaker at 220 rpm, 37℃ for 12 h.</td>
+                                                        <td>The bacteria grew too slow to become single colony.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/11/26</td>
+                                                        <td>L.X.R.</td>
+                                                        <td>Take 10 μL bacterial solution kept in the sterile glycerol in a test tube and put it in the biological shaker; pick the fresh single colonies to 5 mL culture media in a test tube and put it in the
+                                                            biological shaker.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/11/26</td>
+                                                        <td>X.K.</td>
+                                                        <td>Dilute the phage stock solution 108, 107, 106, 105, 104 times respectively. Mix 140 μl TG1 bacterial solution with 10 μl diluted phage solution. Dispense and paint the mixture onto the plate.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2 ">2021/11/27</td>
+
+                                                        <td>X.K.</td>
+                                                        <td>Check the plates and count the phage plaques.</td>
+                                                        <td>Record the quantity of phage plaques and calculate the concentration according to the formula.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.X.R., Z.Z.Y.</td>
+                                                        <td>Make some 2×YT liquid media; sterilise 2 mL centrifuge tubes; mix the phage solution with TG1 bacteria solution and paint the plates.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021/11/28</td>
+                                                        <td>L.X.R., Z.Z.Y.</td>
+                                                        <td>Check the plates and count the phage plaques.</td>
+                                                        <td>The original concentration of phage solution was 3.5×109 calculated according to the formula.</td>
+                                                    </tr>
+
+                                                </table>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="footer " style="position:absolute;right:0;left:0;margin:0 auto;width: 100%;height: 500px;background-color: black;margin-top: -200px;position: relative;">
+                            <div class="container" style="width:100%;height:100%;background-color: black;width: 100%;font-size: 14px;">
+                                <div class="footer-img" style="position:absolute;left: 0;">
+                                    <img src="../image/footer.jpg" width="800px" height="330px">
+                                </div>
+
+
+                                <div class="footer-content" style="text-align: center;right: 0;height: 100%;width: 50%;background-color: black;top: 0;">
+
+                                    <ul class="footer-content-ul">
+                                        <li class="first">
+                                            <a href="../index.html" style="font-size: 21px;">HOME</a>
+                                        </li>
+
+
+                                    </ul>
+
+                                    <ul>
+                                        <li class="first">
+                                            <a href="../background.html" style="font-size: 21px;">PROJECT</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="../description.html">Description</a>
+                                        </li>
+                                        <li>
+                                            <a href="../design.html">Design</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="../protocol.html">Protocol</a>
+                                        </li>
+                                        <li>
+                                            <a href="../supplement.html">Supplement</a>
+                                        </li>
+                                        <li>
+                                            <a href="../results.html">Results</a>
+                                        </li>
+
+                                    </ul>
+
+                                    <ul class="footer-content-ul">
+                                        <li class="first">
+                                            <a href="../lab_notebook.html" style="font-size: 18px;">LAB NOTEBOOK</a>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="footer-content-ul">
+                                        <li class="first">
+                                            <a href="../team.html" style="font-size: 21px;">TEAM</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="../collaboration.html">Collaboration</a>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+
+                                <div class="footer-row">
+                                    <div class="col-md-12 " style="margin-top: -30px; ">
+                                        <p style="text-align: center;font-size: 16px; color: white;">Copyright © 2022 NAU All rights reserved.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+</html>

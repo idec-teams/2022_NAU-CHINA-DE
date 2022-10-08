@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>September</title>
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/painter.css">
+    <link rel="stylesheet" type="text/css" href="../css/new1.css">
+    <link rel="stylesheet" type="text/css" href="../css/page/lab_notebook.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div id="loading">
+        <div class='loadingX' style="background-color: #abc2ea;">
+            <img src="../image/lodding_3.gif" height=100% width=100%>
+        </div>
+    </div>
+
+    <script>
+        document.onreadystatechange = function() {
+
+            if (document.readyState === "complete") {
+
+                setTimeout(
+                    function() {
+                        // document.querySelector("#loading").style.opacity = "0%";
+                        document.querySelector("#loading").style.display = "none";
+                        document.querySelector("#globalWrapper").style.display = "block";
+                    }, 3000)
+            }
+        }
+    </script>
+
+    <div id='globalWrapper'>
+        <div id="content" class="mw-body" role="main" style="background-color:  white">
+
+
+            <div id="HQ_page">
+                <div id="bodyContent">
+
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+
+                        <section class="menu-section-area">
+
+                            <!-- Navigation -->
+                            <nav class="menu">
+                                <div style="height: 0px;width: 0px;position: relative;">
+                                    <img src="../image/logo.png" width="50px" height="50px" style="position:absolute;top:-14px;">
+                                </div>
+
+                                <ol>
+                                    <li class="menu-item"><a href="../index.html">Home</a></li>
+
+                                    <li class="menu-item">
+                                        <a href="#0">Project
+                                            <svg version="1.1" class="plus-icon" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18">
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="10" y1="9" x2="17" y2="9" />
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="9" y1="9" x2="9" y2="1" />
+                                                <g id="lineGroup_1">
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="1" y1="9" x2="8" y2="9" />
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="9" y1="17" x2="9" y2="9" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <ol class="sub-menu">
+                                            <li class="sub-menu-item"><a href="../description.html">Description</a></li>
+                                            <li class="sub-menu-item"><a href="../design.html">Design</a></li>
+                                            <li class="sub-menu-item"><a href="../results.html">Results</a></li>
+                                            <li class="sub-menu-item"><a href="../supplement.html">Supplement</a></li>
+
+                                            <li class="sub-menu-item"><a href="../protocol.html">Protocol</a></li>
+                                        </ol>
+                                    </li>
+                                    <li class="menu-item"><a href="../lab_notebook.html">Lab notebook</a></li>
+                                    <li class="menu-item">
+                                        <a href="#0">Team
+                                            <svg version="1.1" class="plus-icon" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18">
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="10" y1="9" x2="17" y2="9" />
+                                                <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10"
+                                                    x1="9" y1="9" x2="9" y2="1" />
+                                                <g id="lineGroup_1">
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="1" y1="9" x2="8" y2="9" />
+                                                    <line fill="none" stroke-width="4" stroke-linecap="round"
+                                                        stroke-miterlimit="10" x1="9" y1="17" x2="9" y2="9" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <ol class="sub-menu">
+                                            <li class="sub-menu-item"><a href="../team.html">Team</a></li>
+                                            <li class="sub-menu-item"><a href="../collaboration.html">Collaboration</a></li>
+
+                                        </ol>
+                                    </li>
+
+
+
+                            </nav>
+                            <!-- Navigation -->
+
+                        </section>
+                        <div class="img1"></div>
+                        <!-- 
+                        <div class="lnav">
+                            <div class="turn-container"> -->
+                        <!-- --d为自定义属性，CSS中可通过var函数对其调用 -->
+                        <!-- <div class="turn-line" style="--d:1;"><span></span></div>
+                                <div class="turn-line" style="--d:2;"><span></span></div>
+                                <div class="turn-line" style="--d:3;"><span></span></div>
+                                <div class="turn-line" style="--d:4;"><span></span></div>
+                                <div class="turn-line" style="--d:5;"><span></span></div>
+                                <div class="turn-line" style="--d:6;"><span></span></div>
+                                <div class="turn-line" style="--d:7;"><span></span></div> -->
+                        <!-- <div class="turn-line" style="--d:8;"><span></span></div>
+                          <div class="turn-line" style="--d:9;"><span></span></div>
+                          <div class="turn-line" style="--d:10;"><span></span></div>
+                          <div class="turn-line" style="--d:11;"><span></span></div>
+                          <div class="turn-line" style="--d:12;"><span></span></div> -->
+                        <!-- </div>
+                        </div> -->
+
+
+
+                        <div class="content">
+
+                            <div class="main" style="color: black;">
+                                <div class="notebook_container col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+                                    <a href="../lab_notebook.html">
+                                        </h1>
+                                        BACK👈
+                                        </h1>
+                                    </a>
+                                    <div class=" notebook " style="text-align:center; ">
+                                        <div class="calendar-part11 ">
+                                            <img src="../image/9.png " style="width: 300px; " class="hover ">
+                                            <div>
+                                                <table border=" 1 " class="show">
+                                                    <tr>
+                                                        <th style=" width: 10vw !important; ">Date</th>
+                                                        <th>Member</th>
+                                                        <th>Experiment</th>
+                                                        <th>Result</th>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td rowspan="2" id="h9">2022/9/2</td>
+                                                        <td>L.J.</td>
+                                                        <td>Make chloramphenicol solution. Validate competent cells with sfGFP through PCR.</td>
+                                                        <td>The products of PCR produced bright strips.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.</td>
+                                                        <td>Operate electrophoresis for AP.</td>
+                                                        <td>The results did not match the theory. We supposed the circular plasmids ran faster in the gel.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="5">2022/9/3</td>
+                                                        <td rowspan="2">Z.Z.Y., L.J.</td>
+                                                        <td>Get plasmids through PCR.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>(1) Measure the fluorescence intensity. pick the single colonies with plasmids mutated through error-prone PCR and site-directed mutation in the liquid media with 3 μL chloramphenicol solution in
+                                                            the test tubes and put them in the biological shaker until the bacterial solution was statured after 6 h.(2) Make LBL liquid media.</td>
+                                                        <td>(1)Two kinds of plasmids: one strip was at the position of 1000 bp. the other was at the position of 1500 bp.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J., Y.Y.H.</td>
+                                                        <td>The samples were sent to be sequenced.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Divide the Gene 1 into 2 parts, gene1-1 and gene1-2 and get them through PCR.(2) Get the gene2 section from the plasmids with gene2 sequence through PCR.(3) Gel extraction.(4) Operate homologous
+                                                            recombination by using the 3 kinds section mentioned above and AP backbones and tranfer the recombinant AP into bacteria DH5α.</td>
+                                                        <td>(1) gene1-1 PCR products produced higer strips.(2) All the strips were at the normal position.(3) Value was normal.(4) A few bacterial colonies grew on the plates.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.</td>
+                                                        <td>Homologous recombination→transformation→construct CP.</td>
+                                                        <td>Few transformants grew on the plates.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4">2022/9/4</td>
+                                                        <td>L.J., N.X.H.</td>
+                                                        <td>Measure the fluorescence intensity: pick the single colonies with plasmids mutated through error-prone PCR and site-directed mutation in the liquid media with DOPA and arabinose solution in the 96-well
+                                                            plates to culture them for 2 h. 2 h later, add IPTG into the bacterial solution and culture them for 4 h.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>L.J., Y.Y.H.</td>
+                                                        <td>Plasmid extraction: take the bacterial solution into the test tubes and put them in the biological shaker overnight.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Pick 8 single colonies in all from the 3 plates painted yesterday and validate them.(2) Pick 4 single colonies with gene2. pick 4 single colonies with gene1-1.</td>
+                                                        <td>(1) One sinlge colonies with gene1-2. one sinlge colonies with gene1-1. no single with gene2.(2) PCR products of gene2 produced 2 abnormal strips whose position were close to 4000 bp. PCR products
+                                                            of gene1-1 produced 2 normal strips.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Z.Y.</td>
+                                                        <td>Validate sections colony PCR(vector+section 1).</td>
+                                                        <td>No correct strips.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="5">2022/9/5</td>
+                                                        <td>Z.Z.Y., L.J.</td>
+                                                        <td>Extract the plasmids.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.</td>
+                                                        <td>Measure the fluorescence intensity: centrifuge and suspend the solution. Measure the fluorescence intensity through microplate reader.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.</td>
+                                                        <td>(1) AP plasmids were sent to be sequenced.(2) Make media plates with streptomycin.(3) Streak plates with bacteria S2060 kept in the glycerol and label them as L1, L2, G2, G1.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Z.Y.H.</td>
+                                                        <td>Extracti plasmids from the bacteria cultured yesterday.</td>
+                                                        <td>Experiment failed.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.</td>
+                                                        <td>Validate sections colony PCR(vector+section 1, sections 1, 2, 3).</td>
+                                                        <td>Part of the strips were at the correct position.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4">2022/9/6</td>
+                                                        <td>Z.Z.Y., L.J.J</td>
+                                                        <td>Construct the error-prone PCR: PCR→gel extraction→error-prone PCR→ gel extraction→homologous recombination.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.</td>
+                                                        <td>Pick 2 single colonies from every plates in into the centrifuge tubes with streptomycin and tetracycline.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.</td>
+                                                        <td>Extract the plasmids: 1-1, 1-2, 2-1, 2-1, CK1, CK2.Measure the concentration and send them to be sequenced.</td>
+                                                        <td>Concentration of all samples were over 120 ng/ul.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.</td>
+                                                        <td>Pick the single colonies with CP in the test tubes and put them in the biological shaker.</td>
+                                                        <td>The bacterial solution got cloudy.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="5">2022/9/7</td>
+                                                        <td>Z.Z.Y., L.J.J</td>
+                                                        <td>(1) Transformatin.(2) Streak the plates with competent cells containing sfGFP.
+                                                        </td>
+                                                        <td>The bacteria lawn grew on the plates. No single colonies existed.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.</td>
+                                                        <td>Make competent cells with sfGFP and paint the plates.</td>
+                                                        <td>The bacteria lawn grew on the plates. No single colonies existed.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.</td>
+                                                        <td>(1) Colony PCR(primers: M13F4/R4, M13F1/R3) and operate electrophoresis.(2) Make 2×YT solid media plates with streptomycin and tetracycline.(3) Pick 7 single colonies from plates labeled as G1, L2
+                                                            in into the centrifuge tubes with streptomycin and tetracycline.(4) Streak plates with bacteria S2060 kept in the glycerol.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Extract plasmids from the bacteria cultured the day before yesterday.(2) Transformation of the plasmids(gene1-1 and gene1-2).(3) Operate homologous recombination for gene2.(4) Take the BL21 bacterial
+                                                            solution in the test tubes and put them in the biological shaker.</td>
+                                                        <td>All the results were normal.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.</td>
+                                                        <td>Extract the CP and operate the electrophoresis for CP.</td>
+                                                        <td>The concentration was relatively high. The results showed 2 strips.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4">2022/9/8</td>
+                                                        <td>Z.Z.Y., L.J.J</td>
+                                                        <td>Take the bacterial solution in the test tubes and put them in the biological shaker.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.</td>
+                                                        <td>(1) Colony PCR(primers: M13F4/R4, M13F1/R3) and operate electrophoresis.(2) Pick 10 S2208 single colonies from the all the plates and operate colony PCR(primers: M13F4/R4). The control groups used
+                                                            plasmid pJC175e as template.(3) Operate puncture and scribe inoculation in 2 test tubes.(4) Transfer the rest of AP1 into bacteria DH5α.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Get T7RNAP, AP backbones used for homologous recombination through PCR.(2) Gel extraction.(3) Pick 8 single colonies with gene2 and 4 single colonies with gene1-1and gene1-2 respectively. Validate
+                                                            them through colony PCR.(4) Operate homologous recombination and transformation for gel extraction.</td>
+                                                        <td>(1) Strips were normal.(2) All the values were normal. The value of 260/230 was relatively low.(3) PCR products of gene2 produced 4 normal strips whose position were close to 4000 bp. PCR products
+                                                            of gene1-1 produced 2 normal strips. PCR products of gene1-2 produced 2 normal strips.(4) There were single colonies growing on the plates.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.</td>
+                                                        <td>(1) Cut the gel and extract CP from the gel containing CP.(2) Pick the single colonies with CP into the test tubes and put them in the biological shaker.</td>
+                                                        <td>Experiment failed.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4">2022/9/9</td>
+                                                        <td>Z.Z.Y., L.J.</td>
+                                                        <td>(1) Colony PCR.(2) Make C321 competent cells.(3) Prepare the reagent for making competent cells.(4) Paint plates with transformants solution.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.</td>
+                                                        <td>(1) Pick 5 transformants with AP into liquid media in the test tubes and put them in the biological.(2) Streak on the plates containing streptomycin and ampicillin with bacteria S2060.(3) Operate
+                                                            colony PCR by using bacterial kept in the glycerol and 3 kinds of primers.(4) Make media plates with ampicllin.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Pick single colonies with split-D and split-C into liquid media in the 2 test tubes respectively and put them in the biological shaker.(2) Pick 8 single colonies of transformants and operate
+                                                            colony PCR.(3) Pick 2 single colonies mentioned above respectively into the liquid media in the test tubes and put them in the biological shaker.</td>
+                                                        <td>The results of colony PCR showed 2 strips.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.</td>
+                                                        <td>(1) Extract plasmids. measure the concentraiton. send samples to be sequenced.(2) Operate homologous recombination for CP mutated by site-directed mutagenesis and transformation.</td>
+                                                        <td>(1) The concentration was high.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="5">2022/9/10</td>
+                                                        <td>Z.Z.Y., L.J.</td>
+                                                        <td>(1) Pick single colonies with plasmids mutated by error-prone PCR in 10 test tubes.(2) Streak the plates with bacteria DH5α.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.</td>
+                                                        <td>(1) Validate competent cells through PCR.(2) Validate plasmids mutated by site-directed mutagenesis through PCR.</td>
+                                                        <td>(1) No strips.(2) The results showed bright strips.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.，L.J.</td>
+                                                        <td>(1) Pick single colonies. Operate PCR. Streak on the empty plates with streptomycin.(2) PCR.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Extract plasmids from bacteria with split-D and split-C.(2) Pick single colonies into the test tubes and put them in the biological shaker for 2 days.(3) Pick single colonies into the conical
+                                                            flasks and put them in the biological shaker. Operate phage infection assay with wild-type phage.(4) Extract plasmids from the bacterial solution and operate electrophoresis. Take AP as control
+                                                            groups.
+                                                        </td>
+                                                        <td>(1) The concentration was around 100 ng/μL, but the value of 260/230 was relatively low.(2) No phage plaques existed.(3) The concentration was normal. the plasmids were recombinant plasmids.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.</td>
+                                                        <td>(1) Get CP section mutated by site-directed mutagenesis.(2) Gel extraction and measure the concentration.</td>
+                                                        <td>(1) No signal.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4">2022/9/11</td>
+                                                        <td>Z.Z.Y., T.W.H.</td>
+                                                        <td>Make DH5α competent cells.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.</td>
+                                                        <td>PCR:(1) Primers: M13F4/R4. no templates.(2) Primers: M13F3/R4. templates: bacteria S2060.(3) Primers: G3-RBSF/G3-PROKR. templates: bacteria S2060, plasmid pJC175e.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.</td>
+                                                        <td>(1) Extract AP.(2) Get the complete AP2 plasmids.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Operate phage infection assasy.(2) PCR.</td>
+                                                        <td>(1) No phage plaques existed. (2) The results were correct.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2">2022/9/12</td>
+                                                        <td>Z.Z.Y., T.W.H.</td>
+                                                        <td>The samples were sent to be sequenced.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.</td>
+                                                        <td> Operate electrophoresis.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4">2022/9/14</td>
+                                                        <td>Z.Z.Y., T.W.H.</td>
+                                                        <td>The samples were sent to be sequenced.</td>
+                                                        <td>No signal.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.</td>
+                                                        <td>Measure the fluorescence intensity. pick the single colonies with plasmids mutated through site-directed mutation in the liquid media with 3 μL chloramphenicol solution in the test tubes and put
+                                                            them in the biological shaker until the bacterial solution was statured after 6 h.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.</td>
+                                                        <td>Transfer MP6 into bacteria S2208.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Pick single colonies into liquid media in the test tubes and put them in the biological shaker.(2)Operate homologus recombination for SP and transfer them into S2208 competent cells.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2">2022/9/15</td>
+                                                        <td>L.J.J.</td>
+                                                        <td>(1) Transfer MP6 into bacteria S2208.(2) Phage analysis.(3) AP samples were sent to be sequenced.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H., L.J.J.</td>
+                                                        <td>(1) Validate the SP(primers: F3/R5).(2) Filter the bacterial solution.(3) Operate phage infection assasy.</td>
+                                                        <td>(1) All wild-type phage.(2) Phage plaques existed.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="5">2022/9/16</td>
+                                                        <td>Z.Z.Y., T.W.H.</td>
+                                                        <td>Second error-prone Gen2 fragment. Gel extraction.</td>
+                                                        <td>Concentration is too low.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J., N.X.H.</td>
+                                                        <td>Measure the fluorescence value.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.</td>
+                                                        <td>(1) MP6 was selected in 2×YT medium, and D-Glu and CHL were added.(2) Transform AP into BL21.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Pick plaque verification.(2) F3/T7-R was used as the primer to verify whether the bacteria were on the group. (3) PJC175e, Split-C, Split-D, T7-(1)T7-2 plasmids, S2208 and S2208 were used to
+                                                            verify the wild-type.
+                                                        </td>
+                                                        <td>(1) wild-type band.(2) wild-type band. (3) The band was correct and the group was identified, but there were also wild types. (4) No wild type was found.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.</td>
+                                                        <td>PCR amplification of CP fragments (vector, fragment 1, fragment 2+3).&lt;br /&gt;Gel extraction, concentration measurement.&lt;br /&gt;Homologous recombination, transformation.</td>
+                                                        <td>Amplification was successful, and there were many transformants with high concentration of recovered products (9.17 observation)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="6">2022/9/17</td>
+                                                        <td>Z.Z.Y., T.W.H.</td>
+                                                        <td>(1) Prepare sfGFP compent cells.(2) The fixed point orange light mutant *4 error-prone mutant *1 was selected, and the plasmid was prepared for posttest and some error-prone fragments were extracted.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J., N.X.H.</td>
+                                                        <td>Measure the fluorescence value.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J., Y.Y.H.</td>
+                                                        <td>Sequence after two PCR with different primers.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.</td>
+                                                        <td>(1) Pick four single colonies from AP, two of which were added IPTG(2mm).(2) MP6 bacterial solution was diluted, dividing into two group with Ara and D-Glu.(3) S2208 receptive state and S2208 bacterial
+                                                            liquid line.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) The competent state of S2060 and S2208 and wild-type were verified.(2) Verified the presence of pJC175e plasmid in pJC175e, S2060 compent cells and bacteria, S2208compent cells and bacteria.(3)
+                                                            PCR with F3/R5 primer and gel extraction.</td>
+                                                        <td>(1) S2060 has no wild-type,S2208 has wild-type. (2)S2208 competent state and small shake of bacteria solution is no problem. (3) If the concentration is normal, the band is correct.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Z.Y.</td>
+                                                        <td>Site directed mutagenesis of CP.&lt;br /&gt;Homologous recombination, transformation.&lt;br /&gt;PCR.</td>
+                                                        <td>Part of the conversion paste board (9.18 observation) was verified successfully
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="6">2022/9/18</td>
+                                                        <td>Z.Z.Y., T.W.H.</td>
+                                                        <td>(1) PCR sfgfp.(2)extract the plasmid of mutants.(3) PCR the fragments of mutants.
+                                                        </td>
+                                                        <td>(1) There were too many bacteria and protein in the first time. The second and third time the band is too light.(2) The concentration is too low, the shaking time is too little. (3) The concentration
+                                                            is low.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J., N.X.H.</td>
+                                                        <td>Measure the fluorescence value.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J., Z.Z.Y.</td>
+                                                        <td>PCR verified sfGFP.</td>
+                                                        <td>The correct band appears, but it is dark.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>L.J.J.</td>
+                                                        <td>(1) After ara induction, 100ul of each MP6 was coated on the plate containing Rif.(2) Two AP single colonies were selected and shaken to OD 0.6-0.9. Inducer IPTG (2mM) was added to one tube.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H.</td>
+                                                        <td>Prepare S2208 compent cells.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.</td>
+                                                        <td>Amplify CP.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td rowspan="3">2022/9/19</td>
+                                                        <td>Z.Z.Y., T.W.H.</td>
+                                                        <td>(1) Sequential Error-prone PCR.(2)prepare compant cells.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.H., L.J.J.</td>
+                                                        <td>(1) Inoculate with saturated bacterial solution.(2) F4/R4 primers were used to verify the presence of wild-type.(3) The presence of pJC175e plasmid was verified.(4) Three validated wild-type plasmids
+                                                            and pJC175e plasmids were taken from each of the two competent states.and a control without template was set up with primers.</td>
+                                                        <td>(1) Wild-type. (2) Without pJC175e plasmid. (3) The six competent states all had wild-type but without pJC175e plasmid.</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.</td>
+                                                        <td>Extract the CP plasmid.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2022/9/20</td>
+                                                        <td>Z.Z.Y., T.W.H.</td>
+                                                        <td>PCR rhe plasmid and sequence.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2">2022/9/21</td>
+                                                        <td>Z.Y.H., L.J.J.</td>
+                                                        <td>(1) Saturated strain S2208 selected by Geng was shaken to prepare competent states. (2) Golden Gate recombination of three plasmids was carried out and transformed into the newly prepared competent
+                                                            state of S2208. Control (without enzyme) was set, and two experimental groups were set.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Z.Y.</td>
+                                                        <td>Homologous recombination, transformation and construction of CP spike plasmid.
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2">2022/9/22</td>
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) The transformed and shaken bacterial solution was filtered to obtain two kinds of phage stock solution.(2) The saturated S2208 was turned to large shake for plaque.(3) F3/R4 was used to verify
+                                                            the wild type.(4) T7-test -F/R was used to verify the reconstituted type SP.</td>
+                                                        <td>(1) Wild-type.(2) Bands were wild-type bands, but also SP bands, indicating wild-type M13 staining.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Z.Y.</td>
+                                                        <td>Bacteria PCR was used to verify whether the CP point protrusion plasmid was successfully constructed. The CP point protrusion plasmid (CP) was picked, amplified and cultured, and the concentration
+                                                            was measured and sent for sequencing.</td>
+                                                        <td>It was verified that almost all CP dots were successfully constructed because of turbidity in CP dots fluid and high concentration of CP plasmids. The sequencing results were correct.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2022/9/23</td>
+                                                        <td>Z.Y.</td>
+                                                        <td>Extract the CP plasmid and sequence.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2022/9/25</td>
+                                                        <td>Z.Y.H.</td>
+                                                        <td>Plaque assay.</td>
+                                                        <td>No plaque</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2022/9/26</td>
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) Pick two colonies from the S2208 board (do plaque) and shake them to do plaque. (2) In the afternoon, shake the small bacteria to large.(3) To do the plaque experiment, using the phage given
+                                                            by Geng.</td>
+                                                        <td> No plaque</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2022/9/27</td>
+                                                        <td>Z.Y.H.</td>
+                                                        <td>(1) The small shaking bacteria given by Geng was turned to large shaking to make plaque. (2) The large shaking bacteria was used as plaque and WT was used as control. (3) At noon, the shaking was
+                                                            redone. (4) At night, the plaque was redone and WT was used as the control.</td>
+                                                        <td>(1) the OD400 of large shake was 1.07, the OD of high shake. (2) No plaque. (3) 0.7. (4) No plaque.</td>
+                                                    </tr>
+
+                                                </table>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="footer " style="position:absolute;right:0;left:0;margin:0 auto;width: 100%;height: 500px;background-color: black;margin-top: -200px;position: relative;">
+                            <div class="container" style="width:100%;height:100%;background-color: black;width: 100%;font-size: 14px;">
+                                <div class="footer-img" style="position:absolute;left: 0;">
+                                    <img src="../image/footer.jpg" width="800px" height="330px">
+                                </div>
+
+
+                                <div class="footer-content" style="text-align: center;right: 0;height: 100%;width: 50%;background-color: black;top: 0;">
+
+                                    <ul class="footer-content-ul">
+                                        <li class="first">
+                                            <a href="../index.html" style="font-size: 21px;">HOME</a>
+                                        </li>
+
+
+                                    </ul>
+
+                                    <ul>
+                                        <li class="first">
+                                            <a href="../background.html" style="font-size: 21px;">PROJECT</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="../description.html">Description</a>
+                                        </li>
+                                        <li>
+                                            <a href="../design.html">Design</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="../protocol.html">Protocol</a>
+                                        </li>
+                                        <li>
+                                            <a href="../supplement.html">Supplement</a>
+                                        </li>
+                                        <li>
+                                            <a href="../results.html">Results</a>
+                                        </li>
+
+                                    </ul>
+
+                                    <ul class="footer-content-ul">
+                                        <li class="first">
+                                            <a href="../lab_notebook.html" style="font-size: 18px;">LAB NOTEBOOK</a>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="footer-content-ul">
+                                        <li class="first">
+                                            <a href="../team.html" style="font-size: 21px;">TEAM</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="../collaboration.html">Collaboration</a>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+
+                                <div class="footer-row">
+                                    <div class="col-md-12 " style="margin-top: -30px; ">
+                                        <p style="text-align: center;font-size: 16px; color: white;">Copyright © 2022 NAU All rights reserved.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+</html>

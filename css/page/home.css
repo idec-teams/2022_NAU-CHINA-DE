@@ -1,0 +1,23 @@
+.img1 p{
+    width: 1000px;
+    height: 400px;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: #aac2c6 10px solid;
+    background-color: rgb(170, 194, 198,0.3);
+    color: #e0f2f5;
+    box-shadow: 0 0 20px black;
+    /* letter-spacing: 30px; */
+    font: 200 45px 'font';
+    font-family: 'font';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@font-face {
+    font-family: 'font';
+    src: url('../../font/Collins-Butter-2.otf');
+}
