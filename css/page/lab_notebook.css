@@ -1,0 +1,112 @@
+.img1::after {
+    content: 'LAB  NOTEBOOK';
+    width: 700px;
+    height: 250px;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: #fff 10px solid;
+    color: #fff;
+    letter-spacing: 30px;
+    font: 100 70px 'font';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.img1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('./toutu/DSCF8954-1.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.turn-container {
+    width: 80px;
+    height: 400px;
+    /* 开启3D效果 */
+    transform-style: preserve-3d;
+    /* 定义3D元素距视图的距离 */
+    perspective: 1000px;
+    /* 沿Z轴旋转15度 */
+    transform: rotateZ(-15deg);
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    z-index: 100;
+}
+
+.turn-container .turn-line {
+    width: 50px;
+    height: 10px;
+    /* 绝对定位 */
+    position: absolute;
+    /* 结合自定义属性--d，计算top */
+    top: calc(50px * var(--d));
+    /* 执行动画：动画名 时长 线性 无限播放 */
+    animation: roll 4s linear infinite;
+    /* 结合自定义属性--d，计算动画延迟时间 */
+    animation-delay: calc(0.3s * var(--d));
+}
+
+
+/* 两边两个圆的统一样式 */
+
+.turn-container .turn-line::before,
+.turn-container .turn-line::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+
+/* 左圆 */
+
+.turn-container .turn-line::before {
+    background-color: #e60116;
+    position: absolute;
+    left: 0;
+}
+
+
+/* 右圆 */
+
+.turn-container .turn-line::after {
+    background-color: #0588da;
+    position: absolute;
+    right: 0;
+}
+
+
+/* 中间的线 */
+
+.turn-container .turn-line span {
+    width: 40.5px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 10px;
+    top: 3px;
+}
+
+
+/* 定义旋转动画 */
+
+@keyframes roll {
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.hover:hover {
+    width: 220px;
+}
