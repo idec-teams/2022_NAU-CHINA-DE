@@ -1,4 +1,4 @@
-# Wiki repoistory for iDEC 2022 | NAU-CHINA-DE
+# Wiki repoistory for iDEC 2022 | NAU-CHINA-DE12312
 
 (This a temporary README file that needs to be updated before you submit the team wiki. Please stay tuned at [idec.io](https://idec.io) for future relevant announcements.)
 
