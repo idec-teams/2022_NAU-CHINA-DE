@@ -1,0 +1,64 @@
+
+.footer2 {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.footer_img {
+    display: inline-block;
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: url(../images/slogan.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: auto 100%;
+    overflow: hidden;
+}
+
+.footer_menu {
+    margin-right: 50px;
+    float: right;
+    margin-top: 50px;
+    width: 60%;
+    height: 350px;
+    display: inline-block;
+}
+
+.footer_list {
+    width: 20%;
+    height: 350px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer_title {
+    position: relative;
+    z-index: 6;
+    height: auto;
+    white-space: nowrap;
+    line-height: 350%;
+}
+
+.footer_title a div {
+    position: relative;
+    z-index: 6;
+    margin: 0;
+    display: inline-block;
+    height: auto;
+    font-size: 1.1vw;
+    letter-spacing: 0.5px;
+    line-height: 100%;
+}
+
+.footer_arrow {
+    height: auto;
+    width: 0;
+    overflow: hidden;
+}

@@ -1,0 +1,29 @@
+.img1::after {
+    content: 'RESULTS';
+    width: 900px;
+    height: 200px;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: #fff 10px solid;
+    color: #fff;
+    letter-spacing: 30px;
+    font: 100 70px 'font';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('./toutu/DSCF9198.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
