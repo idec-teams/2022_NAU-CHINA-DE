@@ -9,3 +9,5 @@ navul.forEach((item,index) => {
         item.className='longli cntli';
     })
 });
+
+console.log('111');
