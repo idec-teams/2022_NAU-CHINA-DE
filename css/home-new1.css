@@ -28,7 +28,7 @@ body .shell-main-lbt {
     background-color: #978989;
     margin-bottom: 200px;
     overflow: hidden;
-    background-image: url("../image/未命名的设计\ \(2\).gif");
+    background-image: url("../image/turn.gif");
     background-color: #fff;
     background-repeat: no-repeat;
     background-size: contain;
@@ -60,7 +60,7 @@ body .shell-main-lbt .images .img .shell-main-lbt-word {
     overflow-x: hidden;
     height: 100px;
     /* background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)); */
-    backdrop-filter: blur(0px); 
+    backdrop-filter: blur(0px);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -121,7 +121,6 @@ body .shell-main-header {
     overflow: hidden;
     align-items: center;
     position: relative;
-
 }
 
 body .shell-main-header-left {
@@ -205,7 +204,7 @@ body .shell-main-header-left-bottom {
     width: 50%;
     position: absolute;
     left: 100px;
-   top: 360px;
+    top: 360px;
     transform: translateY(400px);
     transition: .8s;
     transition-delay: .2s;
@@ -520,9 +519,6 @@ body .shell-main-image-img img {
 }
 
 
-
-
-
 /* body .shell-main-image-img img:nth-child(1) {
     width: 350px;
     height: 470px;
@@ -660,7 +656,7 @@ right: -190px;
         height: 500px;
     }
     body .shell-main-lbt {
-        height: 200px; 
+        height: 200px;
     }
 }
 

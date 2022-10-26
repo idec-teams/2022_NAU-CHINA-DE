@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./css/page/supplement.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
     <script>
-        window.addEventListener('scroll', function () {
+        window.addEventListener('scroll', function() {
             let top = window.scrollY
             console.log(top)
             if (top > 200) {
@@ -25,17 +25,17 @@
 <body>
     <div id="loading">
         <div class='loadingX' style="background-color: #abc2ea;">
-            <img src="./image/动画_3.gif" height=100% width=100%>
+            <img src="./image/lodding_3.gif" height=100% width=100%>
         </div>
     </div>
 
     <script>
-        document.onreadystatechange = function () {
+        document.onreadystatechange = function() {
 
             if (document.readyState === "complete") {
 
                 setTimeout(
-                    function () {
+                    function() {
                         // document.querySelector("#loading").style.opacity = "0%";
                         document.querySelector("#loading").style.display = "none";
                         document.querySelector("#globalWrapper").style.display = "block";
@@ -55,7 +55,7 @@
                         </div>
 
                         <ol>
-                            <li class="menu-item"><a href="./home.html">Home</a></li>
+                            <li class="menu-item"><a href="./index.html">Home</a></li>
 
                             <li class="menu-item">
                                 <a href="#0">Project
@@ -146,17 +146,10 @@
                                     Error-prone PCR library construction
                                 </h3>
 
-                                <p style="text-indent:2em;">The linearized vector and MjTYR-Gen2 fragment were obtained
-                                    by PCR on the Gen 2 plasmid using primers (Vector-F, Vector-R, Gen 2-F, Gen 2-R).
-                                    Using the error-prone PCR kit purchased from Gene-star company with (template
-                                    plasmid 1, 2×StarMut Random PCR Mix 10, Gen 2-F, Gen 2-R 1 each, Star Mut enhancer
-                                    6,sterile water 1, 53.1℃) conditions for error-prone PCR on MjTYR-Gen2 fragments.
-                                    The PCR products were verified by electrophoresis
-                                    and purified usinga kit purchased from Vazyme. The linearized vector and error-prone
-                                    PCR fragments were then subjected to homologous recombination using homologous
-                                    recombination reagents purchased from Vazyme. The recombinant
-                                    plasmid was transformed into C321-sfGFP-Y66DOPA-S205C spread on 1.5% agar LB medium
-                                    plates containing 10 μg/ml bleomycin and 10 μg/ml chloramphenicol.</p>
+                                <p style="text-indent:2em;">The linearized vector and MjTYR-Gen2 fragment were obtained by PCR on the Gen 2 plasmid using primers (Vector-F, Vector-R, Gen 2-F, Gen 2-R). Using the error-prone PCR kit purchased from Gene-star company with (template
+                                    plasmid 1, 2×StarMut Random PCR Mix 10, Gen 2-F, Gen 2-R 1 each, Star Mut enhancer 6,sterile water 1, 53.1℃) conditions for error-prone PCR on MjTYR-Gen2 fragments. The PCR products were verified by electrophoresis
+                                    and purified usinga kit purchased from Vazyme. The linearized vector and error-prone PCR fragments were then subjected to homologous recombination using homologous recombination reagents purchased from Vazyme. The recombinant
+                                    plasmid was transformed into C321-sfGFP-Y66DOPA-S205C spread on 1.5% agar LB medium plates containing 10 μg/ml bleomycin and 10 μg/ml chloramphenicol.</p>
 
                                 <h3 style="font-size: 17px; margin-top: 30px;color: black;">
                                     Construction of site-directed mutagenesis library
@@ -164,305 +157,197 @@
                                 </h3>
 
 
-                                <p style="text-indent:2em;">Three pairs of degenerate primers (IUBcode) were designed to
-                                    randomly introduce mutations (wild type or desired residues or others) on four sites
-                                    in gen 2, in which A67&H70 were too close to be combined to one fragment.
-                                    The whole pBAD33-gen2-Angew tRNA plasmid was divided into three parts and then
-                                    amplified by three pairs of degenerate primers and 2 × Phanta Max Master Mix (Dye
-                                    Plus) (Vazyme Biotech Co.,Ltd). The consequent three fragments
-                                    with randomly introduced mutations were then combined with ClonExpress MultiS One
-                                    Step Cloning Kit (Vazyme), which is a cloning kit based on homologous recombination.
-                                    E.coli C321 with pET28a-GfpS205C were used for subsequent
+                                <p style="text-indent:2em;">Three pairs of degenerate primers (IUBcode) were designed to randomly introduce mutations (wild type or desired residues or others) on four sites in gen 2, in which A67&H70 were too close to be combined to one fragment.
+                                    The whole pBAD33-gen2-Angew tRNA plasmid was divided into three parts and then amplified by three pairs of degenerate primers and 2 × Phanta Max Master Mix (Dye Plus) (Vazyme Biotech Co.,Ltd). The consequent three fragments
+                                    with randomly introduced mutations were then combined with ClonExpress MultiS One Step Cloning Kit (Vazyme), which is a cloning kit based on homologous recombination. E.coli C321 with pET28a-GfpS205C were used for subsequent
                                     chemical transformation.</p>
 
                                 <h3 style="font-size: 17px; margin-top: 30px;color: black;">
                                     Mutation rate determination <br />
                                 </h3>
 
-                                <p style="text-indent:2em;">Some transformants were randomly selected from the mutant
-                                    library and cultured in 5 mL LB liquid medium at 37℃ and 200 rpm for 48 h.Plasmids
-                                    were extracted using a plasmid extraction kit from Vazyme. The resulting plasmids
-                                    were sent to General Biol for sanger sequencing of the error-prone PCR-processed
-                                    fragments to calculate the average mutation rate.</p>
+                                <p style="text-indent:2em;">Some transformants were randomly selected from the mutant library and cultured in 5 mL LB liquid medium at 37℃ and 200 rpm for 48 h.Plasmids were extracted using a plasmid extraction kit from Vazyme. The resulting plasmids
+                                    were sent to General Biol for sanger sequencing of the error-prone PCR-processed fragments to calculate the average mutation rate.</p>
 
 
                                 <h3 style="font-size: 17px; margin-top: 30px;color: black;">
                                     Construction of plasmids <br />
                                 </h3>
 
-                                <p style="text-indent:2em;">We constructed SP plasmid through Golden Gate assembly. For
-                                    Golden Gate assembly, SapⅠ(New England BioLabs）acted as IIS restriction endonuclease
-                                    and T4 DNA ligase(New England BioLabs）. Assembly contained 3-5 ng/kb/µL</br>
-                                    donor plasmids and 1-3 ng/kb/µL receptor (splitC and splitD). And it experienced
-                                    thermal cycles (37℃ for 5 min,16℃ for 5 min,30 cycles,60℃ 5 min,4℃）. After this
-                                    process, assembly was transferred into S2208 competent cells according to the clone
-                                    methods
+                                <p style="text-indent:2em;">We constructed SP plasmid through Golden Gate assembly. For Golden Gate assembly, SapⅠ(New England BioLabs）acted as IIS restriction endonuclease and T4 DNA ligase(New England BioLabs）. Assembly contained 3-5 ng/kb/µL</br>
+                                    donor plasmids and 1-3 ng/kb/µL receptor (splitC and splitD). And it experienced thermal cycles (37℃ for 5 min,16℃ for 5 min,30 cycles,60℃ 5 min,4℃）. After this process, assembly was transferred into S2208 competent cells according to the clone methods
                                     of SP plasmid.</p>
 
                                 <p style="text-indent:2em;">
-                                    Cloning and amplication of plasmids happen in the DH5α competent cells (Vazyme
-                                    Biotech Co.,Ltd).Vazyme plasmid extraction kit was used for isolation of plasmids.
-                                    All the recombinant plasmids constructed by PCR were sequenced and tested through
-                                    Sanger
-                                    sequencing. Plasmids constructed by Golden Gate assembly were also completely
-                                    sequenced and tested. Homologous recombination was used to construct the AP and CP
-                                    plasmids. Assembly was put into homologous recombination
+                                    Cloning and amplication of plasmids happen in the DH5α competent cells (Vazyme Biotech Co.,Ltd).Vazyme plasmid extraction kit was used for isolation of plasmids. All the recombinant plasmids constructed by PCR were sequenced and tested through Sanger
+                                    sequencing. Plasmids constructed by Golden Gate assembly were also completely sequenced and tested. Homologous recombination was used to construct the AP and CP plasmids. Assembly was put into homologous recombination
                                     enzyme system (Vazyme Biotech Co.,Ltd), 37℃, 30 min.
                                 </p>
 
 
                                 <h3 style="font-size: 17px; margin-top: 30px;color: black;">
-                                    Transformation and storage of competent cells and strains prepared by chemical
-                                    methods<br />
+                                    Transformation and storage of competent cells and strains prepared by chemical methods
+                                    <br />
                                 </h3>
 
                                 <p style="text-indent:2em;">
-                                    Luciferase assay, phage propagation experiment and PACE were operated in the strain
-                                    S2060. Competent cells are prepared by the method below. The saturated S2060
-                                    solution was added to a conical flask containing 2 x YT liquid medium (Solarbio)
-                                    with appropriate
-                                    antibiotics and diluted 100 times. The flask was then incubated in a shaker at 37℃
-                                    at 200-300 rpm/min until the OD600 of the bacterial solution was 0.4-0.6. Then we
-                                    put it in the biological shaker at 200-300 rpm/min,
-                                    37℃, until the OD600 of the solution became 0.4-0.6. We took and centrifuged 50 mL
-                                    bacterial solution in the centrifugal tubes at 6500 rpm, 4℃ for 10 min. Discard the
-                                    supernatant, and add 2 mL cold liquid LB and 2 mL
-                                    cold 2×TSS (MgCl2, PEG 3350 and DMSO were added to LB medium at final concentrations
-                                    of 20 mM, 10% and 5% respectively). Then, we froze the competent cells in the liquid
-                                    nitrogen after mixing and dispensing them in
+                                    Luciferase assay, phage propagation experiment and PACE were operated in the strain S2060. Competent cells are prepared by the method below. The saturated S2060 solution was added to a conical flask containing 2 x YT liquid medium (Solarbio) with appropriate
+                                    antibiotics and diluted 100 times. The flask was then incubated in a shaker at 37℃ at 200-300 rpm/min until the OD600 of the bacterial solution was 0.4-0.6. Then we put it in the biological shaker at 200-300 rpm/min,
+                                    37℃, until the OD600 of the solution became 0.4-0.6. We took and centrifuged 50 mL bacterial solution in the centrifugal tubes at 6500 rpm, 4℃ for 10 min. Discard the supernatant, and add 2 mL cold liquid LB and 2 mL
+                                    cold 2×TSS (MgCl2, PEG 3350 and DMSO were added to LB medium at final concentrations of 20 mM, 10% and 5% respectively). Then, we froze the competent cells in the liquid nitrogen after mixing and dispensing them in
                                     the tubes and stored at -80℃.
                                 </p>
 
                                 <p style="text-indent:2em;">
-                                    As for transformation, 100 μL competent cells defrost on the ice; add pre-cooled
-                                    plasmid mixture (each kind of plasmids should < 100 ng; 3 kinds of plasmids can be
-                                    transferred at most) and 100 μL 1×KCM(KCl, CaCl2 and MgCl2 were added to LB medium
-                                    at
-                                    final concentrations of 100 mM, 30 mM and 50 mM respectively). Put it on the ice for
-                                    10 min after being mixed thoroughly, heat shock at 42℃ for 75 s; put it on the ice
-                                    for 2-3 min; add 500 μL SOC solution in it and put
-                                    it in the biological shaker at 200-300 rpm/min for 1h; centrifuged the bacterial
-                                    solution at 8000 rpm for 2min, discard the supernatant; plate the bacterial solution
-                                    on the 2×YT solid culture (1.5% agar) with proper
-                                    antibiotics after the bacterial solution being resuspended; culture at 37℃ for 16-18
-                                    h. A saturated bacterial solution containing the appropriate antibiotic is mixed in
-                                    equal proportions with sterile glycerol and stored
-                                    frozen at -80℃. </p>
+                                    As for transformation, 100 μL competent cells defrost on the ice; add pre-cooled plasmid mixture (each kind of plasmids should
+                                    < 100 ng; 3 kinds of plasmids can be transferred at most) and 100 μL 1×KCM(KCl, CaCl2 and MgCl2 were added to LB medium at final concentrations of 100 mM, 30 mM and 50 mM respectively). Put it on the ice for 10 min after being mixed thoroughly, heat shock
+                                        at 42℃ for 75 s; put it on the ice for 2-3 min; add 500 μL SOC solution in it and put it in the biological shaker at 200-300 rpm/min for 1h; centrifuged the bacterial solution at 8000 rpm for 2min, discard the supernatant;
+                                        plate the bacterial solution on the 2×YT solid culture (1.5% agar) with proper antibiotics after the bacterial solution being resuspended; culture at 37℃ for 16-18 h. A saturated bacterial solution containing the appropriate
+                                        antibiotic is mixed in equal proportions with sterile glycerol and stored frozen at -80℃. </p>
 
-                                <h3 style="font-size: 17px; margin-top: 30px;color: black;">
-                                    Cloning of SP </h3>
+                                        <h3 style="font-size: 17px; margin-top: 30px;color: black;">
+                                            Cloning of SP </h3>
 
-                                <p style="text-indent:2em;">In the above transformation step, the above plasmids were
-                                    replaced with a mixture product of assembled SP plasmids, heat shocked for 75 s,
-                                    left on ice for 2-3min, and then the cell mixture was directly diluted into 10ml
-                                    of antibiotic-free 2×YT liquid medium at 37℃ for 16-18 h at 200-300 rpm/min on a
-                                    biologicalshaker. 2mL of bacterial solution was put into a centrifuge tube and
-                                    centrifuged at 8000g for 3min. The supernatant was collected
-                                    and filtered in a 1ml syringe (Nanjing Dingbei Biotechnology co., LTD.) equipped
-                                    with a 13mm, 0.22 μm PVDF filter (Nanjing Dingbei Biotechnology co., LTD.) to obtain
-                                    the phage stock solution and stored at -4℃.
-                                </p>
+                                        <p style="text-indent:2em;">In the above transformation step, the above plasmids were replaced with a mixture product of assembled SP plasmids, heat shocked for 75 s, left on ice for 2-3min, and then the cell mixture was directly diluted into
+                                            10ml of antibiotic-free 2×YT liquid medium at 37℃ for 16-18 h at 200-300 rpm/min on a biologicalshaker. 2mL of bacterial solution was put into a centrifuge tube and centrifuged at 8000g for 3min. The supernatant
+                                            was collected and filtered in a 1ml syringe (Nanjing Dingbei Biotechnology co., LTD.) equipped with a 13mm, 0.22 μm PVDF filter (Nanjing Dingbei Biotechnology co., LTD.) to obtain the phage stock solution and
+                                            stored at -4℃.
+                                        </p>
 
-                                <h3 style="font-size: 17px; margin-top: 30px;color: black;">
-                                    Isolation of monoclonal phages</h3>
-                                <p style="text-indent:2em;">
-                                    Gently touch the plaque with the tip of a P10 pipette. Place the pipette tip into
-                                    2-3 mL of DRM, grow for 16-20h in a biologicalshaker at 37℃. Centrifuge at 8000 g
-                                    for 2 min. The supernatant was collected and filtered in a 1 ml syringe equipped
-                                    with a
-                                    13mm 0.22 μm PVDF filter to obtain a phage stock solution.Its concentration was
-                                    determined using an activity-independent phage plaque assay. POI fragments can also
-                                    be amplified by PCR for sequencing.
-                                </p>
+                                        <h3 style="font-size: 17px; margin-top: 30px;color: black;">
+                                            Isolation of monoclonal phages</h3>
+                                        <p style="text-indent:2em;">
+                                            Gently touch the plaque with the tip of a P10 pipette. Place the pipette tip into 2-3 mL of DRM, grow for 16-20h in a biologicalshaker at 37℃. Centrifuge at 8000 g for 2 min. The supernatant was collected and filtered in a 1 ml syringe equipped with a
+                                            13mm 0.22 μm PVDF filter to obtain a phage stock solution.Its concentration was determined using an activity-independent phage plaque assay. POI fragments can also be amplified by PCR for sequencing.
+                                        </p>
 
-                                <h3 style="font-size: 17px; margin-top: 30px;color: black;">
-                                    Activity-dependent phage propagation</h3>
-                                <p style="text-indent:2em;">
-                                    S2060 saturated bacterial solution transformed with AP/CP was diluted 1000 times
-                                    into DRM medium containing appropriate antibiotics, and the culture was shaken at
-                                    37℃ until OD600 was 0.4-0.6. Cells were infected with phage at a starting titer of
-                                    approximately
-                                    104 PFU /ml and incubated at 37℃ for 16-20h on a biologicalshaker. Centrifuge at
-                                    8000g for 3min. The supernatant was collected and filtered in a 1ml syringe equipped
-                                    with a 13mm 0.22μm PVDF filter to obtain phage stock
-                                    solution, which was stored at -4℃.
-                                </p>
+                                        <h3 style="font-size: 17px; margin-top: 30px;color: black;">
+                                            Activity-dependent phage propagation</h3>
+                                        <p style="text-indent:2em;">
+                                            S2060 saturated bacterial solution transformed with AP/CP was diluted 1000 times into DRM medium containing appropriate antibiotics, and the culture was shaken at 37℃ until OD600 was 0.4-0.6. Cells were infected with phage at a starting titer of approximately
+                                            104 PFU /ml and incubated at 37℃ for 16-20h on a biologicalshaker. Centrifuge at 8000g for 3min. The supernatant was collected and filtered in a 1ml syringe equipped with a 13mm 0.22μm PVDF filter to obtain
+                                            phage stock solution, which was stored at -4℃.
+                                        </p>
 
-                                <h3 style="font-size: 17px; margin-top: 30px;color: black;">
-                                    Purification of SP plasmids</h3>
-                                <p style="text-indent:2em;">Using a P1000 pipette tip, Agar sections containing
-                                    individual plaques were punched out and resuspended in 2ml of DRM without
-                                    antibiotics. The cells were incubated in a biological shaker at 37℃ for 6-8 h or
-                                    until mid-exponential
-                                    stage (OD600 0.2-0.8). The cells were centrifuged at 8000 g for 2 min. The phage
-                                    stock solution was obtained by collecting and filtering the supernatant in a 1ml
-                                    syringe equipped with a 13mm, 0.22 μm PVDF filter. Phage
-                                    titers were determined using an activity-independent phage plaque assay.</p>
+                                        <h3 style="font-size: 17px; margin-top: 30px;color: black;">
+                                            Purification of SP plasmids</h3>
+                                        <p style="text-indent:2em;">Using a P1000 pipette tip, Agar sections containing individual plaques were punched out and resuspended in 2ml of DRM without antibiotics. The cells were incubated in a biological shaker at 37℃ for 6-8 h or until
+                                            mid-exponential stage (OD600 0.2-0.8). The cells were centrifuged at 8000 g for 2 min. The phage stock solution was obtained by collecting and filtering the supernatant in a 1ml syringe equipped with a 13mm,
+                                            0.22 μm PVDF filter. Phage titers were determined using an activity-independent phage plaque assay.</p>
 
-                                <h3 style="font-size: 17px; margin-top: 30px;color: black;">
-                                    Modeling and MD simulation</h3>
+                                        <h3 style="font-size: 17px; margin-top: 30px;color: black;">
+                                            Modeling and MD simulation</h3>
 
-                                <P style="text-indent:2em;">The structures of Gen 2 and Mutpre were modeled by
-                                    AlphaFold2. The simulations were conducted on an cloud server (Beikunyun cloud
-                                    supercomputing platform). Then the model ranked highest (pLDDTGen 2 = 92.4,
-                                    pLDDTMutpre =
-                                    92.1) were chosen for the subsequent molecular dynamic simulation (MD simulation).
-                                    The MD simulation were achieved by Gromacs,which is free MD simulation tool. Among
-                                    the steps of MD simulation, energy minimization,
-                                    ensemble equilibration and final MD simulation were run on cloud server (Beikunyun
-                                    cloud supercomputing platform),and other steps were completed on local computer. In
-                                    the simulation, force field was OPLS-AA/L all-atom
-                                    force field (2001 aminoacid dihedrals) and water force field was SPC/E water force
-                                    field.</P>
+                                        <P style="text-indent:2em;">The structures of Gen 2 and Mutpre were modeled by AlphaFold2. The simulations were conducted on an cloud server (Beikunyun cloud supercomputing platform). Then the model ranked highest (pLDDTGen 2 = 92.4, pLDDTMutpre
+                                            = 92.1) were chosen for the subsequent molecular dynamic simulation (MD simulation). The MD simulation were achieved by Gromacs,which is free MD simulation tool. Among the steps of MD simulation, energy minimization,
+                                            ensemble equilibration and final MD simulation were run on cloud server (Beikunyun cloud supercomputing platform),and other steps were completed on local computer. In the simulation, force field was OPLS-AA/L
+                                            all-atom force field (2001 aminoacid dihedrals) and water force field was SPC/E water force field.
+                                        </P>
 
                             </div>
-                       
+
                             <div class="p2" id="p2" style="text-align:left;">
-                            </br>
-                      
-                            <h1 style="text-align:left;font-size: 25px;line-height: 30px; "> <br />   Note
-                            </h1>
-                            <h3 style="font-size: 22px; margin-top: 30px;color: black;">
-                                Note. S1 Construction of the selection plasmid (SP)</h3>
+                                </br>
 
-                            <p style="text-indent:2em;">The construction of SP is undoubtedly a big
-                                challenge during the establishment of PACE pathway. At first, we used
-                                wild-type M13 phage as the template to remove the gⅢ by PCR to obtain the
-                                vector. Then, the vector, TyrRS gene fragment and artificial RBS sequence
-                                were linked by homologous recombination. Then, phage genomes assembled were
-                                transformed into S2208 cells through the SP cloning method, and finally the
-                                reconstituted phage stock was obtained. SP stock was used for
-                                activity-independent phage plaque assays. After large amount of plaque
-                                verifications, we found that the quadrate plates were almost entirely
-                                plaques formed by wild-type M13 phages.
+                                <h1 style="text-align:left;font-size: 25px;line-height: 30px; "> <br /> Note
+                                </h1>
+                                <h3 style="font-size: 22px; margin-top: 30px;color: black;">
+                                    Note. S1 Construction of the selection plasmid (SP)</h3>
 
-                            </p>
+                                <p style="text-indent:2em;">The construction of SP is undoubtedly a big challenge during the establishment of PACE pathway. At first, we used wild-type M13 phage as the template to remove the gⅢ by PCR to obtain the vector. Then, the vector, TyrRS
+                                    gene fragment and artificial RBS sequence were linked by homologous recombination. Then, phage genomes assembled were transformed into S2208 cells through the SP cloning method, and finally the reconstituted phage stock
+                                    was obtained. SP stock was used for activity-independent phage plaque assays. After large amount of plaque verifications, we found that the quadrate plates were almost entirely plaques formed by wild-type M13 phages.
 
-                            <p style="text-indent:2em;">Later, we attempted to add DpnⅠto remove wild-type
-                                M13 phages during homologous recombination. Although a part of wild-type M13
-                                phages can be eliminated, the remaining wild-type M13 phages can propagate
-                                rapidly in the subsequent culture and dominate.
-                            </p>
+                                </p>
 
-                            <p style="text-indent:2em;">USER cloning is one way of constructing plasmids.
-                                Primers were designed to include a single internal deoxyuracil base 15–20
-                                bases from the 5’ end of the primer and begin with a deoxyadenosine and end
-                                with a deoxythymine. Liu and co-workers used the USER cloning to construct
-                                SP and evolved Bacillus thuringiensis toxins to overcome the resistance of
-                                insects<sup>1</sup>. Inspired by it, we also used this method to construct SP, and
-                                added DpnⅠ(New England Biolabs Inc., USA) into the reaction system of USER
-                                enzyme (New England Biolabs Inc., USA). It is hoped that DpnⅠ can remove
-                                more wild-type M13 phage templates in rCutSmart buffer (New England Biolabs
-                                Inc., USA). However, the results showed that even if a small amount of
-                                wild-type M13 phages would propagate rapidly and dominate in subsequent
-                                culture.
-                               </p><p style="text-indent:2em;"> Since S2060 cells are modified from DH10β cells to be infected by M13 phage<sup>2</sup>.
-                                DH5α cells were not modified, so it could not be infected by M13 phage.
-                                Based on this reason, we tried to split M13 backbone without gⅢ gene into
-                                two plasmids, as donor plasmids and then replace gⅢ in the AP-T7P plasmid
-                                with target gene, as acceptor plasmid<sup>3</sup>. To further eliminate wild-type M13,
-                                donor and acceptor plasmids were transformed into DH5α cells, respectively.
-                                Positive clones without wild-type M13, were selected and the plasmids were
-                                extracted after overnight culture. Then the extracted recombinant plasmids
-                                were transformed into DH5α cells again, and the above steps were repeated
-                                until wild-type M13 were completely diluted and disappeared. Finally, SP was
-                                assembled by purified donor and acceptor plasmids, SP was transformed into
-                                S2208 cells according to SP cloning method to obtain recombinant phage.
-                                Although this method is feasible, it is too complex. In order to remove
-                                wild-type M13, it often takes 4-5 transformation steps to remove wild-type
-                                M13. And multi-fragment homologous recombination often greatly reduces the
-                                success rate.
+                                <p style="text-indent:2em;">Later, we attempted to add DpnⅠto remove wild-type M13 phages during homologous recombination. Although a part of wild-type M13 phages can be eliminated, the remaining wild-type M13 phages can propagate rapidly in the subsequent
+                                    culture and dominate.
+                                </p>
 
-                            </p>
+                                <p style="text-indent:2em;">USER cloning is one way of constructing plasmids. Primers were designed to include a single internal deoxyuracil base 15–20 bases from the 5’ end of the primer and begin with a deoxyadenosine and end with a deoxythymine.
+                                    Liu and co-workers used the USER cloning to construct SP and evolved Bacillus thuringiensis toxins to overcome the resistance of insects
+                                    <sup>1</sup>. Inspired by it, we also used this method to construct SP, and added DpnⅠ(New England Biolabs Inc., USA) into the reaction system of USER enzyme (New England Biolabs Inc., USA). It is hoped that DpnⅠ can
+                                    remove more wild-type M13 phage templates in rCutSmart buffer (New England Biolabs Inc., USA). However, the results showed that even if a small amount of wild-type M13 phages would propagate rapidly and dominate in
+                                    subsequent culture.
+                                </p>
+                                <p style="text-indent:2em;"> Since S2060 cells are modified from DH10β cells to be infected by M13 phage<sup>2</sup>. DH5α cells were not modified, so it could not be infected by M13 phage. Based on this reason, we tried to split M13 backbone without
+                                    gⅢ gene into two plasmids, as donor plasmids and then replace gⅢ in the AP-T7P plasmid with target gene, as acceptor plasmid<sup>3</sup>. To further eliminate wild-type M13, donor and acceptor plasmids were transformed
+                                    into DH5α cells, respectively. Positive clones without wild-type M13, were selected and the plasmids were extracted after overnight culture. Then the extracted recombinant plasmids were transformed into DH5α cells again,
+                                    and the above steps were repeated until wild-type M13 were completely diluted and disappeared. Finally, SP was assembled by purified donor and acceptor plasmids, SP was transformed into S2208 cells according to SP cloning
+                                    method to obtain recombinant phage. Although this method is feasible, it is too complex. In order to remove wild-type M13, it often takes 4-5 transformation steps to remove wild-type M13. And multi-fragment homologous
+                                    recombination often greatly reduces the success rate.
 
-                            <p style="text-indent:2em;">
-                                It is reported that Liu and co-workers constructed two plasmids,
-                                pBT29-SplitC and pBT29-SplitD4, by splitting the M13 backbone without gⅢ
-                                into two plasmids, as acceptor plasmids<sup>4</sup>. In order to improve the success
-                                rate, we used the above plasmids and constructed the donor plasmid,
-                                AP-TyrRS-P by In-fusion. The three plasmids were assembled into SP by using
-                                the Golden Gate method. We anticipate that this will be a feasible and
-                                successful method.
-                            </p>
+                                </p>
 
-                        </div>
-                        <div style="text-align:left;">
+                                <p style="text-indent:2em;">
+                                    It is reported that Liu and co-workers constructed two plasmids, pBT29-SplitC and pBT29-SplitD4, by splitting the M13 backbone without gⅢ into two plasmids, as acceptor plasmids<sup>4</sup>. In order to improve the
+                                    success rate, we used the above plasmids and constructed the donor plasmid, AP-TyrRS-P by In-fusion. The three plasmids were assembled into SP by using the Golden Gate method. We anticipate that this will be a feasible
+                                    and successful method.
+                                </p>
 
-                            <h3 style="font-size: 22px; margin-top: 30px;color: black;">
-                                Note. S2 Some unexpected phenomena</h3>
-
-                            <p style="text-indent:2em;">
-                                During the experiment, we encountered some unexpected phenomena. In the
-                                transformation and screening process, we found that the bacterial solution
-                                was orange, visible to the naked eye. Sequencing found that the arabinose
-                                operon sequence mutated, so we speculate that structural alterations in the
-                                AraC protein cannot play a depressive role, allowing sfGFP to be
-                                overexpressed.
-
-
-                            </p>
-                            <div style="display: flex;justify-content: center;align-items: center;">
-                                <img src="./image/results/7.png" width="600px" height="500px">
                             </div>
+                            <div style="text-align:left;">
 
-                           
-                            <p>
-                               <b>Figure. S1</b> Bacterial solution was orange, visible to the naked eye after
-                                centrifugation
-                            </p>
+                                <h3 style="font-size: 22px; margin-top: 30px;color: black;">
+                                    Note. S2 Some unexpected phenomena</h3>
 
-                            </br>
-                            <div style="display: flex;justify-content: center;align-items: center;">
-                               
-                            <img src="./image/results/8.png" width="600px" height="500px">
-                            </div>
+                                <p style="text-indent:2em;">
+                                    During the experiment, we encountered some unexpected phenomena. In the transformation and screening process, we found that the bacterial solution was orange, visible to the naked eye. Sequencing found that the arabinose operon sequence mutated, so we
+                                    speculate that structural alterations in the AraC protein cannot play a depressive role, allowing sfGFP to be overexpressed.
 
-                            <p>  <b>Figure. S2</b> Some strains are visible orange after being induced and cultured
-                                for about 8 hours.</p>
+
+                                </p>
+                                <div style="display: flex;justify-content: center;align-items: center;">
+                                    <img src="./image/results/7.png" width="600px" height="500px">
+                                </div>
+
+
+                                <p>
+                                    <b>Figure. S1</b> Bacterial solution was orange, visible to the naked eye after centrifugation
+                                </p>
+
+                                </br>
+                                <div style="display: flex;justify-content: center;align-items: center;">
+
+                                    <img src="./image/results/8.png" width="600px" height="500px">
+                                </div>
+
+                                <p> <b>Figure. S2</b> Some strains are visible orange after being induced and cultured for about 8 hours.</p>
 
                                 <div style="display: flex;justify-content: center;align-items: center;">
-                                    <img src="./image/results/图片1.png" width="700px" height="500px">
+                                    <img src="./image/results/r-1.png" width="700px" height="500px">
                                 </div>
-                          
-                            <p>  <b>Figure. S3</b> Heatmap of partial mutation library (orange).</p>
-                            
-                            <div style="display: flex;justify-content: center;align-items: center;">
-                                <img src="./image/results/图片2.png" width="700px" height="500px">
+
+                                <p> <b>Figure. S3</b> Heatmap of partial mutation library (orange).</p>
+
+                                <div style="display: flex;justify-content: center;align-items: center;">
+                                    <img src="./image/results/r-2.png" width="700px" height="500px">
+                                </div>
+                                <p> <b>Figure. S4</b> Heatmap of partial mutation library (green).</p>
+
+                                </br>
+                                </br>
+
+                                <h3 style="font-size: 22px; margin-top: 30px;color: black;">
+                                    Note. S3 Modeling and MD simulation</h3>
+
+                                <p style="text-indent:2em;">
+                                    The structures of Gen 2 and Mutpre were modeled by AlphaFold2. The simulations were conducted on an cloud server (Beikunyun cloud supercomputing platform). Then the model ranked highest (pLDDTGen 2 = 92.4, pLDDTMutpre = 92.1) were chosen for the subsequent
+                                    molecular dynamic simulation (MD simulation). The MD simulation were achieved by Gromacs, which is free MD simulation tool. Among the steps of MD simulation, energy minimization, ensemble equilibration and final MD
+                                    simulation were run on cloud server (Beikunyun cloud supercomputing platform), and other steps were completed on local computer. In the simulation, force field was OPLS-AA/L all-atom force field (2001 aminoacid dihedrals)
+                                    and water force field was SPC/E water force field.
+                                </p>
+
                             </div>
-                            <p>  <b>Figure. S4</b> Heatmap of partial mutation library (green).</p>
-
-                            </br>
-                            </br>
-
-                            <h3 style="font-size: 22px; margin-top: 30px;color: black;">
-                                Note. S3 Modeling and MD simulation</h3>
-
-                            <p style="text-indent:2em;">
-                                The structures of Gen 2 and Mutpre were modeled by AlphaFold2. The
-                                simulations were conducted on an cloud server (Beikunyun cloud
-                                supercomputing platform). Then the model ranked highest (pLDDTGen 2 = 92.4,
-                                pLDDTMutpre = 92.1) were chosen for the subsequent molecular dynamic
-                                simulation (MD simulation). The MD simulation were achieved by Gromacs,
-                                which is free MD simulation tool. Among the steps of MD simulation, energy
-                                minimization, ensemble equilibration and final MD simulation were run on
-                                cloud server (Beikunyun cloud supercomputing platform), and other steps were
-                                completed on local computer. In the simulation, force field was OPLS-AA/L
-                                all-atom force field (2001 aminoacid dihedrals) and water force field was
-                                SPC/E water force field.
-                            </p>
-
-                        </div>
                             <div style="text-align:center;" id="p3">
-                                <div class="notebook_cell" id="p3" class="p3" >
+                                <div class="notebook_cell" id="p3" class="p3">
 
                                     <h1 style="text-align:left;font-size: 25px;line-height: 30px; "> <br />Table
                                     </h1>
-                            
+
                                     <p style="text-align:left;"><b>Table.S1</b> The primers which were used in this study.</p>
 
-                                    <table
-                                        style="border:black 2px solid;text-align: center;align-items: center;margin: 0 auto;"
-                                        border="1">
+                                    <table style="border:black 2px solid;text-align: center;align-items: center;margin: 0 auto;" border="1">
                                         <tr>
                                             <th>Name</th>
                                             <th>Sequence 5'-3'</th>
@@ -574,9 +459,7 @@
                                     <p style="text-align:left;"><b>Table.S2</b> The plasmids which were used in this study</p>
 
                                     <div>
-                                        <table
-                                            style="border:black 2px solid;text-align: center;align-items: center;margin: 0 auto;"
-                                            border="1">
+                                        <table style="border:black 2px solid;text-align: center;align-items: center;margin: 0 auto;" border="1">
                                             <tr>
                                                 <th>Plasmid</th>
                                                 <th>Goal</th>
@@ -622,8 +505,7 @@
                                                 <td>Provides tRNA and <i>gIII</i></td>
                                                 <td>Amp<sup>R</sup></td>
                                                 <td>pSC101 ori</td>
-                                                <td>Contains tRNAcua controlled by the prok promoter, <i>gIII</i> controlled by
-                                                    the T7 promoter and LuxAB</td>
+                                                <td>Contains tRNAcua controlled by the prok promoter, <i>gIII</i> controlled by the T7 promoter and LuxAB</td>
                                             </tr>
 
                                             <tr>
@@ -669,14 +551,11 @@
 
                                         </table>
                                         </br>
-                                   
 
-                                        <p style="text-align:left;"><b>Table.S3</b> Sequencing revealed an identical gap (Marked in Underline) at the
-                                            same location in their arabinose promoter</p>
 
-                                        <table
-                                            style="border:black 2px solid;text-align: center;align-items: center;margin: 0 auto;"
-                                            border="1">
+                                        <p style="text-align:left;"><b>Table.S3</b> Sequencing revealed an identical gap (Marked in Underline) at the same location in their arabinose promoter</p>
+
+                                        <table style="border:black 2px solid;text-align: center;align-items: center;margin: 0 auto;" border="1">
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Mutations in arabinose promoter </th>
@@ -697,45 +576,36 @@
                                             </tr>
 
                                         </table>
-                                        
-                                    
+
+
                                         </br>
 
                                         <p style="text-align:left;"><b>Table.S4</b> DNA sequence of T7 RNAP.
-                                            <br />
-                                            Codons that were mutated to amber
-                                            stop codons in the course of developing PACE selections are highlighted in
-                                            yellow (Ser-12, Ser-203,). </p>
-                           
+                                            <br /> Codons that were mutated to amber stop codons in the course of developing PACE selections are highlighted in yellow (Ser-12, Ser-203,). </p>
+
                                         <p style="text-indent:2em;text-align: left;">
-                                           ATGAACACGATTAACATCGCTAAGAACGACTTC<span style="background-color: yellow;">TAG</span>GACATCGAACTGGCTGCTATCCCGTTCAACACTCTGGCTGACCATTACGGTGAGCGTTTAGCTCGCGAACAGTTGGCCCTTGAGCATGAGTCTTACGAGATGGGTGAAGCACGCTTCCGCAAGATGTTTGAGCGTCAACTTAAAGCTGGTGAGGTTGCGGATAACGCTGCCGCCAAGCCTCTCATCACTACCCTACTCCCTAAGATGATTGCACGCATCAACGACTGGTTTGAGGAAGTGAAAGCTAAGCGCGGCAAGCGCCCGACAGCCTTCCAGTTCCTGCAAGAAATCAAGCCGGAAGCCGTAGCGTACATCACCATTAAGACCACTCTGGCTTGCCTAACCAGTGCTGACAATACAACCGTTCAGGCTGTAGCAAGCGCAATCGGTCGGGCCATTGAGGACGAGGCTCGCTTCGGTCGTATCCGTGACCTTGAAGCTAAGCACTTCAAGAAAAACGTTGAGGAACAACTCAACAAGCGCGTAGGGCACGTCTACAAGAAAGCATTTATGCAAGTTGTCGAGGCTGACATGCTCTCTAAGGGTCTACTCGGTGGCGAGGCGTGGTCT<span style="background-color: yellow;">TAG</span>TGGCATAAGGAAGACTCTATTCATGTAGGAGTACGCTGCATCGAGATGCTCATTGAGTCAACCGGAATGGTTAGCTTACACCGCCAAAATGCTGGCGTAGTAGGTCAAGACTCTGAGACTATCGAACTCGCACCTGAATACGCTGAGGCTATCGCAACCCGTGCAGGTGCGCTGGCTGGCATCTCTCCGATGTTCCAACCTTGCGTAGTTCCTCCTAAGCCGTGGACTGGCATTACTGGTGGTGGCTATTGGGCTAACGGTCGTCGTCCTCTGGCGCTGGTGCGTACTCACAGTAAGAAAGCACTGATGCGCTACGAAGACGTTTACATGCCTGAGGTGTACAAAGCGATTAACATTGCGCAAAACACCGCATGGAAAATCAACAAGAAAGTCCTAGCGGTCGCCAACGTAATCACCAAGTGGAAGCATTGTCCGGTCGAGGACATCCCTGCGATTGAGCGTGAAGAACTCCCGATGAAACCGGAAGACATCGACATGAATCCTGAGGCTCTCACCGCGTGGAAACGTGCTGCCGCTGCTGTGTACCGCAAGGACAAGGCTCGCAAGTCTCGCCGTATCAGCCTTGAGTTCATGCTTGAGCAAGCCAATAAGTTTGCTAACCATAAGGCCATCTGGTTCCCTTACAACATGGACTGGCGCGGTCGTGTTTACGCTGTGTCAATGTTCAACCCGCAAGGTAACGATATGACCAAAGGACTGCTTACGCTGGCGAAAGGTAAACCAATCGGTAAGGAAGGTTACTACTGGCTGAAAATCCACGGTGCAAACTGTGCGGGTGTCGATAAGGTTCCGTTCCCTGAGCGCATCAAGTTCATTGAGGAAAACCACGAGAACATCATGGCTTGCGCTAAGTCTCCACTGGAGAACACTTGGTGGGCTGAGCAAGATTCTCCGTTCTGCTTCCTTGCGTTCTGCTTTGAGTACGCTGGGGTACAGCACCACGGCCTGAGCTATAACTGCTCCCTTCCGCTGGCGTTTGACGGGTCTTGCTCTGGCATCCAGCACTTCTCCGCGATGCTCCGAGATGAGGTAGGTGGTCGCGCGGTTAACTTGCTTCCTAGTGAAACCGTTCAGGACATCTACGGGATTGTTGCTAAGAAAGTCAACGAGATTCTACAAGCAGACGCAATCAATGGGACCGATAACGAAGTAGTTACCGTGACCGATGAGAACACTGGTGAAATCTCTGAGAAAGTCAAGCTGGGCACTAAGGCACTGGCTGGTCAATGGCTGGCTTACGGTGTTACTCGCAGTGTGACTAAGCGTTCAGTCATGACGCTGGCTTACGGGTCCAAAGAGTTCGGCTTCCGTCAACAAGTGCTGGAAGATACCATTCAGCCAGCTATTGATTCCGGCAAGGGTCTGATGTTCACTCAGCCGAATCAGGCTGCTGGATACATGGCTAAGCTGATTTGGGAATCTGTGAGCGTGACGGTGGTAGCTGCGGTTGAAGCAATGAACTGGCTTAAGTCTGCTGCTAAGCTGCTGGCTGCTGAGGTCAAAGATAAGAAGACTGGAGAGATTCTTCGCAAGCGTTGCGCTGTGCATTGGGTAACTCCTGATGGTTTCCCTGTGTGGCAGGAATACAAGAAGCCTATTCAGACGCGCTTGAACCTGATGTTCCTCGGTCAGTTCCGCTTACAGCCTACCATTAACACCAACAAAGATAGCGAGATTGATGCACACAAACAGGAGTCTGGTATCGCTCCTAACTTTGTACACAGCCAAGACGGTAGCCACCTTCGTAAGACTGTAGTGTGGGCACACGAGAAGTACGGAATCGAATCTTTTGCACTGATTCACGACTCCTTCGGTACCATTCCGGCTGACGCTGCGAACCTGTTCAAAGCAGTGCGCGAAACTATGGTTGACACATATGAGTCTTGTGATGTACTGGCTGATTTCTACGACCAGTTCGCTGACCAGTTGCACGAGTCTCAATTGGACAAAATGCCAGCACTTCCGGCTAAAGGTAACTTGAACCTCCGTGACATCTTAGAGTCGGACTTCGCGTTCGCGTAA
-                                           </p>
+                                            ATGAACACGATTAACATCGCTAAGAACGACTTC<span style="background-color: yellow;">TAG</span>GACATCGAACTGGCTGCTATCCCGTTCAACACTCTGGCTGACCATTACGGTGAGCGTTTAGCTCGCGAACAGTTGGCCCTTGAGCATGAGTCTTACGAGATGGGTGAAGCACGCTTCCGCAAGATGTTTGAGCGTCAACTTAAAGCTGGTGAGGTTGCGGATAACGCTGCCGCCAAGCCTCTCATCACTACCCTACTCCCTAAGATGATTGCACGCATCAACGACTGGTTTGAGGAAGTGAAAGCTAAGCGCGGCAAGCGCCCGACAGCCTTCCAGTTCCTGCAAGAAATCAAGCCGGAAGCCGTAGCGTACATCACCATTAAGACCACTCTGGCTTGCCTAACCAGTGCTGACAATACAACCGTTCAGGCTGTAGCAAGCGCAATCGGTCGGGCCATTGAGGACGAGGCTCGCTTCGGTCGTATCCGTGACCTTGAAGCTAAGCACTTCAAGAAAAACGTTGAGGAACAACTCAACAAGCGCGTAGGGCACGTCTACAAGAAAGCATTTATGCAAGTTGTCGAGGCTGACATGCTCTCTAAGGGTCTACTCGGTGGCGAGGCGTGGTCT
+                                            <span style="background-color: yellow;">TAG</span>TGGCATAAGGAAGACTCTATTCATGTAGGAGTACGCTGCATCGAGATGCTCATTGAGTCAACCGGAATGGTTAGCTTACACCGCCAAAATGCTGGCGTAGTAGGTCAAGACTCTGAGACTATCGAACTCGCACCTGAATACGCTGAGGCTATCGCAACCCGTGCAGGTGCGCTGGCTGGCATCTCTCCGATGTTCCAACCTTGCGTAGTTCCTCCTAAGCCGTGGACTGGCATTACTGGTGGTGGCTATTGGGCTAACGGTCGTCGTCCTCTGGCGCTGGTGCGTACTCACAGTAAGAAAGCACTGATGCGCTACGAAGACGTTTACATGCCTGAGGTGTACAAAGCGATTAACATTGCGCAAAACACCGCATGGAAAATCAACAAGAAAGTCCTAGCGGTCGCCAACGTAATCACCAAGTGGAAGCATTGTCCGGTCGAGGACATCCCTGCGATTGAGCGTGAAGAACTCCCGATGAAACCGGAAGACATCGACATGAATCCTGAGGCTCTCACCGCGTGGAAACGTGCTGCCGCTGCTGTGTACCGCAAGGACAAGGCTCGCAAGTCTCGCCGTATCAGCCTTGAGTTCATGCTTGAGCAAGCCAATAAGTTTGCTAACCATAAGGCCATCTGGTTCCCTTACAACATGGACTGGCGCGGTCGTGTTTACGCTGTGTCAATGTTCAACCCGCAAGGTAACGATATGACCAAAGGACTGCTTACGCTGGCGAAAGGTAAACCAATCGGTAAGGAAGGTTACTACTGGCTGAAAATCCACGGTGCAAACTGTGCGGGTGTCGATAAGGTTCCGTTCCCTGAGCGCATCAAGTTCATTGAGGAAAACCACGAGAACATCATGGCTTGCGCTAAGTCTCCACTGGAGAACACTTGGTGGGCTGAGCAAGATTCTCCGTTCTGCTTCCTTGCGTTCTGCTTTGAGTACGCTGGGGTACAGCACCACGGCCTGAGCTATAACTGCTCCCTTCCGCTGGCGTTTGACGGGTCTTGCTCTGGCATCCAGCACTTCTCCGCGATGCTCCGAGATGAGGTAGGTGGTCGCGCGGTTAACTTGCTTCCTAGTGAAACCGTTCAGGACATCTACGGGATTGTTGCTAAGAAAGTCAACGAGATTCTACAAGCAGACGCAATCAATGGGACCGATAACGAAGTAGTTACCGTGACCGATGAGAACACTGGTGAAATCTCTGAGAAAGTCAAGCTGGGCACTAAGGCACTGGCTGGTCAATGGCTGGCTTACGGTGTTACTCGCAGTGTGACTAAGCGTTCAGTCATGACGCTGGCTTACGGGTCCAAAGAGTTCGGCTTCCGTCAACAAGTGCTGGAAGATACCATTCAGCCAGCTATTGATTCCGGCAAGGGTCTGATGTTCACTCAGCCGAATCAGGCTGCTGGATACATGGCTAAGCTGATTTGGGAATCTGTGAGCGTGACGGTGGTAGCTGCGGTTGAAGCAATGAACTGGCTTAAGTCTGCTGCTAAGCTGCTGGCTGCTGAGGTCAAAGATAAGAAGACTGGAGAGATTCTTCGCAAGCGTTGCGCTGTGCATTGGGTAACTCCTGATGGTTTCCCTGTGTGGCAGGAATACAAGAAGCCTATTCAGACGCGCTTGAACCTGATGTTCCTCGGTCAGTTCCGCTTACAGCCTACCATTAACACCAACAAAGATAGCGAGATTGATGCACACAAACAGGAGTCTGGTATCGCTCCTAACTTTGTACACAGCCAAGACGGTAGCCACCTTCGTAAGACTGTAGTGTGGGCACACGAGAAGTACGGAATCGAATCTTTTGCACTGATTCACGACTCCTTCGGTACCATTCCGGCTGACGCTGCGAACCTGTTCAAAGCAGTGCGCGAAACTATGGTTGACACATATGAGTCTTGTGATGTACTGGCTGATTTCTACGACCAGTTCGCTGACCAGTTGCACGAGTCTCAATTGGACAAAATGCCAGCACTTCCGGCTAAAGGTAACTTGAACCTCCGTGACATCTTAGAGTCGGACTTCGCGTTCGCGTAA
+                                        </p>
 
                                     </div>
 
 
                                     <div class="p4" id="p4" style="text-align:left;">
-                                    
-             
+
+
                                         <h1 style="text-align:left;font-size: 25px;line-height: 30px; "> <br />Reference
                                         </h1>
 
-                                        <p>1 A. H. Badran, V. M. Guzov, Q. Huai et al, Continuous evolution of bacillus
-                                            thuringiensis toxins overcomes insect resistance. Nature 533, 58-+ (2016).<br />https://10.1038/nature17938
+                                        <p>1 A. H. Badran, V. M. Guzov, Q. Huai et al, Continuous evolution of bacillus thuringiensis toxins overcomes insect resistance. Nature 533, 58-+ (2016).<br />https://10.1038/nature17938
                                         </p>
 
-                                        <p>2 K. M. Esvelt, J. C. Carlson, D. R. Liu, A system for the continuous
-                                            directed evolution of biomolecules. Nature 472, 499-U550 (2011).<br />https://10.1038/nature09929</p>
+                                        <p>2 K. M. Esvelt, J. C. Carlson, D. R. Liu, A system for the continuous directed evolution of biomolecules. Nature 472, 499-U550 (2011).<br />https://10.1038/nature09929</p>
 
-                                        <p>3 S. C. Popa, I. Inamoto, B. W. Thuronyi, J. A. Shin, Phage-assisted
-                                            continuous evolution (pace): A guide focused on evolving protein-DNA
-                                            interactions. Acs Omega 5, 26957-26966 (2020).
-                                            https://10.1021/acsomega.0c03508
+                                        <p>3 S. C. Popa, I. Inamoto, B. W. Thuronyi, J. A. Shin, Phage-assisted continuous evolution (pace): A guide focused on evolving protein-DNA interactions. Acs Omega 5, 26957-26966 (2020). https://10.1021/acsomega.0c03508
                                         </p>
 
-                                        <p>4 B. W. Thuronyi, L. W. Koblan, J. M. Levy et al, Continuous evolution of
-                                            base editors with expanded target compatibility and improved activity.
-                                            Nature Biotechnology 37, 1070-+ (2019). https://10.1038/s41587-019-0193-0
+                                        <p>4 B. W. Thuronyi, L. W. Koblan, J. M. Levy et al, Continuous evolution of base editors with expanded target compatibility and improved activity. Nature Biotechnology 37, 1070-+ (2019). https://10.1038/s41587-019-0193-0
                                         </p>
 
                                     </div>
@@ -744,84 +614,84 @@
 
 
                         </aside>
+                        </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="footer " style="position:absolute;right:0;left:0;margin:0 auto;width: 100%;height: 400px;background-color: black;margin-top: -200px;position: relative;">
-            <div class="container" style="width:100%;height:100%;background-color: black;width: 100%;font-size: 14px;">
-                <div class="footer-img" style="position:absolute;left: 0;">
-                    <img src="./image/底部.jpg" width="600px" height="230px">
-                </div>
+                <div class="footer " style="position:absolute;right:0;left:0;margin:0 auto;width: 100%;height: 400px;background-color: black;margin-top: -200px;position: relative;">
+                    <div class="container" style="width:100%;height:100%;background-color: black;width: 100%;font-size: 14px;">
+                        <div class="footer-img" style="position:absolute;left: 0;">
+                            <img src="./image/footer.jpg" width="600px" height="230px">
+                        </div>
 
 
-                <div class="footer-content" style="text-align: center;right: 0;height: 100%;width: 50%;background-color: black;top: 0;">
+                        <div class="footer-content" style="text-align: center;right: 0;height: 100%;width: 50%;background-color: black;top: 0;">
 
-                    <ul class="footer-content-ul">
-                        <li class="first">
-                            <a href="./home.html" style="font-size: 21px;">HOME</a>
-                        </li>
-
-
-                    </ul>
-
-                    <ul>
-                        <li class="first">
-                            <a href="./description.html" style="font-size: 21px;">PROJECT</a>
-
-                        </li>
-                        <li>
-                            <a href="./description.html">Description</a>
-                        </li>
-                        <li>
-                            <a href="./design.html">Design</a>
-
-                        </li>
-                        <li>
-                            <a href="./results.html">Results</a>
-                        </li>
-                        <li>
-                            <a href="./supplement.html">Supplement</a>
-                        </li>
-                   
-                        <li>
-                            <a href="./protocol.html">Protocol</a>
-                        </li>
-                    
-
-                    </ul>
-
-                    <ul class="footer-content-ul">
-                        <li class="first">
-                            <a href="./lab_notebook.html" style="font-size: 18px;">LAB NOTEBOOK</a>
-                        </li>
-                    </ul>
-
-                    <ul class="footer-content-ul">
-                        <li class="first">
-                            <a href="./team.html" style="font-size: 21px;">TEAM</a>
-                        </li>
-                        <li>
-                            <a href="./team.html">Team</a>
-                        </li>
-                        <li>
-                            <a href="./collaboration.html">Collaboration</a>
-                        </li>
-                    </ul>
+                            <ul class="footer-content-ul">
+                                <li class="first">
+                                    <a href="./index.html" style="font-size: 21px;">HOME</a>
+                                </li>
 
 
-                </div>
+                            </ul>
 
-                <div class="footer-row">
-                    <div class="col-md-12 " style="margin-top: -30px; ">
-                        <p style="text-align: center;font-size: 16px; color: white;">Copyright © 2022 NAU All rights reserved.
-                        </p>
+                            <ul>
+                                <li class="first">
+                                    <a href="./description.html" style="font-size: 21px;">PROJECT</a>
+
+                                </li>
+                                <li>
+                                    <a href="./description.html">Description</a>
+                                </li>
+                                <li>
+                                    <a href="./design.html">Design</a>
+
+                                </li>
+                                <li>
+                                    <a href="./results.html">Results</a>
+                                </li>
+                                <li>
+                                    <a href="./supplement.html">Supplement</a>
+                                </li>
+
+                                <li>
+                                    <a href="./protocol.html">Protocol</a>
+                                </li>
+
+
+                            </ul>
+
+                            <ul class="footer-content-ul">
+                                <li class="first">
+                                    <a href="./lab_notebook.html" style="font-size: 18px;">LAB NOTEBOOK</a>
+                                </li>
+                            </ul>
+
+                            <ul class="footer-content-ul">
+                                <li class="first">
+                                    <a href="./team.html" style="font-size: 21px;">TEAM</a>
+                                </li>
+                                <li>
+                                    <a href="./team.html">Team</a>
+                                </li>
+                                <li>
+                                    <a href="./collaboration.html">Collaboration</a>
+                                </li>
+                            </ul>
+
+
+                        </div>
+
+                        <div class="footer-row">
+                            <div class="col-md-12 " style="margin-top: -30px; ">
+                                <p style="text-align: center;font-size: 16px; color: white;">Copyright © 2022 NAU All rights reserved.
+                                </p>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
-
-
-            </div>
-        </div>
-        <script src="./js/longli.js"></script>
+                <script src="./js/longli.js"></script>
 
 </html>
